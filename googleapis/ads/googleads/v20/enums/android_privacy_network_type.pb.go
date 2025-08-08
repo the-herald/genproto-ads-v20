@@ -96,7 +96,7 @@ func (AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType) EnumDescriptor() 
 	return file_google_ads_googleads_v20_enums_android_privacy_network_type_proto_rawDescGZIP(), []int{0, 0}
 }
 
-// The network type enum for Android privacy github.com/the-herald/monthly_reporter/reporter/shared key.
+// The network type enum for Android privacy SHARED key.
 type AndroidPrivacyNetworkTypeEnum struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields

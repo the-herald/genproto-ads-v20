@@ -16,7 +16,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: google/ads/googleads/v20/services/github.com/the-herald/monthly_reporter/reporter/shared_set_service.proto
+// source: google/ads/googleads/v20/services/SHARED_set_service.proto
 
 package services
 
@@ -41,13 +41,13 @@ const (
 )
 
 // Request message for
-// [github.com/the-herald/monthly_reporter/reporter/sharedSets][google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSets].
-type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest struct {
+// [SHAREDSets][google.ads.googleads.v20.services.SHAREDSets].
+type MutateSHAREDSetsRequest struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// Required. The ID of the customer whose github.com/the-herald/monthly_reporter/reporter/shared sets are being modified.
+	// Required. The ID of the customer whose SHARED sets are being modified.
 	CustomerId string `protobuf:"bytes,1,opt,name=customer_id,json=customerId,proto3" json:"customer_id,omitempty"`
-	// Required. The list of operations to perform on individual github.com/the-herald/monthly_reporter/reporter/shared sets.
-	Operations []*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation `protobuf:"bytes,2,rep,name=operations,proto3" json:"operations,omitempty"`
+	// Required. The list of operations to perform on individual SHARED sets.
+	Operations []*SHAREDSetOperation `protobuf:"bytes,2,rep,name=operations,proto3" json:"operations,omitempty"`
 	// If true, successful operations will be carried out and invalid
 	// operations will return errors. If false, all operations will be carried
 	// out in one transaction if and only if they are all valid.
@@ -63,21 +63,21 @@ type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest str
 	sizeCache           protoimpl.SizeCache
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) Reset() {
-	*x = Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[0]
+func (x *MutateSHAREDSetsRequest) Reset() {
+	*x = MutateSHAREDSetsRequest{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) String() string {
+func (x *MutateSHAREDSetsRequest) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) ProtoMessage() {}
+func (*MutateSHAREDSetsRequest) ProtoMessage() {}
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[0]
+func (x *MutateSHAREDSetsRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -88,48 +88,48 @@ func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest.ProtoReflect.Descriptor instead.
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use MutateSHAREDSetsRequest.ProtoReflect.Descriptor instead.
+func (*MutateSHAREDSetsRequest) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) GetCustomerId() string {
+func (x *MutateSHAREDSetsRequest) GetCustomerId() string {
 	if x != nil {
 		return x.CustomerId
 	}
 	return ""
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation {
+func (x *MutateSHAREDSetOperation {
 	if x != nil {
 		return x.Operations
 	}
 	return nil
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) GetPartialFailure() bool {
+func (x *MutateSHAREDSetsRequest) GetPartialFailure() bool {
 	if x != nil {
 		return x.PartialFailure
 	}
 	return false
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) GetValidateOnly() bool {
+func (x *MutateSHAREDSetsRequest) GetValidateOnly() bool {
 	if x != nil {
 		return x.ValidateOnly
 	}
 	return false
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest) GetResponseContentType() enums.ResponseContentTypeEnum_ResponseContentType {
+func (x *MutateSHAREDSetsRequest) GetResponseContentType() enums.ResponseContentTypeEnum_ResponseContentType {
 	if x != nil {
 		return x.ResponseContentType
 	}
 	return enums.ResponseContentTypeEnum_ResponseContentType(0)
 }
 
-// A single operation (create, update, remove) on an github.com/the-herald/monthly_reporter/reporter/shared set.
-type github.com/the-herald/monthly_reporter/reporter/sharedSetOperation struct {
+// A single operation (create, update, remove) on an SHARED set.
+type SHAREDSetOperation struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// FieldMask that determines which resource fields are modified in an update.
 	UpdateMask *fieldmaskpb.FieldMask `protobuf:"bytes,4,opt,name=update_mask,json=updateMask,proto3" json:"update_mask,omitempty"`
@@ -137,29 +137,29 @@ type github.com/the-herald/monthly_reporter/reporter/sharedSetOperation struct {
 	//
 	// Types that are valid to be assigned to Operation:
 	//
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Create
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Update
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Remove
-	Operation     isgithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation `protobuf_oneof:"operation"`
+	//	*SHAREDSetOperation_Create
+	//	*SHAREDSetOperation_Update
+	//	*SHAREDSetOperation_Remove
+	Operation     isSHAREDSetOperation_Operation `protobuf_oneof:"operation"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) Reset() {
-	*x = github.com/the-herald/monthly_reporter/reporter/sharedSetOperation{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[1]
+func (x *SHAREDSetOperation) Reset() {
+	*x = SHAREDSetOperation{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) String() string {
+func (x *SHAREDSetOperation) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) ProtoMessage() {}
+func (*SHAREDSetOperation) ProtoMessage() {}
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[1]
+func (x *SHAREDSetOperation) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -170,83 +170,83 @@ func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) Pro
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use github.com/the-herald/monthly_reporter/reporter/sharedSetOperation.ProtoReflect.Descriptor instead.
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescGZIP(), []int{1}
+// Deprecated: Use SHAREDSetOperation.ProtoReflect.Descriptor instead.
+func (*SHAREDSetOperation) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescGZIP(), []int{1}
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) GetUpdateMask() *fieldmaskpb.FieldMask {
+func (x *SHAREDSetOperation) GetUpdateMask() *fieldmaskpb.FieldMask {
 	if x != nil {
 		return x.UpdateMask
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation {
+func (x *SHAREDSetOperation_Operation {
 	if x != nil {
 		return x.Operation
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSet {
+func (x *SHAREDSet {
 	if x != nil {
-		if x, ok := x.Operation.(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Create); ok {
+		if x, ok := x.Operation.(*SHAREDSetOperation_Create); ok {
 			return x.Create
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSet {
+func (x *SHAREDSet {
 	if x != nil {
-		if x, ok := x.Operation.(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Update); ok {
+		if x, ok := x.Operation.(*SHAREDSetOperation_Update); ok {
 			return x.Update
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) GetRemove() string {
+func (x *SHAREDSetOperation) GetRemove() string {
 	if x != nil {
-		if x, ok := x.Operation.(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Remove); ok {
+		if x, ok := x.Operation.(*SHAREDSetOperation_Remove); ok {
 			return x.Remove
 		}
 	}
 	return ""
 }
 
-type isgithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation interface {
-	isgithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation()
+type isSHAREDSetOperation_Operation interface {
+	isSHAREDSetOperation_Operation()
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Create struct {
-	// Create operation: No resource name is expected for the new github.com/the-herald/monthly_reporter/reporter/shared set.
-	Create *resources.github.com/the-herald/monthly_reporter/reporter/sharedSet `protobuf:"bytes,1,opt,name=create,proto3,oneof"`
+type SHAREDSetOperation_Create struct {
+	// Create operation: No resource name is expected for the new SHARED set.
+	Create *resources.SHAREDSet `protobuf:"bytes,1,opt,name=create,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Update struct {
-	// Update operation: The github.com/the-herald/monthly_reporter/reporter/shared set is expected to have a valid resource
+type SHAREDSetOperation_Update struct {
+	// Update operation: The SHARED set is expected to have a valid resource
 	// name.
-	Update *resources.github.com/the-herald/monthly_reporter/reporter/sharedSet `protobuf:"bytes,2,opt,name=update,proto3,oneof"`
+	Update *resources.SHAREDSet `protobuf:"bytes,2,opt,name=update,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Remove struct {
-	// Remove operation: A resource name for the removed github.com/the-herald/monthly_reporter/reporter/shared set is expected,
+type SHAREDSetOperation_Remove struct {
+	// Remove operation: A resource name for the removed SHARED set is expected,
 	// in this format:
 	//
-	// `customers/{customer_id}/github.com/the-herald/monthly_reporter/reporter/shared_set_id}`
+	// `customers/{customer_id}/SHARED_set_id}`
 	Remove string `protobuf:"bytes,3,opt,name=remove,proto3,oneof"`
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation() {}
+func (*SHAREDSetOperation_Operation() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation() {}
+func (*SHAREDSetOperation_Operation() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Operation() {}
+func (*SHAREDSetOperation_Operation() {}
 
-// Response message for a github.com/the-herald/monthly_reporter/reporter/shared set mutate.
-type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse struct {
+// Response message for a SHARED set mutate.
+type MutateSHAREDSetsResponse struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// Errors that pertain to operation failures in the partial failure mode.
 	// Returned only when partial_failure = true and all errors occur inside the
@@ -254,26 +254,26 @@ type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse st
 	// errors), we return an RPC level error.
 	PartialFailureError *status.Status `protobuf:"bytes,3,opt,name=partial_failure_error,json=partialFailureError,proto3" json:"partial_failure_error,omitempty"`
 	// All results for the mutate.
-	Results       []*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult `protobuf:"bytes,2,rep,name=results,proto3" json:"results,omitempty"`
+	Results       []*MutateSHAREDSetResult `protobuf:"bytes,2,rep,name=results,proto3" json:"results,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse) Reset() {
-	*x = Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[2]
+func (x *MutateSHAREDSetsResponse) Reset() {
+	*x = MutateSHAREDSetsResponse{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse) String() string {
+func (x *MutateSHAREDSetsResponse) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse) ProtoMessage() {}
+func (*MutateSHAREDSetsResponse) ProtoMessage() {}
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[2]
+func (x *MutateSHAREDSetsResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -284,53 +284,53 @@ func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRespons
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse.ProtoReflect.Descriptor instead.
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescGZIP(), []int{2}
+// Deprecated: Use MutateSHAREDSetsResponse.ProtoReflect.Descriptor instead.
+func (*MutateSHAREDSetsResponse) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse) GetPartialFailureError() *status.Status {
+func (x *MutateSHAREDSetsResponse) GetPartialFailureError() *status.Status {
 	if x != nil {
 		return x.PartialFailureError
 	}
 	return nil
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult {
+func (x *MutateSHAREDSetResult {
 	if x != nil {
 		return x.Results
 	}
 	return nil
 }
 
-// The result for the github.com/the-herald/monthly_reporter/reporter/shared set mutate.
-type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult struct {
+// The result for the SHARED set mutate.
+type MutateSHAREDSetResult struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// Returned for successful operations.
 	ResourceName string `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	// The mutated github.com/the-herald/monthly_reporter/reporter/shared set with only mutable fields after mutate. The field
+	// The mutated SHARED set with only mutable fields after mutate. The field
 	// will only be returned when response_content_type is set to
 	// "MUTABLE_RESOURCE".
-	github.com/the-herald/monthly_reporter/reporter/sharedSet `protobuf:"bytes,2,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedSet,proto3" json:"github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	SHAREDSet `protobuf:"bytes,2,opt,name=SHAREDSet,proto3" json:"SHARED_set,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) Reset() {
-	*x = Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[3]
+func (x *MutateSHAREDSetResult) Reset() {
+	*x = MutateSHAREDSetResult{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) String() string {
+func (x *MutateSHAREDSetResult) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) ProtoMessage() {}
+func (*MutateSHAREDSetResult) ProtoMessage() {}
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[3]
+func (x *MutateSHAREDSetResult) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -341,93 +341,93 @@ func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) 
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult.ProtoReflect.Descriptor instead.
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescGZIP(), []int{3}
+// Deprecated: Use MutateSHAREDSetResult.ProtoReflect.Descriptor instead.
+func (*MutateSHAREDSetResult) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) GetResourceName() string {
+func (x *MutateSHAREDSetResult) GetResourceName() string {
 	if x != nil {
 		return x.ResourceName
 	}
 	return ""
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSet() *resources.github.com/the-herald/monthly_reporter/reporter/sharedSet {
+func (x *MutateSHAREDSet() *resources.SHAREDSet {
 	if x != nil {
-		return x.github.com/the-herald/monthly_reporter/reporter/sharedSet
+		return x.SHAREDSet
 	}
 	return nil
 }
 
-var File_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto protoreflect.FileDescriptor
+var File_google_ads_googleads_v20_services_SHARED_set_service_proto protoreflect.FileDescriptor
 
-const file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDesc = "" +
+const file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDesc = "" +
 	"\n" +
-	":google/ads/googleads/v20/services/github.com/the-herald/monthly_reporter/reporter/shared_set.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x17google/api/client.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/rpc/status.proto\"\xea\x02\n" +
-	"\x17Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest\x12$\n" +
+	":google/ads/googleads/v20/services/SHARED_set.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x17google/api/client.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/rpc/status.proto\"\xea\x02\n" +
+	"\x17MutateSHAREDSetsRequest\x12$\n" +
 	"\vcustomer_id\x18\x01 \x01(\tB\x03\xe0A\x02R\n" +
 	"customerId\x12Z\n" +
 	"\n" +
-	"operations\x18\x02 \x03(\v25.google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSetOperationB\x03\xe0A\x02R\n" +
+	"operations\x18\x02 \x03(\v25.google.ads.googleads.v20.services.SHAREDSetOperationB\x03\xe0A\x02R\n" +
 	"operations\x12'\n" +
 	"\x0fpartial_failure\x18\x03 \x01(\bR\x0epartialFailure\x12#\n" +
 	"\rvalidate_only\x18\x04 \x01(\bR\fvalidateOnly\x12\x7f\n" +
 	"\x15response_content_type\x18\x05 \x01(\x0e2K.google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentTypeR\x13responseContentType\"\xb3\x02\n" +
-	"\x12github.com/the-herald/monthly_reporter/reporter/sharedSetOperation\x12;\n" +
+	"\x12SHAREDSetOperation\x12;\n" +
 	"\vupdate_mask\x18\x04 \x01(\v2\x1a.google.protobuf.FieldMaskR\n" +
 	"updateMask\x12G\n" +
-	"\x06create\x18\x01 \x01(\v2-.google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedSetH\x00R\x06create\x12G\n" +
-	"\x06update\x18\x02 \x01(\v2-.google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedSetH\x00R\x06update\x12A\n" +
+	"\x06create\x18\x01 \x01(\v2-.google.ads.googleads.v20.resources.SHAREDSetH\x00R\x06create\x12G\n" +
+	"\x06update\x18\x02 \x01(\v2-.google.ads.googleads.v20.resources.SHAREDSetH\x00R\x06update\x12A\n" +
 	"\x06remove\x18\x03 \x01(\tB'\xfaA$\n" +
-	"\"googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedSetH\x00R\x06removeB\v\n" +
+	"\"googleads.googleapis.com/SHAREDSetH\x00R\x06removeB\v\n" +
 	"\toperation\"\xb6\x01\n" +
-	"\x18Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse\x12F\n" +
+	"\x18MutateSHAREDSetsResponse\x12F\n" +
 	"\x15partial_failure_error\x18\x03 \x01(\v2\x12.google.rpc.StatusR\x13partialFailureError\x12R\n" +
-	"\aresults\x18\x02 \x03(\v28.google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResultR\aresults\"\xb3\x01\n" +
-	"\x15Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult\x12L\n" +
+	"\aresults\x18\x02 \x03(\v28.google.ads.googleads.v20.services.MutateSHAREDSetResultR\aresults\"\xb3\x01\n" +
+	"\x15MutateSHAREDSetResult\x12L\n" +
 	"\rresource_name\x18\x01 \x01(\tB'\xfaA$\n" +
-	"\"googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedSetR\fresourceName\x12L\n" +
+	"\"googleads.googleapis.com/SHAREDSetR\fresourceName\x12L\n" +
 	"\n" +
-	"github.com/the-herald/monthly_reporter/reporter/sharedSetR\tgithub.com/the-herald/monthly_reporter/reporter/sharedSet2\xbd\x02\n" +
-	"\x10github.com/the-herald/monthly_reporter/reporter/sharedSetService\x12\xe1\x01\n" +
-	"\x10Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest\x1a;.google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSets:mutate\x1aE\xcaA\x18googleads.googleapis.com\xd2A'https://www.googleapis.com/auth/adwordsB\x81\x02\n" +
-	"%com.google.ads.googleads.v20.servicesB\x15github.com/the-herald/monthly_reporter/reporter/sharedSetServiceProtoP\x01ZIgoogle.golang.org/genproto/googleapis/ads/googleads/v20/services;services\xa2\x02\x03GAA\xaa\x02!Google.Ads.GoogleAds.V20.Services\xca\x02!Google\\Ads\\GoogleAds\\V20\\Services\xea\x02%Google::Ads::GoogleAds::V20::Servicesb\x06proto3"
+	"SHAREDSetR\tSHAREDSet2\xbd\x02\n" +
+	"\x10SHAREDSetService\x12\xe1\x01\n" +
+	"\x10MutateSHAREDSetsRequest\x1a;.google.ads.googleads.v20.services.MutateSHAREDSets:mutate\x1aE\xcaA\x18googleads.googleapis.com\xd2A'https://www.googleapis.com/auth/adwordsB\x81\x02\n" +
+	"%com.google.ads.googleads.v20.servicesB\x15SHAREDSetServiceProtoP\x01ZIgoogle.golang.org/genproto/googleapis/ads/googleads/v20/services;services\xa2\x02\x03GAA\xaa\x02!Google.Ads.GoogleAds.V20.Services\xca\x02!Google\\Ads\\GoogleAds\\V20\\Services\xea\x02%Google::Ads::GoogleAds::V20::Servicesb\x06proto3"
 
 var (
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescOnce sync.Once
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescData []byte
+	file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescOnce sync.Once
+	file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescData []byte
 )
 
-func file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescGZIP() []byte {
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescOnce.Do(func() {
-		file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDesc), len(file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDesc)))
+func file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescGZIP() []byte {
+	file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescOnce.Do(func() {
+		file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDesc), len(file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDesc)))
 	})
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDescData
+	return file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDescData
 }
 
-var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_goTypes = []any{
-	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest
-	(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation
-	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse
-	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult
+var file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_google_ads_googleads_v20_services_SHARED_set_service_proto_goTypes = []any{
+	(*MutateSHAREDSetsRequest
+	(*SHAREDSetOperation
+	(*MutateSHAREDSetsResponse
+	(*MutateSHAREDSetResult
 	(enums.ResponseContentTypeEnum_ResponseContentType)(0), // 4: google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
 	(*fieldmaskpb.FieldMask)(nil),                          // 5: google.protobuf.FieldMask
-	(*resources.github.com/the-herald/monthly_reporter/reporter/sharedSet
+	(*resources.SHAREDSet
 	(*status.Status)(nil),                                  // 7: google.rpc.Status
 }
-var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_depIdxs = []int32{
-	1, // 0: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation
-	4, // 1: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest.response_content_type:type_name -> google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
-	5, // 2: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSetOperation.update_mask:type_name -> google.protobuf.FieldMask
-	6, // 3: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSet
-	6, // 4: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSet
-	7, // 5: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse.partial_failure_error:type_name -> google.rpc.Status
-	3, // 6: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult
-	6, // 7: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/shared_set:type_name -> google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedSet
-	0, // 8: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSets:input_type -> google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsRequest
-	2, // 9: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedSets:output_type -> google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetsResponse
+var file_google_ads_googleads_v20_services_SHARED_set_service_proto_depIdxs = []int32{
+	1, // 0: google.ads.googleads.v20.services.MutateSHAREDSetOperation
+	4, // 1: google.ads.googleads.v20.services.MutateSHAREDSetsRequest.response_content_type:type_name -> google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
+	5, // 2: google.ads.googleads.v20.services.SHAREDSetOperation.update_mask:type_name -> google.protobuf.FieldMask
+	6, // 3: google.ads.googleads.v20.services.SHAREDSet
+	6, // 4: google.ads.googleads.v20.services.SHAREDSet
+	7, // 5: google.ads.googleads.v20.services.MutateSHAREDSetsResponse.partial_failure_error:type_name -> google.rpc.Status
+	3, // 6: google.ads.googleads.v20.services.MutateSHAREDSetResult
+	6, // 7: google.ads.googleads.v20.services.MutateSHARED_set:type_name -> google.ads.googleads.v20.resources.SHAREDSet
+	0, // 8: google.ads.googleads.v20.services.SHAREDSets:input_type -> google.ads.googleads.v20.services.MutateSHAREDSetsRequest
+	2, // 9: google.ads.googleads.v20.services.SHAREDSets:output_type -> google.ads.googleads.v20.services.MutateSHAREDSetsResponse
 	9, // [9:10] is the sub-list for method output_type
 	8, // [8:9] is the sub-list for method input_type
 	8, // [8:8] is the sub-list for extension type_name
@@ -435,31 +435,31 @@ var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporte
 	0, // [0:8] is the sub-list for field type_name
 }
 
-func init() { file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_init() }
-func file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_init() {
-	if File_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto != nil {
+func init() { file_google_ads_googleads_v20_services_SHARED_set_service_proto_init() }
+func file_google_ads_googleads_v20_services_SHARED_set_service_proto_init() {
+	if File_google_ads_googleads_v20_services_SHARED_set_service_proto != nil {
 		return
 	}
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes[1].OneofWrappers = []any{
-		(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Create)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Update)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation_Remove)(nil),
+	file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes[1].OneofWrappers = []any{
+		(*SHAREDSetOperation_Create)(nil),
+		(*SHAREDSetOperation_Update)(nil),
+		(*SHAREDSetOperation_Remove)(nil),
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_services_SHARED_set_service_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_goTypes,
-		DependencyIndexes: file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_depIdxs,
-		MessageInfos:      file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_msgTypes,
+		GoTypes:           file_google_ads_googleads_v20_services_SHARED_set_service_proto_goTypes,
+		DependencyIndexes: file_google_ads_googleads_v20_services_SHARED_set_service_proto_depIdxs,
+		MessageInfos:      file_google_ads_googleads_v20_services_SHARED_set_service_proto_msgTypes,
 	}.Build()
-	File_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto = out.File
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_goTypes = nil
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_depIdxs = nil
+	File_google_ads_googleads_v20_services_SHARED_set_service_proto = out.File
+	file_google_ads_googleads_v20_services_SHARED_set_service_proto_goTypes = nil
+	file_google_ads_googleads_v20_services_SHARED_set_service_proto_depIdxs = nil
 }

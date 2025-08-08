@@ -16,7 +16,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: google/ads/googleads/v20/resources/android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type.proto
+// source: google/ads/googleads/v20/resources/android_privacy_SHARED_key_google_network_type.proto
 
 package resources
 
@@ -37,47 +37,47 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// An Android privacy github.com/the-herald/monthly_reporter/reporter/shared key view for Google network type key.
-type AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType struct {
+// An Android privacy SHARED key view for Google network type key.
+type AndroidPrivacySHAREDKeyGoogleNetworkType struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// Output only. The resource name of the Android privacy github.com/the-herald/monthly_reporter/reporter/shared key.
-	// Android privacy github.com/the-herald/monthly_reporter/reporter/shared key resource names have the form:
+	// Output only. The resource name of the Android privacy SHARED key.
+	// Android privacy SHARED key resource names have the form:
 	//
-	// `customers/{customer_id}/androidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkTypes/{campaign_id}~{android_privacy_interaction_type}~{android_privacy_network_type}~{android_privacy_interaction_date(yyyy-mm-dd)}`
+	// `customers/{customer_id}/androidPrivacySHAREDKeyGoogleNetworkTypes/{campaign_id}~{android_privacy_interaction_type}~{android_privacy_network_type}~{android_privacy_interaction_date(yyyy-mm-dd)}`
 	ResourceName string `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
 	// Output only. The campaign ID used in the share key encoding.
 	CampaignId int64 `protobuf:"varint,2,opt,name=campaign_id,json=campaignId,proto3" json:"campaign_id,omitempty"`
 	// Output only. The interaction type enum used in the share key encoding.
 	AndroidPrivacyInteractionType enums.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType `protobuf:"varint,3,opt,name=android_privacy_interaction_type,json=androidPrivacyInteractionType,proto3,enum=google.ads.googleads.v20.enums.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType" json:"android_privacy_interaction_type,omitempty"`
-	// Output only. The interaction date used in the github.com/the-herald/monthly_reporter/reporter/shared key encoding in the
+	// Output only. The interaction date used in the SHARED key encoding in the
 	// format of "YYYY-MM-DD" in UTC timezone.
 	AndroidPrivacyInteractionDate string `protobuf:"bytes,4,opt,name=android_privacy_interaction_date,json=androidPrivacyInteractionDate,proto3" json:"android_privacy_interaction_date,omitempty"`
 	// Output only. The network type enum used in the share key encoding.
 	AndroidPrivacyNetworkType enums.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType `protobuf:"varint,5,opt,name=android_privacy_network_type,json=androidPrivacyNetworkType,proto3,enum=google.ads.googleads.v20.enums.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType" json:"android_privacy_network_type,omitempty"`
-	// Output only. 128 bit hex string of the encoded github.com/the-herald/monthly_reporter/reporter/shared network type key,
+	// Output only. 128 bit hex string of the encoded SHARED network type key,
 	// including a '0x' prefix. This key can be used to do a bitwise OR operator
 	// with the aggregate conversion key to create a full aggregation key to
 	// retrieve the Aggregate API Report in Android Privacy Sandbox.
-	github.com/the-herald/monthly_reporter/reporter/shared_network_type_key,json=github.com/the-herald/monthly_reporter/reporter/shared_network_type_key,omitempty"`
+	SHARED_network_type_key,json=SHARED_network_type_key,omitempty"`
 	unknownFields        protoimpl.UnknownFields
 	sizeCache            protoimpl.SizeCache
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) Reset() {
-	*x = AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType{}
-	mi := &file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_msgTypes[0]
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) Reset() {
+	*x = AndroidPrivacySHAREDKeyGoogleNetworkType{}
+	mi := &file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) String() string {
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) ProtoMessage() {}
+func (*AndroidPrivacySHAREDKeyGoogleNetworkType) ProtoMessage() {}
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_msgTypes[0]
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -88,91 +88,91 @@ func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKey
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType.ProtoReflect.Descriptor instead.
-func (*AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use AndroidPrivacySHAREDKeyGoogleNetworkType.ProtoReflect.Descriptor instead.
+func (*AndroidPrivacySHAREDKeyGoogleNetworkType) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) GetResourceName() string {
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) GetResourceName() string {
 	if x != nil {
 		return x.ResourceName
 	}
 	return ""
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) GetCampaignId() int64 {
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) GetCampaignId() int64 {
 	if x != nil {
 		return x.CampaignId
 	}
 	return 0
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) GetAndroidPrivacyInteractionType() enums.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType {
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) GetAndroidPrivacyInteractionType() enums.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType {
 	if x != nil {
 		return x.AndroidPrivacyInteractionType
 	}
 	return enums.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType(0)
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) GetAndroidPrivacyInteractionDate() string {
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) GetAndroidPrivacyInteractionDate() string {
 	if x != nil {
 		return x.AndroidPrivacyInteractionDate
 	}
 	return ""
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType) GetAndroidPrivacyNetworkType() enums.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType {
+func (x *AndroidPrivacySHAREDKeyGoogleNetworkType) GetAndroidPrivacyNetworkType() enums.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType {
 	if x != nil {
 		return x.AndroidPrivacyNetworkType
 	}
 	return enums.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType(0)
 }
 
-func (x *AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedNetworkTypeKey() string {
+func (x *AndroidPrivacySHAREDNetworkTypeKey() string {
 	if x != nil {
-		return x.github.com/the-herald/monthly_reporter/reporter/sharedNetworkTypeKey
+		return x.SHAREDNetworkTypeKey
 	}
 	return ""
 }
 
-var File_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto protoreflect.FileDescriptor
+var File_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto protoreflect.FileDescriptor
 
-const file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDesc = "" +
+const file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDesc = "" +
 	"\n" +
-	"Wgoogle/ads/googleads/v20/resources/android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type.proto\x12\"google.ads.googleads.v20.resources\x1aEgoogle/ads/googleads/v20/enums/android_privacy_interaction_type.proto\x1aAgoogle/ads/googleads/v20/enums/android_privacy_network_type.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\"\x9b\a\n" +
-	"(AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType\x12n\n" +
+	"Wgoogle/ads/googleads/v20/resources/android_privacy_SHARED_key_google_network_type.proto\x12\"google.ads.googleads.v20.resources\x1aEgoogle/ads/googleads/v20/enums/android_privacy_interaction_type.proto\x1aAgoogle/ads/googleads/v20/enums/android_privacy_network_type.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\"\x9b\a\n" +
+	"(AndroidPrivacySHAREDKeyGoogleNetworkType\x12n\n" +
 	"\rresource_name\x18\x01 \x01(\tBI\xe0A\x03\xfaAC\n" +
-	"Agoogleads.googleapis.com/AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkTypeR\fresourceName\x12$\n" +
+	"Agoogleads.googleapis.com/AndroidPrivacySHAREDKeyGoogleNetworkTypeR\fresourceName\x12$\n" +
 	"\vcampaign_id\x18\x02 \x01(\x03B\x03\xe0A\x03R\n" +
 	"campaignId\x12\xad\x01\n" +
 	" android_privacy_interaction_type\x18\x03 \x01(\x0e2_.google.ads.googleads.v20.enums.AndroidPrivacyInteractionTypeEnum.AndroidPrivacyInteractionTypeB\x03\xe0A\x03R\x1dandroidPrivacyInteractionType\x12L\n" +
 	" android_privacy_interaction_date\x18\x04 \x01(\tB\x03\xe0A\x03R\x1dandroidPrivacyInteractionDate\x12\x9d\x01\n" +
 	"\x1candroid_privacy_network_type\x18\x05 \x01(\x0e2W.google.ads.googleads.v20.enums.AndroidPrivacyNetworkTypeEnum.AndroidPrivacyNetworkTypeB\x03\xe0A\x03R\x19androidPrivacyNetworkType\x12:\n" +
-	"\x17github.com/the-herald/monthly_reporter/reporter/sharedNetworkTypeKey:\xfe\x01\xeaA\xfa\x01\n" +
-	"Agoogleads.googleapis.com/AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkTypes/{campaign_id}~{android_privacy_interaction_type}~{android_privacy_network_type}~{android_privacy_interaction_date}B\x9f\x02\n" +
-	"&com.google.ads.googleads.v20.resourcesB-AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkTypeProtoP\x01ZKgoogle.golang.org/genproto/googleapis/ads/googleads/v20/resources;resources\xa2\x02\x03GAA\xaa\x02\"Google.Ads.GoogleAds.V20.Resources\xca\x02\"Google\\Ads\\GoogleAds\\V20\\Resources\xea\x02&Google::Ads::GoogleAds::V20::Resourcesb\x06proto3"
+	"\x17SHAREDNetworkTypeKey:\xfe\x01\xeaA\xfa\x01\n" +
+	"Agoogleads.googleapis.com/AndroidPrivacySHAREDKeyGoogleNetworkTypes/{campaign_id}~{android_privacy_interaction_type}~{android_privacy_network_type}~{android_privacy_interaction_date}B\x9f\x02\n" +
+	"&com.google.ads.googleads.v20.resourcesB-AndroidPrivacySHAREDKeyGoogleNetworkTypeProtoP\x01ZKgoogle.golang.org/genproto/googleapis/ads/googleads/v20/resources;resources\xa2\x02\x03GAA\xaa\x02\"Google.Ads.GoogleAds.V20.Resources\xca\x02\"Google\\Ads\\GoogleAds\\V20\\Resources\xea\x02&Google::Ads::GoogleAds::V20::Resourcesb\x06proto3"
 
 var (
-	file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDescOnce sync.Once
-	file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDescData []byte
+	file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDescOnce sync.Once
+	file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDescData []byte
 )
 
-func file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDescGZIP() []byte {
-	file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDescOnce.Do(func() {
-		file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDesc), len(file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDesc)))
+func file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDescGZIP() []byte {
+	file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDescOnce.Do(func() {
+		file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDesc), len(file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDesc)))
 	})
-	return file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDescData
+	return file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDescData
 }
 
-var file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_goTypes = []any{
-	(*AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType
+var file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_goTypes = []any{
+	(*AndroidPrivacySHAREDKeyGoogleNetworkType
 	(enums.AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType)(0), // 1: google.ads.googleads.v20.enums.AndroidPrivacyInteractionTypeEnum.AndroidPrivacyInteractionType
 	(enums.AndroidPrivacyNetworkTypeEnum_AndroidPrivacyNetworkType)(0),         // 2: google.ads.googleads.v20.enums.AndroidPrivacyNetworkTypeEnum.AndroidPrivacyNetworkType
 }
-var file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_depIdxs = []int32{
-	1, // 0: google.ads.googleads.v20.resources.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType.android_privacy_interaction_type:type_name -> google.ads.googleads.v20.enums.AndroidPrivacyInteractionTypeEnum.AndroidPrivacyInteractionType
-	2, // 1: google.ads.googleads.v20.resources.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType.android_privacy_network_type:type_name -> google.ads.googleads.v20.enums.AndroidPrivacyNetworkTypeEnum.AndroidPrivacyNetworkType
+var file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_depIdxs = []int32{
+	1, // 0: google.ads.googleads.v20.resources.AndroidPrivacySHAREDKeyGoogleNetworkType.android_privacy_interaction_type:type_name -> google.ads.googleads.v20.enums.AndroidPrivacyInteractionTypeEnum.AndroidPrivacyInteractionType
+	2, // 1: google.ads.googleads.v20.resources.AndroidPrivacySHAREDKeyGoogleNetworkType.android_privacy_network_type:type_name -> google.ads.googleads.v20.enums.AndroidPrivacyNetworkTypeEnum.AndroidPrivacyNetworkType
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
@@ -181,27 +181,27 @@ var file_google_ads_googleads_v20_resources_android_privacy_github.com/the-heral
 }
 
 func init() {
-	file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_init()
+	file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_init()
 }
-func file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_init() {
-	if File_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto != nil {
+func file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_init() {
+	if File_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_goTypes,
-		DependencyIndexes: file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_depIdxs,
-		MessageInfos:      file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_msgTypes,
+		GoTypes:           file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_goTypes,
+		DependencyIndexes: file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_depIdxs,
+		MessageInfos:      file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_msgTypes,
 	}.Build()
-	File_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto = out.File
-	file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_goTypes = nil
-	file_google_ads_googleads_v20_resources_android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type_proto_depIdxs = nil
+	File_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto = out.File
+	file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_goTypes = nil
+	file_google_ads_googleads_v20_resources_android_privacy_SHARED_key_google_network_type_proto_depIdxs = nil
 }

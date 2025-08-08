@@ -353,11 +353,11 @@ const (
 	// policy. See
 	// https://support.google.com/google-ads/answer/6299717.
 	CriterionErrorEnum_CANNOT_TARGET_CUSTOMER_MATCH_USER_LIST CriterionErrorEnum_CriterionError = 139
-	// Cannot create a negative keyword list criterion with a github.com/the-herald/monthly_reporter/reporter/shared set that
+	// Cannot create a negative keyword list criterion with a SHARED set that
 	// does not exist.
-	CriterionErrorEnum_NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST CriterionErrorEnum_CriterionError = 145
-	// Cannot create a negative keyword list with deleted github.com/the-herald/monthly_reporter/reporter/shared set.
-	CriterionErrorEnum_CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET CriterionErrorEnum_CriterionError = 146
+	CriterionErrorEnum_NEGATIVE_KEYWORD_SHARED_SET_DOES_NOT_EXIST CriterionErrorEnum_CriterionError = 145
+	// Cannot create a negative keyword list with deleted SHARED set.
+	CriterionErrorEnum_CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_SHARED_SET CriterionErrorEnum_CriterionError = 146
 	// Can only have one Negative Keyword List per account.
 	CriterionErrorEnum_CANNOT_HAVE_MULTIPLE_NEGATIVE_KEYWORD_LIST_PER_ACCOUNT CriterionErrorEnum_CriterionError = 147
 	// Only allowlisted customers can add criteria of this type.
@@ -376,11 +376,11 @@ const (
 	// The brand criteria has a brand input that is not recognized as a
 	// valid brand.
 	CriterionErrorEnum_CANNOT_RECOGNIZE_BRAND CriterionErrorEnum_CriterionError = 155
-	// The brand_list.github.com/the-herald/monthly_reporter/reporter/shared set that does not
+	// The brand_list.SHARED set that does not
 	// exist.
-	CriterionErrorEnum_BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST CriterionErrorEnum_CriterionError = 156
-	// Cannot create a brand list with deleted github.com/the-herald/monthly_reporter/reporter/shared set.
-	CriterionErrorEnum_CANNOT_ADD_REMOVED_BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET CriterionErrorEnum_CriterionError = 157
+	CriterionErrorEnum_BRAND_SHARED_SET_DOES_NOT_EXIST CriterionErrorEnum_CriterionError = 156
+	// Cannot create a brand list with deleted SHARED set.
+	CriterionErrorEnum_CANNOT_ADD_REMOVED_BRAND_SHARED_SET CriterionErrorEnum_CriterionError = 157
 	// Brand list can only be negatively targeted for the campaign type.
 	CriterionErrorEnum_ONLY_EXCLUSION_BRAND_LIST_ALLOWED_FOR_CAMPAIGN_TYPE CriterionErrorEnum_CriterionError = 158
 	// Cannot positively target locations outside of restricted area for
@@ -529,8 +529,8 @@ var (
 		137: "AUDIENCE_NOT_ELIGIBLE_FOR_CAMPAIGN_TYPE",
 		138: "AUDIENCE_NOT_ALLOWED_TO_ATTACH_WHEN_AUDIENCE_GROUPED_SET_TO_FALSE",
 		139: "CANNOT_TARGET_CUSTOMER_MATCH_USER_LIST",
-		145: "NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST",
-		146: "CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET",
+		145: "NEGATIVE_KEYWORD_SHARED_SET_DOES_NOT_EXIST",
+		146: "CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_SHARED_SET",
 		147: "CANNOT_HAVE_MULTIPLE_NEGATIVE_KEYWORD_LIST_PER_ACCOUNT",
 		149: "CUSTOMER_CANNOT_ADD_CRITERION_OF_THIS_TYPE",
 		151: "CANNOT_TARGET_SIMILAR_USER_LIST",
@@ -538,8 +538,8 @@ var (
 		153: "ONE_AUDIENCE_ALLOWED_PER_AD_GROUP",
 		154: "INVALID_DETAILED_DEMOGRAPHIC",
 		155: "CANNOT_RECOGNIZE_BRAND",
-		156: "BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST",
-		157: "CANNOT_ADD_REMOVED_BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET",
+		156: "BRAND_SHARED_SET_DOES_NOT_EXIST",
+		157: "CANNOT_ADD_REMOVED_BRAND_SHARED_SET",
 		158: "ONLY_EXCLUSION_BRAND_LIST_ALLOWED_FOR_CAMPAIGN_TYPE",
 		166: "LOCATION_TARGETING_NOT_ELIGIBLE_FOR_RESTRICTED_CAMPAIGN",
 	}
@@ -682,8 +682,8 @@ var (
 		"AUDIENCE_NOT_ELIGIBLE_FOR_CAMPAIGN_TYPE":                            137,
 		"AUDIENCE_NOT_ALLOWED_TO_ATTACH_WHEN_AUDIENCE_GROUPED_SET_TO_FALSE":  138,
 		"CANNOT_TARGET_CUSTOMER_MATCH_USER_LIST":                             139,
-		"NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST":                         145,
-		"CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET":                     146,
+		"NEGATIVE_KEYWORD_SHARED_SET_DOES_NOT_EXIST":                         145,
+		"CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_SHARED_SET":                     146,
 		"CANNOT_HAVE_MULTIPLE_NEGATIVE_KEYWORD_LIST_PER_ACCOUNT":             147,
 		"CUSTOMER_CANNOT_ADD_CRITERION_OF_THIS_TYPE":                         149,
 		"CANNOT_TARGET_SIMILAR_USER_LIST":                                    151,
@@ -691,8 +691,8 @@ var (
 		"ONE_AUDIENCE_ALLOWED_PER_AD_GROUP":                                  153,
 		"INVALID_DETAILED_DEMOGRAPHIC":                                       154,
 		"CANNOT_RECOGNIZE_BRAND":                                             155,
-		"BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST":                                    156,
-		"CANNOT_ADD_REMOVED_BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET":                                157,
+		"BRAND_SHARED_SET_DOES_NOT_EXIST":                                    156,
+		"CANNOT_ADD_REMOVED_BRAND_SHARED_SET":                                157,
 		"ONLY_EXCLUSION_BRAND_LIST_ALLOWED_FOR_CAMPAIGN_TYPE":                158,
 		"LOCATION_TARGETING_NOT_ELIGIBLE_FOR_RESTRICTED_CAMPAIGN":            166,
 	}
@@ -908,8 +908,8 @@ const file_google_ads_googleads_v20_errors_criterion_error_proto_rawDesc = "" +
 	"'AUDIENCE_NOT_ELIGIBLE_FOR_CAMPAIGN_TYPE\x10\x89\x01\x12F\n" +
 	"AAUDIENCE_NOT_ALLOWED_TO_ATTACH_WHEN_AUDIENCE_GROUPED_SET_TO_FALSE\x10\x8a\x01\x12+\n" +
 	"&CANNOT_TARGET_CUSTOMER_MATCH_USER_LIST\x10\x8b\x01\x12/\n" +
-	"*NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST\x10\x91\x01\x123\n" +
-	".CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10\x92\x01\x12;\n" +
+	"*NEGATIVE_KEYWORD_SHARED_SET_DOES_NOT_EXIST\x10\x91\x01\x123\n" +
+	".CANNOT_ADD_REMOVED_NEGATIVE_KEYWORD_SHARED_SET\x10\x92\x01\x12;\n" +
 	"6CANNOT_HAVE_MULTIPLE_NEGATIVE_KEYWORD_LIST_PER_ACCOUNT\x10\x93\x01\x12/\n" +
 	"*CUSTOMER_CANNOT_ADD_CRITERION_OF_THIS_TYPE\x10\x95\x01\x12$\n" +
 	"\x1fCANNOT_TARGET_SIMILAR_USER_LIST\x10\x97\x01\x12G\n" +
@@ -917,8 +917,8 @@ const file_google_ads_googleads_v20_errors_criterion_error_proto_rawDesc = "" +
 	"!ONE_AUDIENCE_ALLOWED_PER_AD_GROUP\x10\x99\x01\x12!\n" +
 	"\x1cINVALID_DETAILED_DEMOGRAPHIC\x10\x9a\x01\x12\x1b\n" +
 	"\x16CANNOT_RECOGNIZE_BRAND\x10\x9b\x01\x12$\n" +
-	"\x1fBRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET_DOES_NOT_EXIST\x10\x9c\x01\x12(\n" +
-	"#CANNOT_ADD_REMOVED_BRAND_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10\x9d\x01\x128\n" +
+	"\x1fBRAND_SHARED_SET_DOES_NOT_EXIST\x10\x9c\x01\x12(\n" +
+	"#CANNOT_ADD_REMOVED_BRAND_SHARED_SET\x10\x9d\x01\x128\n" +
 	"3ONLY_EXCLUSION_BRAND_LIST_ALLOWED_FOR_CAMPAIGN_TYPE\x10\x9e\x01\x12<\n" +
 	"7LOCATION_TARGETING_NOT_ELIGIBLE_FOR_RESTRICTED_CAMPAIGN\x10\xa6\x01B\xf3\x01\n" +
 	"#com.google.ads.googleads.v20.errorsB\x13CriterionErrorProtoP\x01ZEgoogle.golang.org/genproto/googleapis/ads/googleads/v20/errors;errors\xa2\x02\x03GAA\xaa\x02\x1fGoogle.Ads.GoogleAds.V20.Errors\xca\x02\x1fGoogle\\Ads\\GoogleAds\\V20\\Errors\xea\x02#Google::Ads::GoogleAds::V20::Errorsb\x06proto3"

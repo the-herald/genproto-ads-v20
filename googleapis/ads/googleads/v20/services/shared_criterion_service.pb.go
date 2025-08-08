@@ -16,7 +16,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: google/ads/googleads/v20/services/github.com/the-herald/monthly_reporter/reporter/shared_criterion_service.proto
+// source: google/ads/googleads/v20/services/SHARED_criterion_service.proto
 
 package services
 
@@ -40,13 +40,13 @@ const (
 )
 
 // Request message for
-// [github.com/the-herald/monthly_reporter/reporter/sharedCriteria][google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedCriteria].
-type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest struct {
+// [SHAREDCriteria][google.ads.googleads.v20.services.SHAREDCriteria].
+type MutateSHAREDCriteriaRequest struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// Required. The ID of the customer whose github.com/the-herald/monthly_reporter/reporter/shared criteria are being modified.
+	// Required. The ID of the customer whose SHARED criteria are being modified.
 	CustomerId string `protobuf:"bytes,1,opt,name=customer_id,json=customerId,proto3" json:"customer_id,omitempty"`
-	// Required. The list of operations to perform on individual github.com/the-herald/monthly_reporter/reporter/shared criteria.
-	Operations []*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation `protobuf:"bytes,2,rep,name=operations,proto3" json:"operations,omitempty"`
+	// Required. The list of operations to perform on individual SHARED criteria.
+	Operations []*SHAREDCriterionOperation `protobuf:"bytes,2,rep,name=operations,proto3" json:"operations,omitempty"`
 	// If true, successful operations will be carried out and invalid
 	// operations will return errors. If false, all operations will be carried
 	// out in one transaction if and only if they are all valid.
@@ -62,21 +62,21 @@ type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest
 	sizeCache           protoimpl.SizeCache
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) Reset() {
-	*x = Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[0]
+func (x *MutateSHAREDCriteriaRequest) Reset() {
+	*x = MutateSHAREDCriteriaRequest{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) String() string {
+func (x *MutateSHAREDCriteriaRequest) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) ProtoMessage() {}
+func (*MutateSHAREDCriteriaRequest) ProtoMessage() {}
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[0]
+func (x *MutateSHAREDCriteriaRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -87,75 +87,75 @@ func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaReq
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest.ProtoReflect.Descriptor instead.
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use MutateSHAREDCriteriaRequest.ProtoReflect.Descriptor instead.
+func (*MutateSHAREDCriteriaRequest) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) GetCustomerId() string {
+func (x *MutateSHAREDCriteriaRequest) GetCustomerId() string {
 	if x != nil {
 		return x.CustomerId
 	}
 	return ""
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation {
+func (x *MutateSHAREDCriterionOperation {
 	if x != nil {
 		return x.Operations
 	}
 	return nil
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) GetPartialFailure() bool {
+func (x *MutateSHAREDCriteriaRequest) GetPartialFailure() bool {
 	if x != nil {
 		return x.PartialFailure
 	}
 	return false
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) GetValidateOnly() bool {
+func (x *MutateSHAREDCriteriaRequest) GetValidateOnly() bool {
 	if x != nil {
 		return x.ValidateOnly
 	}
 	return false
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest) GetResponseContentType() enums.ResponseContentTypeEnum_ResponseContentType {
+func (x *MutateSHAREDCriteriaRequest) GetResponseContentType() enums.ResponseContentTypeEnum_ResponseContentType {
 	if x != nil {
 		return x.ResponseContentType
 	}
 	return enums.ResponseContentTypeEnum_ResponseContentType(0)
 }
 
-// A single operation (create, remove) on an github.com/the-herald/monthly_reporter/reporter/shared criterion.
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation struct {
+// A single operation (create, remove) on an SHARED criterion.
+type SHAREDCriterionOperation struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The mutate operation.
 	//
 	// Types that are valid to be assigned to Operation:
 	//
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Create
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Remove
-	Operation     isgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Operation `protobuf_oneof:"operation"`
+	//	*SHAREDCriterionOperation_Create
+	//	*SHAREDCriterionOperation_Remove
+	Operation     isSHAREDCriterionOperation_Operation `protobuf_oneof:"operation"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) Reset() {
-	*x = github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[1]
+func (x *SHAREDCriterionOperation) Reset() {
+	*x = SHAREDCriterionOperation{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) String() string {
+func (x *SHAREDCriterionOperation) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) ProtoMessage() {}
+func (*SHAREDCriterionOperation) ProtoMessage() {}
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[1]
+func (x *SHAREDCriterionOperation) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -166,60 +166,60 @@ func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperatio
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation.ProtoReflect.Descriptor instead.
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescGZIP(), []int{1}
+// Deprecated: Use SHAREDCriterionOperation.ProtoReflect.Descriptor instead.
+func (*SHAREDCriterionOperation) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescGZIP(), []int{1}
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Operation {
+func (x *SHAREDCriterionOperation_Operation {
 	if x != nil {
 		return x.Operation
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion {
+func (x *SHAREDCriterion {
 	if x != nil {
-		if x, ok := x.Operation.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Create); ok {
+		if x, ok := x.Operation.(*SHAREDCriterionOperation_Create); ok {
 			return x.Create
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) GetRemove() string {
+func (x *SHAREDCriterionOperation) GetRemove() string {
 	if x != nil {
-		if x, ok := x.Operation.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Remove); ok {
+		if x, ok := x.Operation.(*SHAREDCriterionOperation_Remove); ok {
 			return x.Remove
 		}
 	}
 	return ""
 }
 
-type isgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Operation interface {
-	isgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Operation()
+type isSHAREDCriterionOperation_Operation interface {
+	isSHAREDCriterionOperation_Operation()
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Create struct {
-	// Create operation: No resource name is expected for the new github.com/the-herald/monthly_reporter/reporter/shared
+type SHAREDCriterionOperation_Create struct {
+	// Create operation: No resource name is expected for the new SHARED
 	// criterion.
-	Create *resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion `protobuf:"bytes,1,opt,name=create,proto3,oneof"`
+	Create *resources.SHAREDCriterion `protobuf:"bytes,1,opt,name=create,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Remove struct {
-	// Remove operation: A resource name for the removed github.com/the-herald/monthly_reporter/reporter/shared criterion is
+type SHAREDCriterionOperation_Remove struct {
+	// Remove operation: A resource name for the removed SHARED criterion is
 	// expected, in this format:
 	//
-	// `customers/{customer_id}/github.com/the-herald/monthly_reporter/reporter/shared_set_id}~{criterion_id}`
+	// `customers/{customer_id}/SHARED_set_id}~{criterion_id}`
 	Remove string `protobuf:"bytes,3,opt,name=remove,proto3,oneof"`
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Operation() {}
+func (*SHAREDCriterionOperation_Operation() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Operation() {}
+func (*SHAREDCriterionOperation_Operation() {}
 
-// Response message for a github.com/the-herald/monthly_reporter/reporter/shared criterion mutate.
-type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse struct {
+// Response message for a SHARED criterion mutate.
+type MutateSHAREDCriteriaResponse struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// Errors that pertain to operation failures in the partial failure mode.
 	// Returned only when partial_failure = true and all errors occur inside the
@@ -227,26 +227,26 @@ type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRespons
 	// errors), we return an RPC level error.
 	PartialFailureError *status.Status `protobuf:"bytes,3,opt,name=partial_failure_error,json=partialFailureError,proto3" json:"partial_failure_error,omitempty"`
 	// All results for the mutate.
-	Results       []*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult `protobuf:"bytes,2,rep,name=results,proto3" json:"results,omitempty"`
+	Results       []*MutateSHAREDCriterionResult `protobuf:"bytes,2,rep,name=results,proto3" json:"results,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse) Reset() {
-	*x = Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[2]
+func (x *MutateSHAREDCriteriaResponse) Reset() {
+	*x = MutateSHAREDCriteriaResponse{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse) String() string {
+func (x *MutateSHAREDCriteriaResponse) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse) ProtoMessage() {}
+func (*MutateSHAREDCriteriaResponse) ProtoMessage() {}
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[2]
+func (x *MutateSHAREDCriteriaResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -257,53 +257,53 @@ func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRes
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse.ProtoReflect.Descriptor instead.
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescGZIP(), []int{2}
+// Deprecated: Use MutateSHAREDCriteriaResponse.ProtoReflect.Descriptor instead.
+func (*MutateSHAREDCriteriaResponse) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse) GetPartialFailureError() *status.Status {
+func (x *MutateSHAREDCriteriaResponse) GetPartialFailureError() *status.Status {
 	if x != nil {
 		return x.PartialFailureError
 	}
 	return nil
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult {
+func (x *MutateSHAREDCriterionResult {
 	if x != nil {
 		return x.Results
 	}
 	return nil
 }
 
-// The result for the github.com/the-herald/monthly_reporter/reporter/shared criterion mutate.
-type Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult struct {
+// The result for the SHARED criterion mutate.
+type MutateSHAREDCriterionResult struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// Returned for successful operations.
 	ResourceName string `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	// The mutated github.com/the-herald/monthly_reporter/reporter/shared criterion with only mutable fields after mutate. The
+	// The mutated SHARED criterion with only mutable fields after mutate. The
 	// field will only be returned when response_content_type is set to
 	// "MUTABLE_RESOURCE".
-	github.com/the-herald/monthly_reporter/reporter/sharedCriterion `protobuf:"bytes,2,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedCriterion,proto3" json:"github.com/the-herald/monthly_reporter/reporter/shared_criterion,omitempty"`
+	SHAREDCriterion `protobuf:"bytes,2,opt,name=SHAREDCriterion,proto3" json:"SHARED_criterion,omitempty"`
 	unknownFields   protoimpl.UnknownFields
 	sizeCache       protoimpl.SizeCache
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) Reset() {
-	*x = Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult{}
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[3]
+func (x *MutateSHAREDCriterionResult) Reset() {
+	*x = MutateSHAREDCriterionResult{}
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) String() string {
+func (x *MutateSHAREDCriterionResult) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) ProtoMessage() {}
+func (*MutateSHAREDCriterionResult) ProtoMessage() {}
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[3]
+func (x *MutateSHAREDCriterionResult) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -314,86 +314,86 @@ func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionRe
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult.ProtoReflect.Descriptor instead.
-func (*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescGZIP(), []int{3}
+// Deprecated: Use MutateSHAREDCriterionResult.ProtoReflect.Descriptor instead.
+func (*MutateSHAREDCriterionResult) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) GetResourceName() string {
+func (x *MutateSHAREDCriterionResult) GetResourceName() string {
 	if x != nil {
 		return x.ResourceName
 	}
 	return ""
 }
 
-func (x *Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterion() *resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion {
+func (x *MutateSHAREDCriterion() *resources.SHAREDCriterion {
 	if x != nil {
-		return x.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
+		return x.SHAREDCriterion
 	}
 	return nil
 }
 
-var File_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto protoreflect.FileDescriptor
+var File_google_ads_googleads_v20_services_SHARED_criterion_service_proto protoreflect.FileDescriptor
 
-const file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDesc = "" +
+const file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDesc = "" +
 	"\n" +
-	"@google/ads/googleads/v20/services/github.com/the-herald/monthly_reporter/reporter/shared_criterion.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x17google/api/client.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\x1a\x17google/rpc/status.proto\"\xf4\x02\n" +
-	"\x1bMutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest\x12$\n" +
+	"@google/ads/googleads/v20/services/SHARED_criterion.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x17google/api/client.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\x1a\x17google/rpc/status.proto\"\xf4\x02\n" +
+	"\x1bMutateSHAREDCriteriaRequest\x12$\n" +
 	"\vcustomer_id\x18\x01 \x01(\tB\x03\xe0A\x02R\n" +
 	"customerId\x12`\n" +
 	"\n" +
-	"operations\x18\x02 \x03(\v2;.google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperationB\x03\xe0A\x02R\n" +
+	"operations\x18\x02 \x03(\v2;.google.ads.googleads.v20.services.SHAREDCriterionOperationB\x03\xe0A\x02R\n" +
 	"operations\x12'\n" +
 	"\x0fpartial_failure\x18\x03 \x01(\bR\x0epartialFailure\x12#\n" +
 	"\rvalidate_only\x18\x04 \x01(\bR\fvalidateOnly\x12\x7f\n" +
 	"\x15response_content_type\x18\x05 \x01(\x0e2K.google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentTypeR\x13responseContentType\"\xbf\x01\n" +
-	"\x18github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation\x12M\n" +
-	"\x06create\x18\x01 \x01(\v23.google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterionH\x00R\x06create\x12G\n" +
+	"\x18SHAREDCriterionOperation\x12M\n" +
+	"\x06create\x18\x01 \x01(\v23.google.ads.googleads.v20.resources.SHAREDCriterionH\x00R\x06create\x12G\n" +
 	"\x06remove\x18\x03 \x01(\tB-\xfaA*\n" +
-	"(googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedCriterionH\x00R\x06removeB\v\n" +
+	"(googleads.googleapis.com/SHAREDCriterionH\x00R\x06removeB\v\n" +
 	"\toperation\"\xc0\x01\n" +
-	"\x1cMutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse\x12F\n" +
+	"\x1cMutateSHAREDCriteriaResponse\x12F\n" +
 	"\x15partial_failure_error\x18\x03 \x01(\v2\x12.google.rpc.StatusR\x13partialFailureError\x12X\n" +
-	"\aresults\x18\x02 \x03(\v2>.google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResultR\aresults\"\xd1\x01\n" +
-	"\x1bMutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult\x12R\n" +
+	"\aresults\x18\x02 \x03(\v2>.google.ads.googleads.v20.services.MutateSHAREDCriterionResultR\aresults\"\xd1\x01\n" +
+	"\x1bMutateSHAREDCriterionResult\x12R\n" +
 	"\rresource_name\x18\x01 \x01(\tB-\xfaA*\n" +
-	"(googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedCriterionR\fresourceName\x12^\n" +
-	"\x10github.com/the-herald/monthly_reporter/reporter/sharedCriterionR\x0fgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion2\xd3\x02\n" +
-	"\x16github.com/the-herald/monthly_reporter/reporter/sharedCriterionService\x12\xf1\x01\n" +
-	"\x14Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest\x1a?.google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteria:mutate\x1aE\xcaA\x18googleads.googleapis.com\xd2A'https://www.googleapis.com/auth/adwordsB\x87\x02\n" +
-	"%com.google.ads.googleads.v20.servicesB\x1bgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionServiceProtoP\x01ZIgoogle.golang.org/genproto/googleapis/ads/googleads/v20/services;services\xa2\x02\x03GAA\xaa\x02!Google.Ads.GoogleAds.V20.Services\xca\x02!Google\\Ads\\GoogleAds\\V20\\Services\xea\x02%Google::Ads::GoogleAds::V20::Servicesb\x06proto3"
+	"(googleads.googleapis.com/SHAREDCriterionR\fresourceName\x12^\n" +
+	"\x10SHAREDCriterionR\x0fSHAREDCriterion2\xd3\x02\n" +
+	"\x16SHAREDCriterionService\x12\xf1\x01\n" +
+	"\x14MutateSHAREDCriteriaRequest\x1a?.google.ads.googleads.v20.services.MutateSHAREDCriteria:mutate\x1aE\xcaA\x18googleads.googleapis.com\xd2A'https://www.googleapis.com/auth/adwordsB\x87\x02\n" +
+	"%com.google.ads.googleads.v20.servicesB\x1bSHAREDCriterionServiceProtoP\x01ZIgoogle.golang.org/genproto/googleapis/ads/googleads/v20/services;services\xa2\x02\x03GAA\xaa\x02!Google.Ads.GoogleAds.V20.Services\xca\x02!Google\\Ads\\GoogleAds\\V20\\Services\xea\x02%Google::Ads::GoogleAds::V20::Servicesb\x06proto3"
 
 var (
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescOnce sync.Once
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescData []byte
+	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescOnce sync.Once
+	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescData []byte
 )
 
-func file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescGZIP() []byte {
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescOnce.Do(func() {
-		file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDesc), len(file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDesc)))
+func file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescGZIP() []byte {
+	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescOnce.Do(func() {
+		file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDesc), len(file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDesc)))
 	})
-	return file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDescData
+	return file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDescData
 }
 
-var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
-var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_goTypes = []any{
-	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest
-	(*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation
-	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse
-	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult
+var file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes = make([]protoimpl.MessageInfo, 4)
+var file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_goTypes = []any{
+	(*MutateSHAREDCriteriaRequest
+	(*SHAREDCriterionOperation
+	(*MutateSHAREDCriteriaResponse
+	(*MutateSHAREDCriterionResult
 	(enums.ResponseContentTypeEnum_ResponseContentType)(0), // 4: google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
-	(*resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
+	(*resources.SHAREDCriterion
 	(*status.Status)(nil),                                  // 6: google.rpc.Status
 }
-var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_depIdxs = []int32{
-	1, // 0: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation
-	4, // 1: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest.response_content_type:type_name -> google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
-	5, // 2: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
-	6, // 3: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse.partial_failure_error:type_name -> google.rpc.Status
-	3, // 4: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult
-	5, // 5: google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/shared_criterion:type_name -> google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
-	0, // 6: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedCriteria:input_type -> google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaRequest
-	2, // 7: google.ads.googleads.v20.services.github.com/the-herald/monthly_reporter/reporter/sharedCriteria:output_type -> google.ads.googleads.v20.services.Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriteriaResponse
+var file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_depIdxs = []int32{
+	1, // 0: google.ads.googleads.v20.services.MutateSHAREDCriterionOperation
+	4, // 1: google.ads.googleads.v20.services.MutateSHAREDCriteriaRequest.response_content_type:type_name -> google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
+	5, // 2: google.ads.googleads.v20.services.SHAREDCriterion
+	6, // 3: google.ads.googleads.v20.services.MutateSHAREDCriteriaResponse.partial_failure_error:type_name -> google.rpc.Status
+	3, // 4: google.ads.googleads.v20.services.MutateSHAREDCriterionResult
+	5, // 5: google.ads.googleads.v20.services.MutateSHARED_criterion:type_name -> google.ads.googleads.v20.resources.SHAREDCriterion
+	0, // 6: google.ads.googleads.v20.services.SHAREDCriteria:input_type -> google.ads.googleads.v20.services.MutateSHAREDCriteriaRequest
+	2, // 7: google.ads.googleads.v20.services.SHAREDCriteria:output_type -> google.ads.googleads.v20.services.MutateSHAREDCriteriaResponse
 	7, // [7:8] is the sub-list for method output_type
 	6, // [6:7] is the sub-list for method input_type
 	6, // [6:6] is the sub-list for extension type_name
@@ -401,30 +401,30 @@ var file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporte
 	0, // [0:6] is the sub-list for field type_name
 }
 
-func init() { file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_init() }
-func file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_init() {
-	if File_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto != nil {
+func init() { file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_init() }
+func file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_init() {
+	if File_google_ads_googleads_v20_services_SHARED_criterion_service_proto != nil {
 		return
 	}
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes[1].OneofWrappers = []any{
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Create)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation_Remove)(nil),
+	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes[1].OneofWrappers = []any{
+		(*SHAREDCriterionOperation_Create)(nil),
+		(*SHAREDCriterionOperation_Remove)(nil),
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   4,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_goTypes,
-		DependencyIndexes: file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_depIdxs,
-		MessageInfos:      file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_msgTypes,
+		GoTypes:           file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_goTypes,
+		DependencyIndexes: file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_depIdxs,
+		MessageInfos:      file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_msgTypes,
 	}.Build()
-	File_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto = out.File
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_goTypes = nil
-	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_depIdxs = nil
+	File_google_ads_googleads_v20_services_SHARED_criterion_service_proto = out.File
+	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_goTypes = nil
+	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_depIdxs = nil
 }

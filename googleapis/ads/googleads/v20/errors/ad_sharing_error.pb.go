@@ -46,7 +46,7 @@ const (
 	// Error resulting in attempting to add an Ad to an AdGroup that already
 	// contains the Ad.
 	AdSharingErrorEnum_AD_GROUP_ALREADY_CONTAINS_AD AdSharingErrorEnum_AdSharingError = 2
-	// Ad is not compatible with the AdGroup it is being github.com/the-herald/monthly_reporter/reporter/shared with.
+	// Ad is not compatible with the AdGroup it is being SHARED with.
 	AdSharingErrorEnum_INCOMPATIBLE_AD_UNDER_AD_GROUP AdSharingErrorEnum_AdSharingError = 3
 	// Cannot add AdGroupAd on inactive Ad.
 	AdSharingErrorEnum_CANNOT_SHARE_INACTIVE_AD AdSharingErrorEnum_AdSharingError = 4

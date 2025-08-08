@@ -48,15 +48,15 @@ type CampaignBudget struct {
 	// Output only. The ID of the campaign budget.
 	//
 	// A campaign budget is created using the CampaignBudgetService create
-	// operation and is assigned a budget ID. A budget ID can be github.com/the-herald/monthly_reporter/reporter/shared across
+	// operation and is assigned a budget ID. A budget ID can be SHARED across
 	// different campaigns; the system will then allocate the campaign budget
 	// among different campaigns to get optimum results.
 	Id *int64 `protobuf:"varint,19,opt,name=id,proto3,oneof" json:"id,omitempty"`
 	// The name of the campaign budget.
 	//
 	// When creating a campaign budget through CampaignBudgetService, every
-	// explicitly github.com/the-herald/monthly_reporter/reporter/shared campaign budget must have a non-null, non-empty name.
-	// Campaign budgets that are not explicitly github.com/the-herald/monthly_reporter/reporter/shared derive their name from the
+	// explicitly SHARED campaign budget must have a non-null, non-empty name.
+	// Campaign budgets that are not explicitly SHARED derive their name from the
 	// attached campaign's name.
 	//
 	// The length of this string must be between 1 and 255, inclusive,
@@ -77,7 +77,7 @@ type CampaignBudget struct {
 	//
 	// Defaults to STANDARD if unspecified in a create operation.
 	DeliveryMethod enums.BudgetDeliveryMethodEnum_BudgetDeliveryMethod `protobuf:"varint,7,opt,name=delivery_method,json=deliveryMethod,proto3,enum=google.ads.googleads.v20.enums.BudgetDeliveryMethodEnum_BudgetDeliveryMethod" json:"delivery_method,omitempty"`
-	// Specifies whether the budget is explicitly github.com/the-herald/monthly_reporter/reporter/shared. Defaults to true if
+	// Specifies whether the budget is explicitly SHARED. Defaults to true if
 	// unspecified in a create operation.
 	//
 	// If true, the budget was created with the purpose of sharing
@@ -88,11 +88,11 @@ type CampaignBudget struct {
 	// with the campaign's name and status. Attempting to share the budget with a
 	// second campaign will result in an error.
 	//
-	// A non-github.com/the-herald/monthly_reporter/reporter/shared. The same operation
+	// A non-SHARED. The same operation
 	// must also assign the budget a name.
 	//
-	// A github.com/the-herald/monthly_reporter/reporter/shared.
-	Explicitlygithub.com/the-herald/monthly_reporter/reporter/shared,json=explicitlygithub.com/the-herald/monthly_reporter/reporter/shared,omitempty"`
+	// A SHARED.
+	ExplicitlySHARED,json=explicitlySHARED,omitempty"`
 	// Output only. The number of campaigns actively using the budget.
 	//
 	// This field is read-only.
@@ -134,7 +134,7 @@ type CampaignBudget struct {
 	RecommendedBudgetEstimatedChangeWeeklyViews *int64 `protobuf:"varint,30,opt,name=recommended_budget_estimated_change_weekly_views,json=recommendedBudgetEstimatedChangeWeeklyViews,proto3,oneof" json:"recommended_budget_estimated_change_weekly_views,omitempty"`
 	// Immutable. The type of the campaign budget.
 	Type enums.BudgetTypeEnum_BudgetType `protobuf:"varint,18,opt,name=type,proto3,enum=google.ads.googleads.v20.enums.BudgetTypeEnum_BudgetType" json:"type,omitempty"`
-	// ID of the portfolio bidding strategy that this github.com/the-herald/monthly_reporter/reporter/shared campaign budget
+	// ID of the portfolio bidding strategy that this SHARED campaign budget
 	// is aligned with. When a bidding strategy and a campaign budget are aligned,
 	// they are attached to the same set of campaigns. After a campaign budget is
 	// aligned with a bidding strategy, campaigns that are added to the campaign
@@ -223,9 +223,9 @@ func (x *CampaignBudget) GetDeliveryMethod() enums.BudgetDeliveryMethodEnum_Budg
 	return enums.BudgetDeliveryMethodEnum_BudgetDeliveryMethod(0)
 }
 
-func (x *CampaignBudget) GetExplicitlygithub.com/the-herald/monthly_reporter/reporter/shared() bool {
-	if x != nil && x.Explicitlygithub.com/the-herald/monthly_reporter/reporter/shared != nil {
-		return *x.Explicitlygithub.com/the-herald/monthly_reporter/reporter/shared
+func (x *CampaignBudget) GetExplicitlySHARED() bool {
+	if x != nil && x.ExplicitlySHARED != nil {
+		return *x.ExplicitlySHARED
 	}
 	return false
 }
@@ -314,7 +314,7 @@ const file_google_ads_googleads_v20_resources_campaign_budget_proto_rawDesc = ""
 	"\x13total_amount_micros\x18\x16 \x01(\x03H\x03R\x11totalAmountMicros\x88\x01\x01\x12Z\n" +
 	"\x06status\x18\x06 \x01(\x0e2=.google.ads.googleads.v20.enums.BudgetStatusEnum.BudgetStatusB\x03\xe0A\x03R\x06status\x12v\n" +
 	"\x0fdelivery_method\x18\a \x01(\x0e2M.google.ads.googleads.v20.enums.BudgetDeliveryMethodEnum.BudgetDeliveryMethodR\x0edeliveryMethod\x120\n" +
-	"\x11explicitly_github.com/the-herald/monthly_reporter/reporter/shared\x88\x01\x01\x121\n" +
+	"\x11explicitly_SHARED\x88\x01\x01\x121\n" +
 	"\x0freference_count\x18\x18 \x01(\x03B\x03\xe0A\x03H\x05R\x0ereferenceCount\x88\x01\x01\x12>\n" +
 	"\x16has_recommended_budget\x18\x19 \x01(\bB\x03\xe0A\x03H\x06R\x14hasRecommendedBudget\x88\x01\x01\x12Q\n" +
 	" recommended_budget_amount_micros\x18\x1a \x01(\x03B\x03\xe0A\x03H\aR\x1drecommendedBudgetAmountMicros\x88\x01\x01\x12Z\n" +
@@ -331,7 +331,7 @@ const file_google_ads_googleads_v20_resources_campaign_budget_proto_rawDesc = ""
 	"\x05_nameB\x10\n" +
 	"\x0e_amount_microsB\x16\n" +
 	"\x14_total_amount_microsB\x14\n" +
-	"\x12_explicitly_github.com/the-herald/monthly_reporter/reporter/sharedB\x12\n" +
+	"\x12_explicitly_SHAREDB\x12\n" +
 	"\x10_reference_countB\x19\n" +
 	"\x17_has_recommended_budgetB#\n" +
 	"!_recommended_budget_amount_microsB4\n" +

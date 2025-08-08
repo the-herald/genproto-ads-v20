@@ -88,7 +88,7 @@ func (x *CustomerSkAdNetworkConversionValueSchemaOperation) GetUpdate() *resourc
 // [CustomerSkAdNetworkConversionValueSchemaService.MutateCustomerSkAdNetworkConversionValueSchema][google.ads.googleads.v20.services.CustomerSkAdNetworkConversionValueSchemaService.MutateCustomerSkAdNetworkConversionValueSchema].
 type MutateCustomerSkAdNetworkConversionValueSchemaRequest struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// The ID of the customer whose github.com/the-herald/monthly_reporter/reporter/shared sets are being modified.
+	// The ID of the customer whose SHARED sets are being modified.
 	CustomerId string `protobuf:"bytes,1,opt,name=customer_id,json=customerId,proto3" json:"customer_id,omitempty"`
 	// The operation to perform.
 	Operation *CustomerSkAdNetworkConversionValueSchemaOperation `protobuf:"bytes,2,opt,name=operation,proto3" json:"operation,omitempty"`

@@ -16,7 +16,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: google/ads/googleads/v20/resources/github.com/the-herald/monthly_reporter/reporter/shared_criterion.proto
+// source: google/ads/googleads/v20/resources/SHARED_criterion.proto
 
 package resources
 
@@ -38,16 +38,16 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// A criterion belonging to a github.com/the-herald/monthly_reporter/reporter/shared set.
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion struct {
+// A criterion belonging to a SHARED set.
+type SHAREDCriterion struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// Immutable. The resource name of the github.com/the-herald/monthly_reporter/reporter/shared criterion.
-	// github.com/the-herald/monthly_reporter/reporter/shared set resource names have the form:
+	// Immutable. The resource name of the SHARED criterion.
+	// SHARED set resource names have the form:
 	//
-	// `customers/{customer_id}/github.com/the-herald/monthly_reporter/reporter/shared_set_id}~{criterion_id}`
+	// `customers/{customer_id}/SHARED_set_id}~{criterion_id}`
 	ResourceName string `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	// Immutable. The github.com/the-herald/monthly_reporter/reporter/shared criterion belongs.
-	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	// Immutable. The SHARED criterion belongs.
+	SHARED_set,json=SHARED_set,omitempty"`
 	// Output only. The ID of the criterion.
 	//
 	// This field is ignored for mutates.
@@ -60,34 +60,34 @@ type github.com/the-herald/monthly_reporter/reporter/sharedCriterion struct {
 	//
 	// Types that are valid to be assigned to Criterion:
 	//
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Keyword
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeVideo
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeChannel
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Placement
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileAppCategory
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileApplication
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Brand
-	//	*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Webpage
-	Criterion     isgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion `protobuf_oneof:"criterion"`
+	//	*SHAREDCriterion_Keyword
+	//	*SHAREDCriterion_YoutubeVideo
+	//	*SHAREDCriterion_YoutubeChannel
+	//	*SHAREDCriterion_Placement
+	//	*SHAREDCriterion_MobileAppCategory
+	//	*SHAREDCriterion_MobileApplication
+	//	*SHAREDCriterion_Brand
+	//	*SHAREDCriterion_Webpage
+	Criterion     isSHAREDCriterion_Criterion `protobuf_oneof:"criterion"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) Reset() {
-	*x = github.com/the-herald/monthly_reporter/reporter/sharedCriterion{}
-	mi := &file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_msgTypes[0]
+func (x *SHAREDCriterion) Reset() {
+	*x = SHAREDCriterion{}
+	mi := &file_google_ads_googleads_v20_resources_SHARED_criterion_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) String() string {
+func (x *SHAREDCriterion) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion) ProtoMessage() {}
+func (*SHAREDCriterion) ProtoMessage() {}
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_msgTypes[0]
+func (x *SHAREDCriterion) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_resources_SHARED_criterion_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -98,190 +98,190 @@ func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) ProtoR
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use github.com/the-herald/monthly_reporter/reporter/sharedCriterion.ProtoReflect.Descriptor instead.
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use SHAREDCriterion.ProtoReflect.Descriptor instead.
+func (*SHAREDCriterion) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetResourceName() string {
+func (x *SHAREDCriterion) GetResourceName() string {
 	if x != nil {
 		return x.ResourceName
 	}
 	return ""
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSet() string {
-	if x != nil && x.github.com/the-herald/monthly_reporter/reporter/sharedSet != nil {
-		return *x.github.com/the-herald/monthly_reporter/reporter/sharedSet
+func (x *SHAREDSet() string {
+	if x != nil && x.SHAREDSet != nil {
+		return *x.SHAREDSet
 	}
 	return ""
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetCriterionId() int64 {
+func (x *SHAREDCriterion) GetCriterionId() int64 {
 	if x != nil && x.CriterionId != nil {
 		return *x.CriterionId
 	}
 	return 0
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetType() enums.CriterionTypeEnum_CriterionType {
+func (x *SHAREDCriterion) GetType() enums.CriterionTypeEnum_CriterionType {
 	if x != nil {
 		return x.Type
 	}
 	return enums.CriterionTypeEnum_CriterionType(0)
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion {
+func (x *SHAREDCriterion_Criterion {
 	if x != nil {
 		return x.Criterion
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetKeyword() *common.KeywordInfo {
+func (x *SHAREDCriterion) GetKeyword() *common.KeywordInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Keyword); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_Keyword); ok {
 			return x.Keyword
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetYoutubeVideo() *common.YouTubeVideoInfo {
+func (x *SHAREDCriterion) GetYoutubeVideo() *common.YouTubeVideoInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeVideo); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_YoutubeVideo); ok {
 			return x.YoutubeVideo
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetYoutubeChannel() *common.YouTubeChannelInfo {
+func (x *SHAREDCriterion) GetYoutubeChannel() *common.YouTubeChannelInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeChannel); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_YoutubeChannel); ok {
 			return x.YoutubeChannel
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetPlacement() *common.PlacementInfo {
+func (x *SHAREDCriterion) GetPlacement() *common.PlacementInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Placement); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_Placement); ok {
 			return x.Placement
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetMobileAppCategory() *common.MobileAppCategoryInfo {
+func (x *SHAREDCriterion) GetMobileAppCategory() *common.MobileAppCategoryInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileAppCategory); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_MobileAppCategory); ok {
 			return x.MobileAppCategory
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetMobileApplication() *common.MobileApplicationInfo {
+func (x *SHAREDCriterion) GetMobileApplication() *common.MobileApplicationInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileApplication); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_MobileApplication); ok {
 			return x.MobileApplication
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetBrand() *common.BrandInfo {
+func (x *SHAREDCriterion) GetBrand() *common.BrandInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Brand); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_Brand); ok {
 			return x.Brand
 		}
 	}
 	return nil
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedCriterion) GetWebpage() *common.WebpageInfo {
+func (x *SHAREDCriterion) GetWebpage() *common.WebpageInfo {
 	if x != nil {
-		if x, ok := x.Criterion.(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Webpage); ok {
+		if x, ok := x.Criterion.(*SHAREDCriterion_Webpage); ok {
 			return x.Webpage
 		}
 	}
 	return nil
 }
 
-type isgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion interface {
-	isgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion()
+type isSHAREDCriterion_Criterion interface {
+	isSHAREDCriterion_Criterion()
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Keyword struct {
+type SHAREDCriterion_Keyword struct {
 	// Immutable. Keyword.
 	Keyword *common.KeywordInfo `protobuf:"bytes,3,opt,name=keyword,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeVideo struct {
+type SHAREDCriterion_YoutubeVideo struct {
 	// Immutable. YouTube Video.
 	YoutubeVideo *common.YouTubeVideoInfo `protobuf:"bytes,5,opt,name=youtube_video,json=youtubeVideo,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeChannel struct {
+type SHAREDCriterion_YoutubeChannel struct {
 	// Immutable. YouTube Channel.
 	YoutubeChannel *common.YouTubeChannelInfo `protobuf:"bytes,6,opt,name=youtube_channel,json=youtubeChannel,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Placement struct {
+type SHAREDCriterion_Placement struct {
 	// Immutable. Placement.
 	Placement *common.PlacementInfo `protobuf:"bytes,7,opt,name=placement,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileAppCategory struct {
+type SHAREDCriterion_MobileAppCategory struct {
 	// Immutable. Mobile App Category.
 	MobileAppCategory *common.MobileAppCategoryInfo `protobuf:"bytes,8,opt,name=mobile_app_category,json=mobileAppCategory,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileApplication struct {
+type SHAREDCriterion_MobileApplication struct {
 	// Immutable. Mobile application.
 	MobileApplication *common.MobileApplicationInfo `protobuf:"bytes,9,opt,name=mobile_application,json=mobileApplication,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Brand struct {
+type SHAREDCriterion_Brand struct {
 	// Immutable. Brand.
 	Brand *common.BrandInfo `protobuf:"bytes,12,opt,name=brand,proto3,oneof"`
 }
 
-type github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Webpage struct {
+type SHAREDCriterion_Webpage struct {
 	// Immutable. Webpage.
 	Webpage *common.WebpageInfo `protobuf:"bytes,13,opt,name=webpage,proto3,oneof"`
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Criterion() {}
+func (*SHAREDCriterion_Criterion() {}
 
-var File_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto protoreflect.FileDescriptor
+var File_google_ads_googleads_v20_resources_SHARED_criterion_proto protoreflect.FileDescriptor
 
-const file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDesc = "" +
+const file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDesc = "" +
 	"\n" +
-	"9google/ads/googleads/v20/resources/github.com/the-herald/monthly_reporter/reporter/shared_criterion.proto\x12\"google.ads.googleads.v20.resources\x1a.google/ads/googleads/v20/common/criteria.proto\x1a3google/ads/googleads/v20/enums/criterion_type.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\"\xbf\t\n" +
-	"\x0fgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion\x12U\n" +
+	"9google/ads/googleads/v20/resources/SHARED_criterion.proto\x12\"google.ads.googleads.v20.resources\x1a.google/ads/googleads/v20/common/criteria.proto\x1a3google/ads/googleads/v20/enums/criterion_type.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\"\xbf\t\n" +
+	"\x0fSHAREDCriterion\x12U\n" +
 	"\rresource_name\x18\x01 \x01(\tB0\xe0A\x05\xfaA*\n" +
-	"(googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedCriterionR\fresourceName\x12N\n" +
+	"(googleads.googleapis.com/SHAREDCriterionR\fresourceName\x12N\n" +
 	"\n" +
-	"github.com/the-herald/monthly_reporter/reporter/shared_set\x18\n" +
+	"SHARED_set\x18\n" +
 	" \x01(\tB*\xe0A\x05\xfaA$\n" +
-	"\"googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedSet\x88\x01\x01\x12+\n" +
+	"\"googleads.googleapis.com/SHAREDSet\x88\x01\x01\x12+\n" +
 	"\fcriterion_id\x18\v \x01(\x03B\x03\xe0A\x03H\x02R\vcriterionId\x88\x01\x01\x12X\n" +
 	"\x04type\x18\x04 \x01(\x0e2?.google.ads.googleads.v20.enums.CriterionTypeEnum.CriterionTypeB\x03\xe0A\x03R\x04type\x12M\n" +
 	"\akeyword\x18\x03 \x01(\v2,.google.ads.googleads.v20.common.KeywordInfoB\x03\xe0A\x05H\x00R\akeyword\x12]\n" +
@@ -292,27 +292,27 @@ const file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_repo
 	"\x12mobile_application\x18\t \x01(\v26.google.ads.googleads.v20.common.MobileApplicationInfoB\x03\xe0A\x05H\x00R\x11mobileApplication\x12G\n" +
 	"\x05brand\x18\f \x01(\v2*.google.ads.googleads.v20.common.BrandInfoB\x03\xe0A\x05H\x00R\x05brand\x12M\n" +
 	"\awebpage\x18\r \x01(\v2,.google.ads.googleads.v20.common.WebpageInfoB\x03\xe0A\x05H\x00R\awebpage:t\xeaAq\n" +
-	"(googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedCriteria/{github.com/the-herald/monthly_reporter/reporter/shared_set_id}~{criterion_id}B\v\n" +
+	"(googleads.googleapis.com/SHAREDCriteria/{SHARED_set_id}~{criterion_id}B\v\n" +
 	"\tcriterionB\r\n" +
-	"\v_github.com/the-herald/monthly_reporter/reporter/shared_setB\x0f\n" +
+	"\v_SHARED_setB\x0f\n" +
 	"\r_criterion_idB\x86\x02\n" +
-	"&com.google.ads.googleads.v20.resourcesB\x14github.com/the-herald/monthly_reporter/reporter/sharedCriterionProtoP\x01ZKgoogle.golang.org/genproto/googleapis/ads/googleads/v20/resources;resources\xa2\x02\x03GAA\xaa\x02\"Google.Ads.GoogleAds.V20.Resources\xca\x02\"Google\\Ads\\GoogleAds\\V20\\Resources\xea\x02&Google::Ads::GoogleAds::V20::Resourcesb\x06proto3"
+	"&com.google.ads.googleads.v20.resourcesB\x14SHAREDCriterionProtoP\x01ZKgoogle.golang.org/genproto/googleapis/ads/googleads/v20/resources;resources\xa2\x02\x03GAA\xaa\x02\"Google.Ads.GoogleAds.V20.Resources\xca\x02\"Google\\Ads\\GoogleAds\\V20\\Resources\xea\x02&Google::Ads::GoogleAds::V20::Resourcesb\x06proto3"
 
 var (
-	file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDescOnce sync.Once
-	file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDescData []byte
+	file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDescOnce sync.Once
+	file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDescData []byte
 )
 
-func file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDescGZIP() []byte {
-	file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDescOnce.Do(func() {
-		file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDesc), len(file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDesc)))
+func file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDescGZIP() []byte {
+	file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDescOnce.Do(func() {
+		file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDesc), len(file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDesc)))
 	})
-	return file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDescData
+	return file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDescData
 }
 
-var file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_goTypes = []any{
-	(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion
+var file_google_ads_googleads_v20_resources_SHARED_criterion_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_google_ads_googleads_v20_resources_SHARED_criterion_proto_goTypes = []any{
+	(*SHAREDCriterion
 	(enums.CriterionTypeEnum_CriterionType)(0), // 1: google.ads.googleads.v20.enums.CriterionTypeEnum.CriterionType
 	(*common.KeywordInfo)(nil),                 // 2: google.ads.googleads.v20.common.KeywordInfo
 	(*common.YouTubeVideoInfo)(nil),            // 3: google.ads.googleads.v20.common.YouTubeVideoInfo
@@ -323,16 +323,16 @@ var file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_report
 	(*common.BrandInfo)(nil),                   // 8: google.ads.googleads.v20.common.BrandInfo
 	(*common.WebpageInfo)(nil),                 // 9: google.ads.googleads.v20.common.WebpageInfo
 }
-var file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_depIdxs = []int32{
-	1, // 0: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.type:type_name -> google.ads.googleads.v20.enums.CriterionTypeEnum.CriterionType
-	2, // 1: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.keyword:type_name -> google.ads.googleads.v20.common.KeywordInfo
-	3, // 2: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.youtube_video:type_name -> google.ads.googleads.v20.common.YouTubeVideoInfo
-	4, // 3: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.youtube_channel:type_name -> google.ads.googleads.v20.common.YouTubeChannelInfo
-	5, // 4: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.placement:type_name -> google.ads.googleads.v20.common.PlacementInfo
-	6, // 5: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.mobile_app_category:type_name -> google.ads.googleads.v20.common.MobileAppCategoryInfo
-	7, // 6: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.mobile_application:type_name -> google.ads.googleads.v20.common.MobileApplicationInfo
-	8, // 7: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.brand:type_name -> google.ads.googleads.v20.common.BrandInfo
-	9, // 8: google.ads.googleads.v20.resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion.webpage:type_name -> google.ads.googleads.v20.common.WebpageInfo
+var file_google_ads_googleads_v20_resources_SHARED_criterion_proto_depIdxs = []int32{
+	1, // 0: google.ads.googleads.v20.resources.SHAREDCriterion.type:type_name -> google.ads.googleads.v20.enums.CriterionTypeEnum.CriterionType
+	2, // 1: google.ads.googleads.v20.resources.SHAREDCriterion.keyword:type_name -> google.ads.googleads.v20.common.KeywordInfo
+	3, // 2: google.ads.googleads.v20.resources.SHAREDCriterion.youtube_video:type_name -> google.ads.googleads.v20.common.YouTubeVideoInfo
+	4, // 3: google.ads.googleads.v20.resources.SHAREDCriterion.youtube_channel:type_name -> google.ads.googleads.v20.common.YouTubeChannelInfo
+	5, // 4: google.ads.googleads.v20.resources.SHAREDCriterion.placement:type_name -> google.ads.googleads.v20.common.PlacementInfo
+	6, // 5: google.ads.googleads.v20.resources.SHAREDCriterion.mobile_app_category:type_name -> google.ads.googleads.v20.common.MobileAppCategoryInfo
+	7, // 6: google.ads.googleads.v20.resources.SHAREDCriterion.mobile_application:type_name -> google.ads.googleads.v20.common.MobileApplicationInfo
+	8, // 7: google.ads.googleads.v20.resources.SHAREDCriterion.brand:type_name -> google.ads.googleads.v20.common.BrandInfo
+	9, // 8: google.ads.googleads.v20.resources.SHAREDCriterion.webpage:type_name -> google.ads.googleads.v20.common.WebpageInfo
 	9, // [9:9] is the sub-list for method output_type
 	9, // [9:9] is the sub-list for method input_type
 	9, // [9:9] is the sub-list for extension type_name
@@ -340,36 +340,36 @@ var file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_report
 	0, // [0:9] is the sub-list for field type_name
 }
 
-func init() { file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_init() }
-func file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_init() {
-	if File_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto != nil {
+func init() { file_google_ads_googleads_v20_resources_SHARED_criterion_proto_init() }
+func file_google_ads_googleads_v20_resources_SHARED_criterion_proto_init() {
+	if File_google_ads_googleads_v20_resources_SHARED_criterion_proto != nil {
 		return
 	}
-	file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_msgTypes[0].OneofWrappers = []any{
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Keyword)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeVideo)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_YoutubeChannel)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Placement)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileAppCategory)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_MobileApplication)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Brand)(nil),
-		(*github.com/the-herald/monthly_reporter/reporter/sharedCriterion_Webpage)(nil),
+	file_google_ads_googleads_v20_resources_SHARED_criterion_proto_msgTypes[0].OneofWrappers = []any{
+		(*SHAREDCriterion_Keyword)(nil),
+		(*SHAREDCriterion_YoutubeVideo)(nil),
+		(*SHAREDCriterion_YoutubeChannel)(nil),
+		(*SHAREDCriterion_Placement)(nil),
+		(*SHAREDCriterion_MobileAppCategory)(nil),
+		(*SHAREDCriterion_MobileApplication)(nil),
+		(*SHAREDCriterion_Brand)(nil),
+		(*SHAREDCriterion_Webpage)(nil),
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_resources_SHARED_criterion_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_goTypes,
-		DependencyIndexes: file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_depIdxs,
-		MessageInfos:      file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_msgTypes,
+		GoTypes:           file_google_ads_googleads_v20_resources_SHARED_criterion_proto_goTypes,
+		DependencyIndexes: file_google_ads_googleads_v20_resources_SHARED_criterion_proto_depIdxs,
+		MessageInfos:      file_google_ads_googleads_v20_resources_SHARED_criterion_proto_msgTypes,
 	}.Build()
-	File_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto = out.File
-	file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_goTypes = nil
-	file_google_ads_googleads_v20_resources_github.com/the-herald/monthly_reporter/reporter/shared_criterion_proto_depIdxs = nil
+	File_google_ads_googleads_v20_resources_SHARED_criterion_proto = out.File
+	file_google_ads_googleads_v20_resources_SHARED_criterion_proto_goTypes = nil
+	file_google_ads_googleads_v20_resources_SHARED_criterion_proto_depIdxs = nil
 }

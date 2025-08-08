@@ -141,13 +141,13 @@ func (x *PlacementInfo) GetUrl() string {
 	return ""
 }
 
-// A Negative Keyword List criterion. Represents a github.com/the-herald/monthly_reporter/reporter/shared set
+// A Negative Keyword List criterion. Represents a SHARED set
 // of negative keywords that can be excluded at the account-level.
 // Only one negative keyword list criterion can be attached per account.
 type NegativeKeywordListInfo struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// The NegativeKeywordListInfo github.com/the-herald/monthly_reporter/reporter/shared set resource name.
-	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	// The NegativeKeywordListInfo SHARED set resource name.
+	SHARED_set,json=SHARED_set,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -182,9 +182,9 @@ func (*NegativeKeywordListInfo) Descriptor() ([]byte, []int) {
 	return file_google_ads_googleads_v20_common_criteria_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *NegativeKeywordListInfo) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
-	if x != nil && x.github.com/the-herald/monthly_reporter/reporter/sharedSet != nil {
-		return *x.github.com/the-herald/monthly_reporter/reporter/sharedSet
+func (x *NegativeKeywordListInfo) GetSHAREDSet() string {
+	if x != nil && x.SHAREDSet != nil {
+		return *x.SHAREDSet
 	}
 	return ""
 }
@@ -3515,8 +3515,8 @@ func (x *WebpageConditionInfo) GetArgument() string {
 // Represents a list of webpage criteria.
 type WebpageListInfo struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// github.com/the-herald/monthly_reporter/reporter/shared set resource name of the webpage list.
-	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	// SHARED set resource name of the webpage list.
+	SHARED_set,json=SHARED_set,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -3551,9 +3551,9 @@ func (*WebpageListInfo) Descriptor() ([]byte, []int) {
 	return file_google_ads_googleads_v20_common_criteria_proto_rawDescGZIP(), []int{59}
 }
 
-func (x *WebpageListInfo) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
-	if x != nil && x.github.com/the-herald/monthly_reporter/reporter/sharedSet != nil {
-		return *x.github.com/the-herald/monthly_reporter/reporter/sharedSet
+func (x *WebpageListInfo) GetSHAREDSet() string {
+	if x != nil && x.SHAREDSet != nil {
+		return *x.SHAREDSet
 	}
 	return ""
 }
@@ -4352,12 +4352,12 @@ func (x *BrandInfo) GetStatus() enums.BrandStateEnum_BrandState {
 }
 
 // A Brand List Criterion is used to specify a list of brands.  The list is
-// represented as a github.com/the-herald/monthly_reporter/reporter/sharedSet id type BRAND_HINT. A criterion of this type can
+// represented as a SHAREDSet id type BRAND_HINT. A criterion of this type can
 // be either targeted or excluded.
 type BrandListInfo struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// github.com/the-herald/monthly_reporter/reporter/shared set resource name of the brand list.
-	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	// SHARED set resource name of the brand list.
+	SHARED_set,json=SHARED_set,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -4392,9 +4392,9 @@ func (*BrandListInfo) Descriptor() ([]byte, []int) {
 	return file_google_ads_googleads_v20_common_criteria_proto_rawDescGZIP(), []int{74}
 }
 
-func (x *BrandListInfo) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
-	if x != nil && x.github.com/the-herald/monthly_reporter/reporter/sharedSet != nil {
-		return *x.github.com/the-herald/monthly_reporter/reporter/sharedSet
+func (x *BrandListInfo) GetSHAREDSet() string {
+	if x != nil && x.SHAREDSet != nil {
+		return *x.SHAREDSet
 	}
 	return ""
 }
@@ -4414,8 +4414,8 @@ const file_google_ads_googleads_v20_common_criteria_proto_rawDesc = "" +
 	"\x04_url\"L\n" +
 	"\x17NegativeKeywordListInfo\x12\"\n" +
 	"\n" +
-	"github.com/the-herald/monthly_reporter/reporter/sharedSet\x88\x01\x01B\r\n" +
-	"\v_github.com/the-herald/monthly_reporter/reporter/shared_set\"\xb7\x01\n" +
+	"SHAREDSet\x88\x01\x01B\r\n" +
+	"\v_SHARED_set\"\xb7\x01\n" +
 	"\x15MobileAppCategoryInfo\x12}\n" +
 	"\x1cmobile_app_category_constant\x18\x02 \x01(\tB7\xfaA4\n" +
 	"2googleads.googleapis.com/MobileAppCategoryConstantH\x00R\x19mobileAppCategoryConstant\x88\x01\x01B\x1f\n" +
@@ -4662,8 +4662,8 @@ const file_google_ads_googleads_v20_common_criteria_proto_rawDesc = "" +
 	"\t_argument\"D\n" +
 	"\x0fWebpageListInfo\x12\"\n" +
 	"\n" +
-	"github.com/the-herald/monthly_reporter/reporter/sharedSet\x88\x01\x01B\r\n" +
-	"\v_github.com/the-herald/monthly_reporter/reporter/shared_set\"4\n" +
+	"SHAREDSet\x88\x01\x01B\r\n" +
+	"\v_SHARED_set\"4\n" +
 	"\x11WebpageSampleInfo\x12\x1f\n" +
 	"\vsample_urls\x18\x01 \x03(\tR\n" +
 	"sampleUrls\"\xd1\x01\n" +
@@ -4725,8 +4725,8 @@ const file_google_ads_googleads_v20_common_criteria_proto_rawDesc = "" +
 	"\a_status\"B\n" +
 	"\rBrandListInfo\x12\"\n" +
 	"\n" +
-	"github.com/the-herald/monthly_reporter/reporter/sharedSet\x88\x01\x01B\r\n" +
-	"\v_github.com/the-herald/monthly_reporter/reporter/shared_setB\xed\x01\n" +
+	"SHAREDSet\x88\x01\x01B\r\n" +
+	"\v_SHARED_setB\xed\x01\n" +
 	"#com.google.ads.googleads.v20.commonB\rCriteriaProtoP\x01ZEgoogle.golang.org/genproto/googleapis/ads/googleads/v20/common;common\xa2\x02\x03GAA\xaa\x02\x1fGoogle.Ads.GoogleAds.V20.Common\xca\x02\x1fGoogle\\Ads\\GoogleAds\\V20\\Common\xea\x02#Google::Ads::GoogleAds::V20::Commonb\x06proto3"
 
 var (

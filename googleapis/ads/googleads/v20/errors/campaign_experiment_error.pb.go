@@ -49,9 +49,9 @@ const (
 	// requested target state. For example, an experiment can only graduate
 	// if its status is ENABLED.
 	CampaignExperimentErrorEnum_INVALID_TRANSITION CampaignExperimentErrorEnum_CampaignExperimentError = 3
-	// Cannot create an experiment from a campaign using an explicitly github.com/the-herald/monthly_reporter/reporter/shared
+	// Cannot create an experiment from a campaign using an explicitly SHARED
 	// budget.
-	CampaignExperimentErrorEnum_CANNOT_CREATE_EXPERIMENT_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET CampaignExperimentErrorEnum_CampaignExperimentError = 4
+	CampaignExperimentErrorEnum_CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET CampaignExperimentErrorEnum_CampaignExperimentError = 4
 	// Cannot create an experiment for a removed base campaign.
 	CampaignExperimentErrorEnum_CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN CampaignExperimentErrorEnum_CampaignExperimentError = 5
 	// Cannot create an experiment from a draft, which has a status other than
@@ -79,7 +79,7 @@ var (
 		1:  "UNKNOWN",
 		2:  "DUPLICATE_NAME",
 		3:  "INVALID_TRANSITION",
-		4:  "CANNOT_CREATE_EXPERIMENT_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
+		4:  "CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET",
 		5:  "CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN",
 		6:  "CANNOT_CREATE_EXPERIMENT_FOR_NON_PROPOSED_DRAFT",
 		7:  "CUSTOMER_CANNOT_CREATE_EXPERIMENT",
@@ -93,7 +93,7 @@ var (
 		"UNKNOWN":            1,
 		"DUPLICATE_NAME":     2,
 		"INVALID_TRANSITION": 3,
-		"CANNOT_CREATE_EXPERIMENT_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET":          4,
+		"CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET":          4,
 		"CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN":   5,
 		"CANNOT_CREATE_EXPERIMENT_FOR_NON_PROPOSED_DRAFT":      6,
 		"CUSTOMER_CANNOT_CREATE_EXPERIMENT":                    7,
@@ -179,7 +179,7 @@ const file_google_ads_googleads_v20_errors_campaign_experiment_error_proto_rawDe
 	"\aUNKNOWN\x10\x01\x12\x12\n" +
 	"\x0eDUPLICATE_NAME\x10\x02\x12\x16\n" +
 	"\x12INVALID_TRANSITION\x10\x03\x12/\n" +
-	"+CANNOT_CREATE_EXPERIMENT_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10\x04\x126\n" +
+	"+CANNOT_CREATE_EXPERIMENT_WITH_SHARED_BUDGET\x10\x04\x126\n" +
 	"2CANNOT_CREATE_EXPERIMENT_FOR_REMOVED_BASE_CAMPAIGN\x10\x05\x123\n" +
 	"/CANNOT_CREATE_EXPERIMENT_FOR_NON_PROPOSED_DRAFT\x10\x06\x12%\n" +
 	"!CUSTOMER_CANNOT_CREATE_EXPERIMENT\x10\a\x12%\n" +

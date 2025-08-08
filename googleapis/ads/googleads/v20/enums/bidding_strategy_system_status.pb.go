@@ -94,7 +94,7 @@ const (
 	BiddingStrategySystemStatusEnum_MISCONFIGURED_CONVERSION_SETTINGS BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus = 18
 	// There are campaigns outside the bid strategy that share budgets with
 	// campaigns included in the strategy.
-	BiddingStrategySystemStatusEnum_MISCONFIGURED_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus = 19
+	BiddingStrategySystemStatusEnum_MISCONFIGURED_SHARED_BUDGET BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus = 19
 	// The campaign has an invalid strategy type and is not serving.
 	BiddingStrategySystemStatusEnum_MISCONFIGURED_STRATEGY_TYPE BiddingStrategySystemStatusEnum_BiddingStrategySystemStatus = 20
 	// The bid strategy is not active. Either there are no active campaigns,
@@ -139,7 +139,7 @@ var (
 		16: "MISCONFIGURED_ZERO_ELIGIBILITY",
 		17: "MISCONFIGURED_CONVERSION_TYPES",
 		18: "MISCONFIGURED_CONVERSION_SETTINGS",
-		19: "MISCONFIGURED_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
+		19: "MISCONFIGURED_SHARED_BUDGET",
 		20: "MISCONFIGURED_STRATEGY_TYPE",
 		21: "PAUSED",
 		22: "UNAVAILABLE",
@@ -168,7 +168,7 @@ var (
 		"MISCONFIGURED_ZERO_ELIGIBILITY":     16,
 		"MISCONFIGURED_CONVERSION_TYPES":     17,
 		"MISCONFIGURED_CONVERSION_SETTINGS":  18,
-		"MISCONFIGURED_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET":        19,
+		"MISCONFIGURED_SHARED_BUDGET":        19,
 		"MISCONFIGURED_STRATEGY_TYPE":        20,
 		"PAUSED":                             21,
 		"UNAVAILABLE":                        22,
@@ -270,7 +270,7 @@ const file_google_ads_googleads_v20_enums_bidding_strategy_system_status_proto_r
 	"\x1eMISCONFIGURED_ZERO_ELIGIBILITY\x10\x10\x12\"\n" +
 	"\x1eMISCONFIGURED_CONVERSION_TYPES\x10\x11\x12%\n" +
 	"!MISCONFIGURED_CONVERSION_SETTINGS\x10\x12\x12\x1f\n" +
-	"\x1bMISCONFIGURED_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10\x13\x12\x1f\n" +
+	"\x1bMISCONFIGURED_SHARED_BUDGET\x10\x13\x12\x1f\n" +
 	"\x1bMISCONFIGURED_STRATEGY_TYPE\x10\x14\x12\n" +
 	"\n" +
 	"\x06PAUSED\x10\x15\x12\x0f\n" +

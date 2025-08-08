@@ -48,8 +48,8 @@ const (
 	CustomerPayPerConversionEligibilityFailureReasonEnum_NOT_ENOUGH_CONVERSIONS CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason = 2
 	// Customer's conversion lag is too high.
 	CustomerPayPerConversionEligibilityFailureReasonEnum_CONVERSION_LAG_TOO_HIGH CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason = 3
-	// Customer uses github.com/the-herald/monthly_reporter/reporter/shared budgets.
-	CustomerPayPerConversionEligibilityFailureReasonEnum_HAS_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason = 4
+	// Customer uses SHARED budgets.
+	CustomerPayPerConversionEligibilityFailureReasonEnum_HAS_CAMPAIGN_WITH_SHARED_BUDGET CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason = 4
 	// Customer has conversions with ConversionActionType.UPLOAD_CLICKS.
 	CustomerPayPerConversionEligibilityFailureReasonEnum_HAS_UPLOAD_CLICKS_CONVERSION CustomerPayPerConversionEligibilityFailureReasonEnum_CustomerPayPerConversionEligibilityFailureReason = 5
 	// Customer's average daily spend is too high.
@@ -68,7 +68,7 @@ var (
 		1: "UNKNOWN",
 		2: "NOT_ENOUGH_CONVERSIONS",
 		3: "CONVERSION_LAG_TOO_HIGH",
-		4: "HAS_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
+		4: "HAS_CAMPAIGN_WITH_SHARED_BUDGET",
 		5: "HAS_UPLOAD_CLICKS_CONVERSION",
 		6: "AVERAGE_DAILY_SPEND_TOO_HIGH",
 		7: "ANALYSIS_NOT_COMPLETE",
@@ -79,7 +79,7 @@ var (
 		"UNKNOWN":                         1,
 		"NOT_ENOUGH_CONVERSIONS":          2,
 		"CONVERSION_LAG_TOO_HIGH":         3,
-		"HAS_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET": 4,
+		"HAS_CAMPAIGN_WITH_SHARED_BUDGET": 4,
 		"HAS_UPLOAD_CLICKS_CONVERSION":    5,
 		"AVERAGE_DAILY_SPEND_TOO_HIGH":    6,
 		"ANALYSIS_NOT_COMPLETE":           7,
@@ -163,7 +163,7 @@ const file_google_ads_googleads_v20_enums_customer_pay_per_conversion_eligibilit
 	"\aUNKNOWN\x10\x01\x12\x1a\n" +
 	"\x16NOT_ENOUGH_CONVERSIONS\x10\x02\x12\x1b\n" +
 	"\x17CONVERSION_LAG_TOO_HIGH\x10\x03\x12#\n" +
-	"\x1fHAS_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10\x04\x12 \n" +
+	"\x1fHAS_CAMPAIGN_WITH_SHARED_BUDGET\x10\x04\x12 \n" +
 	"\x1cHAS_UPLOAD_CLICKS_CONVERSION\x10\x05\x12 \n" +
 	"\x1cAVERAGE_DAILY_SPEND_TOO_HIGH\x10\x06\x12\x19\n" +
 	"\x15ANALYSIS_NOT_COMPLETE\x10\a\x12\t\n" +

@@ -96,7 +96,7 @@ func (AndroidPrivacyInteractionTypeEnum_AndroidPrivacyInteractionType) EnumDescr
 	return file_google_ads_googleads_v20_enums_android_privacy_interaction_type_proto_rawDescGZIP(), []int{0, 0}
 }
 
-// The interaction type enum for Android privacy github.com/the-herald/monthly_reporter/reporter/shared key.
+// The interaction type enum for Android privacy SHARED key.
 type AndroidPrivacyInteractionTypeEnum struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields

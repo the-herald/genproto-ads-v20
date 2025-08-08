@@ -110,10 +110,10 @@ const (
 	ResourceLimitTypeEnum_CRITERIA_PER_AD_GROUP ResourceLimitTypeEnum_ResourceLimitType = 23
 	// Number of listing group criteria per ad group.
 	ResourceLimitTypeEnum_LISTING_GROUPS_PER_AD_GROUP ResourceLimitTypeEnum_ResourceLimitType = 24
-	// Number of ENABLED explicitly github.com/the-herald/monthly_reporter/reporter/shared budgets per customer.
-	ResourceLimitTypeEnum_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 25
-	// Number of ENABLED implicitly github.com/the-herald/monthly_reporter/reporter/shared budgets per customer.
-	ResourceLimitTypeEnum_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 26
+	// Number of ENABLED explicitly SHARED budgets per customer.
+	ResourceLimitTypeEnum_EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 25
+	// Number of ENABLED implicitly SHARED budgets per customer.
+	ResourceLimitTypeEnum_IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 26
 	// Number of combined audience criteria per campaign.
 	ResourceLimitTypeEnum_COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN ResourceLimitTypeEnum_ResourceLimitType = 27
 	// Number of negative keywords per campaign.
@@ -133,18 +133,18 @@ const (
 	ResourceLimitTypeEnum_LISTING_SCOPES_PER_SHOPPING_CAMPAIGN ResourceLimitTypeEnum_ResourceLimitType = 34
 	// Number of listing scopes per non-Shopping campaign.
 	ResourceLimitTypeEnum_LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN ResourceLimitTypeEnum_ResourceLimitType = 35
-	// Number of criteria per negative keyword github.com/the-herald/monthly_reporter/reporter/shared set.
-	ResourceLimitTypeEnum_NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET ResourceLimitTypeEnum_ResourceLimitType = 36
-	// Number of criteria per negative placement github.com/the-herald/monthly_reporter/reporter/shared set.
-	ResourceLimitTypeEnum_NEGATIVE_PLACEMENTS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET ResourceLimitTypeEnum_ResourceLimitType = 37
-	// Default number of github.com/the-herald/monthly_reporter/reporter/shared sets allowed per type per customer.
-	ResourceLimitTypeEnum_github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT ResourceLimitTypeEnum_ResourceLimitType = 40
-	// Number of github.com/the-herald/monthly_reporter/reporter/shared sets of negative placement list type for a
+	// Number of criteria per negative keyword SHARED set.
+	ResourceLimitTypeEnum_NEGATIVE_KEYWORDS_PER_SHARED_SET ResourceLimitTypeEnum_ResourceLimitType = 36
+	// Number of criteria per negative placement SHARED set.
+	ResourceLimitTypeEnum_NEGATIVE_PLACEMENTS_PER_SHARED_SET ResourceLimitTypeEnum_ResourceLimitType = 37
+	// Default number of SHARED sets allowed per type per customer.
+	ResourceLimitTypeEnum_SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT ResourceLimitTypeEnum_ResourceLimitType = 40
+	// Number of SHARED sets of negative placement list type for a
 	// manager customer.
-	ResourceLimitTypeEnum_github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER ResourceLimitTypeEnum_ResourceLimitType = 41
+	ResourceLimitTypeEnum_SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER ResourceLimitTypeEnum_ResourceLimitType = 41
 	// Number of hotel_advance_booking_window bid modifiers per ad group.
 	ResourceLimitTypeEnum_HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP ResourceLimitTypeEnum_ResourceLimitType = 44
-	// Number of ENABLED github.com/the-herald/monthly_reporter/reporter/shared bidding strategies per customer.
+	// Number of ENABLED SHARED bidding strategies per customer.
 	ResourceLimitTypeEnum_BIDDING_STRATEGIES_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 45
 	// Number of open basic user lists per customer.
 	ResourceLimitTypeEnum_BASIC_USER_LISTS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 47
@@ -342,21 +342,21 @@ const (
 	ResourceLimitTypeEnum_BATCH_JOBS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 131
 	// Number of hotel check-in date range bid modifiers per ad agroup.
 	ResourceLimitTypeEnum_HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP ResourceLimitTypeEnum_ResourceLimitType = 132
-	// Number of github.com/the-herald/monthly_reporter/reporter/shared sets of type ACCOUNT_LEVEL_NEGATIVE_KEYWORDS per
+	// Number of SHARED sets of type ACCOUNT_LEVEL_NEGATIVE_KEYWORDS per
 	// account.
-	ResourceLimitTypeEnum_github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS ResourceLimitTypeEnum_ResourceLimitType = 177
-	// Number of keywords per ACCOUNT_LEVEL_NEGATIVE_KEYWORDS github.com/the-herald/monthly_reporter/reporter/shared set.
-	ResourceLimitTypeEnum_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET ResourceLimitTypeEnum_ResourceLimitType = 178
+	ResourceLimitTypeEnum_SHARED_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS ResourceLimitTypeEnum_ResourceLimitType = 177
+	// Number of keywords per ACCOUNT_LEVEL_NEGATIVE_KEYWORDS SHARED set.
+	ResourceLimitTypeEnum_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_SHARED_SET ResourceLimitTypeEnum_ResourceLimitType = 178
 	// Maximum number of asset per hotel property asset set.
 	ResourceLimitTypeEnum_ENABLED_ASSET_PER_HOTEL_PROPERTY_ASSET_SET ResourceLimitTypeEnum_ResourceLimitType = 181
 	// Maximum number of enabled hotel property assets per asset group.
 	ResourceLimitTypeEnum_ENABLED_HOTEL_PROPERTY_ASSET_LINKS_PER_ASSET_GROUP ResourceLimitTypeEnum_ResourceLimitType = 182
-	// Number of criteria per brand github.com/the-herald/monthly_reporter/reporter/shared set.
-	ResourceLimitTypeEnum_BRANDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET ResourceLimitTypeEnum_ResourceLimitType = 183
+	// Number of criteria per brand SHARED set.
+	ResourceLimitTypeEnum_BRANDS_PER_SHARED_SET ResourceLimitTypeEnum_ResourceLimitType = 183
 	// Number of active brand list criteria per campaign.
 	ResourceLimitTypeEnum_ENABLED_BRAND_LIST_CRITERIA_PER_CAMPAIGN ResourceLimitTypeEnum_ResourceLimitType = 184
-	// Maximum number of github.com/the-herald/monthly_reporter/reporter/shared sets of brand type for an account.
-	ResourceLimitTypeEnum_github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_BRAND ResourceLimitTypeEnum_ResourceLimitType = 185
+	// Maximum number of SHARED sets of brand type for an account.
+	ResourceLimitTypeEnum_SHARED_SETS_PER_ACCOUNT_FOR_BRAND ResourceLimitTypeEnum_ResourceLimitType = 185
 	// Maximum number of lookalike lists per customer.
 	ResourceLimitTypeEnum_LOOKALIKE_USER_LISTS_PER_CUSTOMER ResourceLimitTypeEnum_ResourceLimitType = 186
 	// Total number of enabled IMAGE CampaignAssets with LOGO and LANDSCAPE_LOGO
@@ -403,8 +403,8 @@ var (
 		22:  "CUSTOMER_NEGATIVE_YOUTUBE_CHANNEL_CRITERIA_PER_CUSTOMER",
 		23:  "CRITERIA_PER_AD_GROUP",
 		24:  "LISTING_GROUPS_PER_AD_GROUP",
-		25:  "EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER",
-		26:  "IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER",
+		25:  "EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER",
+		26:  "IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER",
 		27:  "COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN",
 		28:  "NEGATIVE_KEYWORDS_PER_CAMPAIGN",
 		29:  "NEGATIVE_PLACEMENTS_PER_CAMPAIGN",
@@ -413,10 +413,10 @@ var (
 		33:  "PROXIMITIES_PER_CAMPAIGN",
 		34:  "LISTING_SCOPES_PER_SHOPPING_CAMPAIGN",
 		35:  "LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN",
-		36:  "NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET",
-		37:  "NEGATIVE_PLACEMENTS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET",
-		40:  "github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT",
-		41:  "github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER",
+		36:  "NEGATIVE_KEYWORDS_PER_SHARED_SET",
+		37:  "NEGATIVE_PLACEMENTS_PER_SHARED_SET",
+		40:  "SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT",
+		41:  "SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER",
 		44:  "HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP",
 		45:  "BIDDING_STRATEGIES_PER_CUSTOMER",
 		47:  "BASIC_USER_LISTS_PER_CUSTOMER",
@@ -511,13 +511,13 @@ var (
 		130: "BATCH_JOB_OPERATIONS_PER_JOB",
 		131: "BATCH_JOBS_PER_CUSTOMER",
 		132: "HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP",
-		177: "github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
-		178: "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET",
+		177: "SHARED_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS",
+		178: "ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_SHARED_SET",
 		181: "ENABLED_ASSET_PER_HOTEL_PROPERTY_ASSET_SET",
 		182: "ENABLED_HOTEL_PROPERTY_ASSET_LINKS_PER_ASSET_GROUP",
-		183: "BRANDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET",
+		183: "BRANDS_PER_SHARED_SET",
 		184: "ENABLED_BRAND_LIST_CRITERIA_PER_CAMPAIGN",
-		185: "github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_BRAND",
+		185: "SHARED_SETS_PER_ACCOUNT_FOR_BRAND",
 		186: "LOOKALIKE_USER_LISTS_PER_CUSTOMER",
 		187: "LOGO_CAMPAIGN_ASSETS_PER_CAMPAIGN",
 		188: "BUSINESS_MESSAGE_ASSET_LINKS_PER_CUSTOMER",
@@ -553,8 +553,8 @@ var (
 		"CUSTOMER_NEGATIVE_YOUTUBE_CHANNEL_CRITERIA_PER_CUSTOMER":     22,
 		"CRITERIA_PER_AD_GROUP":                                       23,
 		"LISTING_GROUPS_PER_AD_GROUP":                                 24,
-		"EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER":                      25,
-		"IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER":                      26,
+		"EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER":                      25,
+		"IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER":                      26,
 		"COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN":                     27,
 		"NEGATIVE_KEYWORDS_PER_CAMPAIGN":                              28,
 		"NEGATIVE_PLACEMENTS_PER_CAMPAIGN":                            29,
@@ -563,10 +563,10 @@ var (
 		"PROXIMITIES_PER_CAMPAIGN":                                    33,
 		"LISTING_SCOPES_PER_SHOPPING_CAMPAIGN":                        34,
 		"LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN":                    35,
-		"NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET":                            36,
-		"NEGATIVE_PLACEMENTS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET":                          37,
-		"github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT":                   40,
-		"github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER":  41,
+		"NEGATIVE_KEYWORDS_PER_SHARED_SET":                            36,
+		"NEGATIVE_PLACEMENTS_PER_SHARED_SET":                          37,
+		"SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT":                   40,
+		"SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER":  41,
 		"HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP":     44,
 		"BIDDING_STRATEGIES_PER_CUSTOMER":                             45,
 		"BASIC_USER_LISTS_PER_CUSTOMER":                               47,
@@ -661,13 +661,13 @@ var (
 		"BATCH_JOB_OPERATIONS_PER_JOB":                                130,
 		"BATCH_JOBS_PER_CUSTOMER":                                     131,
 		"HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP":        132,
-		"github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS": 177,
-		"ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET":              178,
+		"SHARED_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS": 177,
+		"ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_SHARED_SET":              178,
 		"ENABLED_ASSET_PER_HOTEL_PROPERTY_ASSET_SET":                  181,
 		"ENABLED_HOTEL_PROPERTY_ASSET_LINKS_PER_ASSET_GROUP":          182,
-		"BRANDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET":                                       183,
+		"BRANDS_PER_SHARED_SET":                                       183,
 		"ENABLED_BRAND_LIST_CRITERIA_PER_CAMPAIGN":                    184,
-		"github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_BRAND":                           185,
+		"SHARED_SETS_PER_ACCOUNT_FOR_BRAND":                           185,
 		"LOOKALIKE_USER_LISTS_PER_CUSTOMER":                           186,
 		"LOGO_CAMPAIGN_ASSETS_PER_CAMPAIGN":                           187,
 		"BUSINESS_MESSAGE_ASSET_LINKS_PER_CUSTOMER":                   188,
@@ -776,8 +776,8 @@ const file_google_ads_googleads_v20_enums_resource_limit_type_proto_rawDesc = ""
 	"7CUSTOMER_NEGATIVE_YOUTUBE_CHANNEL_CRITERIA_PER_CUSTOMER\x10\x16\x12\x19\n" +
 	"\x15CRITERIA_PER_AD_GROUP\x10\x17\x12\x1f\n" +
 	"\x1bLISTING_GROUPS_PER_AD_GROUP\x10\x18\x12*\n" +
-	"&EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER\x10\x19\x12*\n" +
-	"&IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_BUDGETS_PER_CUSTOMER\x10\x1a\x12+\n" +
+	"&EXPLICITLY_SHARED_BUDGETS_PER_CUSTOMER\x10\x19\x12*\n" +
+	"&IMPLICITLY_SHARED_BUDGETS_PER_CUSTOMER\x10\x1a\x12+\n" +
 	"'COMBINED_AUDIENCE_CRITERIA_PER_CAMPAIGN\x10\x1b\x12\"\n" +
 	"\x1eNEGATIVE_KEYWORDS_PER_CAMPAIGN\x10\x1c\x12$\n" +
 	" NEGATIVE_PLACEMENTS_PER_CAMPAIGN\x10\x1d\x12\x1c\n" +
@@ -786,10 +786,10 @@ const file_google_ads_googleads_v20_enums_resource_limit_type_proto_rawDesc = ""
 	"\x18PROXIMITIES_PER_CAMPAIGN\x10!\x12(\n" +
 	"$LISTING_SCOPES_PER_SHOPPING_CAMPAIGN\x10\"\x12,\n" +
 	"(LISTING_SCOPES_PER_NON_SHOPPING_CAMPAIGN\x10#\x12$\n" +
-	" NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10$\x12&\n" +
-	"\"NEGATIVE_PLACEMENTS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10%\x12-\n" +
-	")github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT\x10(\x12>\n" +
-	":github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER\x10)\x12;\n" +
+	" NEGATIVE_KEYWORDS_PER_SHARED_SET\x10$\x12&\n" +
+	"\"NEGATIVE_PLACEMENTS_PER_SHARED_SET\x10%\x12-\n" +
+	")SHARED_SETS_PER_CUSTOMER_FOR_TYPE_DEFAULT\x10(\x12>\n" +
+	":SHARED_SETS_PER_CUSTOMER_FOR_NEGATIVE_PLACEMENT_LIST_LOWER\x10)\x12;\n" +
 	"7HOTEL_ADVANCE_BOOKING_WINDOW_BID_MODIFIERS_PER_AD_GROUP\x10,\x12#\n" +
 	"\x1fBIDDING_STRATEGIES_PER_CUSTOMER\x10-\x12!\n" +
 	"\x1dBASIC_USER_LISTS_PER_CUSTOMER\x10/\x12#\n" +
@@ -884,13 +884,13 @@ const file_google_ads_googleads_v20_enums_resource_limit_type_proto_rawDesc = ""
 	"\x1cBATCH_JOB_OPERATIONS_PER_JOB\x10\x82\x01\x12\x1c\n" +
 	"\x17BATCH_JOBS_PER_CUSTOMER\x10\x83\x01\x129\n" +
 	"4HOTEL_CHECK_IN_DATE_RANGE_BID_MODIFIERS_PER_AD_GROUP\x10\x84\x01\x12@\n" +
-	";github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS\x10\xb1\x01\x123\n" +
-	".ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10\xb2\x01\x12/\n" +
+	";SHARED_SETS_PER_ACCOUNT_FOR_ACCOUNT_LEVEL_NEGATIVE_KEYWORDS\x10\xb1\x01\x123\n" +
+	".ACCOUNT_LEVEL_NEGATIVE_KEYWORDS_PER_SHARED_SET\x10\xb2\x01\x12/\n" +
 	"*ENABLED_ASSET_PER_HOTEL_PROPERTY_ASSET_SET\x10\xb5\x01\x127\n" +
 	"2ENABLED_HOTEL_PROPERTY_ASSET_LINKS_PER_ASSET_GROUP\x10\xb6\x01\x12\x1a\n" +
-	"\x15BRANDS_PER_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10\xb7\x01\x12-\n" +
+	"\x15BRANDS_PER_SHARED_SET\x10\xb7\x01\x12-\n" +
 	"(ENABLED_BRAND_LIST_CRITERIA_PER_CAMPAIGN\x10\xb8\x01\x12&\n" +
-	"!github.com/the-herald/monthly_reporter/reporter/shared_SETS_PER_ACCOUNT_FOR_BRAND\x10\xb9\x01\x12&\n" +
+	"!SHARED_SETS_PER_ACCOUNT_FOR_BRAND\x10\xb9\x01\x12&\n" +
 	"!LOOKALIKE_USER_LISTS_PER_CUSTOMER\x10\xba\x01\x12&\n" +
 	"!LOGO_CAMPAIGN_ASSETS_PER_CAMPAIGN\x10\xbb\x01\x12.\n" +
 	")BUSINESS_MESSAGE_ASSET_LINKS_PER_CUSTOMER\x10\xbc\x01\x127\n" +

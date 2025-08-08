@@ -85,10 +85,10 @@ const (
 	// Operation not allowed on a campaign whose serving status has ended
 	CampaignErrorEnum_INVALID_OPERATION_IF_SERVING_STATUS_HAS_ENDED CampaignErrorEnum_CampaignError = 20
 	// This budget is exclusively linked to a Campaign that is using experiments
-	// so it cannot be github.com/the-herald/monthly_reporter/reporter/shared.
-	CampaignErrorEnum_BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared CampaignErrorEnum_CampaignError = 21
-	// Campaigns using experiments cannot use a github.com/the-herald/monthly_reporter/reporter/shared budget.
-	CampaignErrorEnum_CAMPAIGN_CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET CampaignErrorEnum_CampaignError = 22
+	// so it cannot be SHARED.
+	CampaignErrorEnum_BUDGET_CANNOT_BE_SHARED CampaignErrorEnum_CampaignError = 21
+	// Campaigns using experiments cannot use a SHARED budget.
+	CampaignErrorEnum_CAMPAIGN_CANNOT_USE_SHARED_BUDGET CampaignErrorEnum_CampaignError = 22
 	// A different budget cannot be assigned to a campaign when there are
 	// running or scheduled trials.
 	CampaignErrorEnum_CANNOT_CHANGE_BUDGET_ON_CAMPAIGN_WITH_TRIALS CampaignErrorEnum_CampaignError = 23
@@ -121,9 +121,9 @@ const (
 	CampaignErrorEnum_INVALID_HOTEL_CUSTOMER_LINK CampaignErrorEnum_CampaignError = 38
 	// Hotel setting was not found when creating a hotel ads campaign.
 	CampaignErrorEnum_MISSING_HOTEL_SETTING CampaignErrorEnum_CampaignError = 39
-	// A Campaign cannot use github.com/the-herald/monthly_reporter/reporter/shared campaign budgets and be part of a campaign
+	// A Campaign cannot use SHARED campaign budgets and be part of a campaign
 	// group.
-	CampaignErrorEnum_CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP CampaignErrorEnum_CampaignError = 40
+	CampaignErrorEnum_CANNOT_USE_SHARED_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP CampaignErrorEnum_CampaignError = 40
 	// The app ID was not found.
 	CampaignErrorEnum_APP_NOT_FOUND CampaignErrorEnum_CampaignError = 41
 	// Campaign.shopping_setting.enable_local is not supported for the specified
@@ -239,7 +239,7 @@ const (
 	// when keyword conversion to broad match is in process.
 	CampaignErrorEnum_CANNOT_DISABLE_BROAD_MATCH_WHEN_KEYWORD_CONVERSION_IN_PROCESS CampaignErrorEnum_CampaignError = 91
 	// The campaign level keyword match type cannot be switched to non-broad
-	// when the campaign has any attached brand list or when a brand hint github.com/the-herald/monthly_reporter/reporter/shared
+	// when the campaign has any attached brand list or when a brand hint SHARED
 	// set is attached to the campaign.
 	CampaignErrorEnum_CANNOT_DISABLE_BROAD_MATCH_WHEN_TARGETING_BRANDS CampaignErrorEnum_CampaignError = 92
 	// Cannot set campaign level keyword match type to BROAD if the campaign is
@@ -310,8 +310,8 @@ var (
 		18:  "MAX_IMPRESSIONS_NOT_IN_RANGE",
 		19:  "TIME_UNIT_NOT_SUPPORTED",
 		20:  "INVALID_OPERATION_IF_SERVING_STATUS_HAS_ENDED",
-		21:  "BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared",
-		22:  "CAMPAIGN_CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
+		21:  "BUDGET_CANNOT_BE_SHARED",
+		22:  "CAMPAIGN_CANNOT_USE_SHARED_BUDGET",
 		23:  "CANNOT_CHANGE_BUDGET_ON_CAMPAIGN_WITH_TRIALS",
 		24:  "CAMPAIGN_LABEL_DOES_NOT_EXIST",
 		25:  "CAMPAIGN_LABEL_ALREADY_EXISTS",
@@ -326,7 +326,7 @@ var (
 		37:  "MISSING_HOTEL_CUSTOMER_LINK",
 		38:  "INVALID_HOTEL_CUSTOMER_LINK",
 		39:  "MISSING_HOTEL_SETTING",
-		40:  "CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP",
+		40:  "CANNOT_USE_SHARED_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP",
 		41:  "APP_NOT_FOUND",
 		42:  "SHOPPING_ENABLE_LOCAL_NOT_SUPPORTED_FOR_CAMPAIGN_TYPE",
 		43:  "MERCHANT_NOT_ALLOWED_FOR_COMPARISON_LISTING_ADS",
@@ -406,8 +406,8 @@ var (
 		"MAX_IMPRESSIONS_NOT_IN_RANGE":                                            18,
 		"TIME_UNIT_NOT_SUPPORTED":                                                 19,
 		"INVALID_OPERATION_IF_SERVING_STATUS_HAS_ENDED":                           20,
-		"BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared":                                                 21,
-		"CAMPAIGN_CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET":                                       22,
+		"BUDGET_CANNOT_BE_SHARED":                                                 21,
+		"CAMPAIGN_CANNOT_USE_SHARED_BUDGET":                                       22,
 		"CANNOT_CHANGE_BUDGET_ON_CAMPAIGN_WITH_TRIALS":                            23,
 		"CAMPAIGN_LABEL_DOES_NOT_EXIST":                                           24,
 		"CAMPAIGN_LABEL_ALREADY_EXISTS":                                           25,
@@ -422,7 +422,7 @@ var (
 		"MISSING_HOTEL_CUSTOMER_LINK":                                             37,
 		"INVALID_HOTEL_CUSTOMER_LINK":                                             38,
 		"MISSING_HOTEL_SETTING":                                                   39,
-		"CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP":          40,
+		"CANNOT_USE_SHARED_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP":          40,
 		"APP_NOT_FOUND":                                                           41,
 		"SHOPPING_ENABLE_LOCAL_NOT_SUPPORTED_FOR_CAMPAIGN_TYPE":                   42,
 		"MERCHANT_NOT_ALLOWED_FOR_COMPARISON_LISTING_ADS":                         43,
@@ -575,8 +575,8 @@ const file_google_ads_googleads_v20_errors_campaign_error_proto_rawDesc = "" +
 	"\x1cMAX_IMPRESSIONS_NOT_IN_RANGE\x10\x12\x12\x1b\n" +
 	"\x17TIME_UNIT_NOT_SUPPORTED\x10\x13\x121\n" +
 	"-INVALID_OPERATION_IF_SERVING_STATUS_HAS_ENDED\x10\x14\x12\x1b\n" +
-	"\x17BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared\x10\x15\x12%\n" +
-	"!CAMPAIGN_CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10\x16\x120\n" +
+	"\x17BUDGET_CANNOT_BE_SHARED\x10\x15\x12%\n" +
+	"!CAMPAIGN_CANNOT_USE_SHARED_BUDGET\x10\x16\x120\n" +
 	",CANNOT_CHANGE_BUDGET_ON_CAMPAIGN_WITH_TRIALS\x10\x17\x12!\n" +
 	"\x1dCAMPAIGN_LABEL_DOES_NOT_EXIST\x10\x18\x12!\n" +
 	"\x1dCAMPAIGN_LABEL_ALREADY_EXISTS\x10\x19\x12\x1c\n" +
@@ -591,7 +591,7 @@ const file_google_ads_googleads_v20_errors_campaign_error_proto_rawDesc = "" +
 	"\x1bMISSING_HOTEL_CUSTOMER_LINK\x10%\x12\x1f\n" +
 	"\x1bINVALID_HOTEL_CUSTOMER_LINK\x10&\x12\x19\n" +
 	"\x15MISSING_HOTEL_SETTING\x10'\x12B\n" +
-	">CANNOT_USE_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP\x10(\x12\x11\n" +
+	">CANNOT_USE_SHARED_CAMPAIGN_BUDGET_WHILE_PART_OF_CAMPAIGN_GROUP\x10(\x12\x11\n" +
 	"\rAPP_NOT_FOUND\x10)\x129\n" +
 	"5SHOPPING_ENABLE_LOCAL_NOT_SUPPORTED_FOR_CAMPAIGN_TYPE\x10*\x123\n" +
 	"/MERCHANT_NOT_ALLOWED_FOR_COMPARISON_LISTING_ADS\x10+\x12#\n" +

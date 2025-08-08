@@ -43,8 +43,8 @@ const (
 	CampaignBudgetErrorEnum_UNSPECIFIED CampaignBudgetErrorEnum_CampaignBudgetError = 0
 	// The received error code is not known in this version.
 	CampaignBudgetErrorEnum_UNKNOWN CampaignBudgetErrorEnum_CampaignBudgetError = 1
-	// The campaign budget cannot be github.com/the-herald/monthly_reporter/reporter/shared.
-	CampaignBudgetErrorEnum_CAMPAIGN_BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared CampaignBudgetErrorEnum_CampaignBudgetError = 17
+	// The campaign budget cannot be SHARED.
+	CampaignBudgetErrorEnum_CAMPAIGN_BUDGET_CANNOT_BE_SHARED CampaignBudgetErrorEnum_CampaignBudgetError = 17
 	// The requested campaign budget no longer exists.
 	CampaignBudgetErrorEnum_CAMPAIGN_BUDGET_REMOVED CampaignBudgetErrorEnum_CampaignBudgetError = 2
 	// The campaign budget is associated with at least one campaign, and so the
@@ -52,20 +52,20 @@ const (
 	CampaignBudgetErrorEnum_CAMPAIGN_BUDGET_IN_USE CampaignBudgetErrorEnum_CampaignBudgetError = 3
 	// Customer is not on the allow-list for this campaign budget period.
 	CampaignBudgetErrorEnum_CAMPAIGN_BUDGET_PERIOD_NOT_AVAILABLE CampaignBudgetErrorEnum_CampaignBudgetError = 4
-	// This field is not mutable on implicitly github.com/the-herald/monthly_reporter/reporter/shared campaign budgets
-	CampaignBudgetErrorEnum_CANNOT_MODIFY_FIELD_OF_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET CampaignBudgetErrorEnum_CampaignBudgetError = 6
-	// Cannot change explicitly github.com/the-herald/monthly_reporter/reporter/shared campaign budgets back to implicitly
-	// github.com/the-herald/monthly_reporter/reporter/shared ones.
-	CampaignBudgetErrorEnum_CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared CampaignBudgetErrorEnum_CampaignBudgetError = 7
+	// This field is not mutable on implicitly SHARED campaign budgets
+	CampaignBudgetErrorEnum_CANNOT_MODIFY_FIELD_OF_IMPLICITLY_SHARED_CAMPAIGN_BUDGET CampaignBudgetErrorEnum_CampaignBudgetError = 6
+	// Cannot change explicitly SHARED campaign budgets back to implicitly
+	// SHARED ones.
+	CampaignBudgetErrorEnum_CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_SHARED CampaignBudgetErrorEnum_CampaignBudgetError = 7
 	// An implicit campaign budget without a name cannot be changed to
-	// explicitly github.com/the-herald/monthly_reporter/reporter/shared campaign budget.
-	CampaignBudgetErrorEnum_CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_WITHOUT_NAME CampaignBudgetErrorEnum_CampaignBudgetError = 8
-	// Cannot change an implicitly github.com/the-herald/monthly_reporter/reporter/shared campaign budget to an explicitly
-	// github.com/the-herald/monthly_reporter/reporter/shared one.
-	CampaignBudgetErrorEnum_CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared CampaignBudgetErrorEnum_CampaignBudgetError = 9
-	// Only explicitly github.com/the-herald/monthly_reporter/reporter/shared campaign budgets can be used with multiple
+	// explicitly SHARED campaign budget.
+	CampaignBudgetErrorEnum_CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED_WITHOUT_NAME CampaignBudgetErrorEnum_CampaignBudgetError = 8
+	// Cannot change an implicitly SHARED campaign budget to an explicitly
+	// SHARED one.
+	CampaignBudgetErrorEnum_CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED CampaignBudgetErrorEnum_CampaignBudgetError = 9
+	// Only explicitly SHARED campaign budgets can be used with multiple
 	// campaigns.
-	CampaignBudgetErrorEnum_CANNOT_USE_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS CampaignBudgetErrorEnum_CampaignBudgetError = 10
+	CampaignBudgetErrorEnum_CANNOT_USE_IMPLICITLY_SHARED_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS CampaignBudgetErrorEnum_CampaignBudgetError = 10
 	// A campaign budget with this name already exists.
 	CampaignBudgetErrorEnum_DUPLICATE_NAME CampaignBudgetErrorEnum_CampaignBudgetError = 11
 	// A money amount was not in the expected currency.
@@ -93,15 +93,15 @@ var (
 	CampaignBudgetErrorEnum_CampaignBudgetError_name = map[int32]string{
 		0:  "UNSPECIFIED",
 		1:  "UNKNOWN",
-		17: "CAMPAIGN_BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared",
+		17: "CAMPAIGN_BUDGET_CANNOT_BE_SHARED",
 		2:  "CAMPAIGN_BUDGET_REMOVED",
 		3:  "CAMPAIGN_BUDGET_IN_USE",
 		4:  "CAMPAIGN_BUDGET_PERIOD_NOT_AVAILABLE",
-		6:  "CANNOT_MODIFY_FIELD_OF_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET",
-		7:  "CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared",
-		8:  "CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_WITHOUT_NAME",
-		9:  "CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared",
-		10: "CANNOT_USE_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS",
+		6:  "CANNOT_MODIFY_FIELD_OF_IMPLICITLY_SHARED_CAMPAIGN_BUDGET",
+		7:  "CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_SHARED",
+		8:  "CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED_WITHOUT_NAME",
+		9:  "CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED",
+		10: "CANNOT_USE_IMPLICITLY_SHARED_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS",
 		11: "DUPLICATE_NAME",
 		12: "MONEY_AMOUNT_IN_WRONG_CURRENCY",
 		13: "MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC",
@@ -116,15 +116,15 @@ var (
 	CampaignBudgetErrorEnum_CampaignBudgetError_value = map[string]int32{
 		"UNSPECIFIED":                          0,
 		"UNKNOWN":                              1,
-		"CAMPAIGN_BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared":     17,
+		"CAMPAIGN_BUDGET_CANNOT_BE_SHARED":     17,
 		"CAMPAIGN_BUDGET_REMOVED":              2,
 		"CAMPAIGN_BUDGET_IN_USE":               3,
 		"CAMPAIGN_BUDGET_PERIOD_NOT_AVAILABLE": 4,
-		"CANNOT_MODIFY_FIELD_OF_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET":             6,
-		"CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared":                   7,
-		"CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_WITHOUT_NAME":      8,
-		"CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared":                   9,
-		"CANNOT_USE_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS": 10,
+		"CANNOT_MODIFY_FIELD_OF_IMPLICITLY_SHARED_CAMPAIGN_BUDGET":             6,
+		"CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_SHARED":                   7,
+		"CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED_WITHOUT_NAME":      8,
+		"CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED":                   9,
+		"CANNOT_USE_IMPLICITLY_SHARED_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS": 10,
 		"DUPLICATE_NAME":                                            11,
 		"MONEY_AMOUNT_IN_WRONG_CURRENCY":                            12,
 		"MONEY_AMOUNT_LESS_THAN_CURRENCY_MINIMUM_CPC":               13,
@@ -211,15 +211,15 @@ const file_google_ads_googleads_v20_errors_campaign_budget_error_proto_rawDesc =
 	"\x13CampaignBudgetError\x12\x0f\n" +
 	"\vUNSPECIFIED\x10\x00\x12\v\n" +
 	"\aUNKNOWN\x10\x01\x12$\n" +
-	" CAMPAIGN_BUDGET_CANNOT_BE_github.com/the-herald/monthly_reporter/reporter/shared\x10\x11\x12\x1b\n" +
+	" CAMPAIGN_BUDGET_CANNOT_BE_SHARED\x10\x11\x12\x1b\n" +
 	"\x17CAMPAIGN_BUDGET_REMOVED\x10\x02\x12\x1a\n" +
 	"\x16CAMPAIGN_BUDGET_IN_USE\x10\x03\x12(\n" +
 	"$CAMPAIGN_BUDGET_PERIOD_NOT_AVAILABLE\x10\x04\x12<\n" +
-	"8CANNOT_MODIFY_FIELD_OF_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET\x10\x06\x126\n" +
-	"2CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared\x10\a\x12C\n" +
-	"?CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_WITHOUT_NAME\x10\b\x126\n" +
-	"2CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared\x10\t\x12H\n" +
-	"DCANNOT_USE_IMPLICITLY_github.com/the-herald/monthly_reporter/reporter/shared_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS\x10\n" +
+	"8CANNOT_MODIFY_FIELD_OF_IMPLICITLY_SHARED_CAMPAIGN_BUDGET\x10\x06\x126\n" +
+	"2CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_IMPLICITLY_SHARED\x10\a\x12C\n" +
+	"?CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED_WITHOUT_NAME\x10\b\x126\n" +
+	"2CANNOT_UPDATE_CAMPAIGN_BUDGET_TO_EXPLICITLY_SHARED\x10\t\x12H\n" +
+	"DCANNOT_USE_IMPLICITLY_SHARED_CAMPAIGN_BUDGET_WITH_MULTIPLE_CAMPAIGNS\x10\n" +
 	"\x12\x12\n" +
 	"\x0eDUPLICATE_NAME\x10\v\x12\"\n" +
 	"\x1eMONEY_AMOUNT_IN_WRONG_CURRENCY\x10\f\x12/\n" +

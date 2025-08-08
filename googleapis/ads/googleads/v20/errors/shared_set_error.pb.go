@@ -16,7 +16,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: google/ads/googleads/v20/errors/github.com/the-herald/monthly_reporter/reporter/shared_set_error.proto
+// source: google/ads/googleads/v20/errors/SHARED_set_error.proto
 
 package errors
 
@@ -35,93 +35,93 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// Enum describing possible github.com/the-herald/monthly_reporter/reporter/shared set errors.
-type github.com/the-herald/monthly_reporter/reporter/sharedSetError int32
+// Enum describing possible SHARED set errors.
+type SHAREDSetError int32
 
 const (
 	// Enum unspecified.
-	github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedSetError = 0
+	SHAREDSetErrorEnum_SHAREDSetError = 0
 	// The received error code is not known in this version.
-	github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedSetError = 1
-	// The customer cannot create this type of github.com/the-herald/monthly_reporter/reporter/shared set.
-	github.com/the-herald/monthly_reporter/reporter/shared_SET_OF_THIS_TYPE github.com/the-herald/monthly_reporter/reporter/sharedSetError = 2
-	// A github.com/the-herald/monthly_reporter/reporter/shared set with this name already exists.
-	github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedSetError = 3
-	// Removed github.com/the-herald/monthly_reporter/reporter/shared sets cannot be mutated.
-	github.com/the-herald/monthly_reporter/reporter/shared_SET_REMOVED github.com/the-herald/monthly_reporter/reporter/sharedSetError = 4
-	// The github.com/the-herald/monthly_reporter/reporter/shared set cannot be removed because it is in use.
-	github.com/the-herald/monthly_reporter/reporter/shared_SET_IN_USE github.com/the-herald/monthly_reporter/reporter/sharedSetError = 5
+	SHAREDSetErrorEnum_SHAREDSetError = 1
+	// The customer cannot create this type of SHARED set.
+	SHARED_SET_OF_THIS_TYPE SHAREDSetError = 2
+	// A SHARED set with this name already exists.
+	SHAREDSetErrorEnum_SHAREDSetError = 3
+	// Removed SHARED sets cannot be mutated.
+	SHARED_SET_REMOVED SHAREDSetError = 4
+	// The SHARED set cannot be removed because it is in use.
+	SHARED_SET_IN_USE SHAREDSetError = 5
 )
 
-// Enum value maps for github.com/the-herald/monthly_reporter/reporter/sharedSetError.
+// Enum value maps for SHAREDSetError.
 var (
-	github.com/the-herald/monthly_reporter/reporter/sharedSetError_name = map[int32]string{
+	SHAREDSetError_name = map[int32]string{
 		0: "UNSPECIFIED",
 		1: "UNKNOWN",
-		2: "CUSTOMER_CANNOT_CREATE_github.com/the-herald/monthly_reporter/reporter/shared_SET_OF_THIS_TYPE",
+		2: "CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE",
 		3: "DUPLICATE_NAME",
-		4: "github.com/the-herald/monthly_reporter/reporter/shared_SET_REMOVED",
-		5: "github.com/the-herald/monthly_reporter/reporter/shared_SET_IN_USE",
+		4: "SHARED_SET_REMOVED",
+		5: "SHARED_SET_IN_USE",
 	}
-	github.com/the-herald/monthly_reporter/reporter/sharedSetError_value = map[string]int32{
+	SHAREDSetError_value = map[string]int32{
 		"UNSPECIFIED": 0,
 		"UNKNOWN":     1,
-		"CUSTOMER_CANNOT_CREATE_github.com/the-herald/monthly_reporter/reporter/shared_SET_OF_THIS_TYPE": 2,
+		"CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE": 2,
 		"DUPLICATE_NAME":     3,
-		"github.com/the-herald/monthly_reporter/reporter/shared_SET_REMOVED": 4,
-		"github.com/the-herald/monthly_reporter/reporter/shared_SET_IN_USE":  5,
+		"SHARED_SET_REMOVED": 4,
+		"SHARED_SET_IN_USE":  5,
 	}
 )
 
-func (x github.com/the-herald/monthly_reporter/reporter/sharedSetError) Enum() *github.com/the-herald/monthly_reporter/reporter/sharedSetError {
-	p := new(github.com/the-herald/monthly_reporter/reporter/sharedSetError)
+func (x SHAREDSetError) Enum() *SHAREDSetError {
+	p := new(SHAREDSetError)
 	*p = x
 	return p
 }
 
-func (x github.com/the-herald/monthly_reporter/reporter/sharedSetError) String() string {
+func (x SHAREDSetError) String() string {
 	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
 }
 
-func (github.com/the-herald/monthly_reporter/reporter/sharedSetError) Descriptor() protoreflect.EnumDescriptor {
-	return file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_enumTypes[0].Descriptor()
+func (SHAREDSetError) Descriptor() protoreflect.EnumDescriptor {
+	return file_google_ads_googleads_v20_errors_SHARED_set_error_proto_enumTypes[0].Descriptor()
 }
 
-func (github.com/the-herald/monthly_reporter/reporter/sharedSetError) Type() protoreflect.EnumType {
-	return &file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_enumTypes[0]
+func (SHAREDSetError) Type() protoreflect.EnumType {
+	return &file_google_ads_googleads_v20_errors_SHARED_set_error_proto_enumTypes[0]
 }
 
-func (x github.com/the-herald/monthly_reporter/reporter/sharedSetError) Number() protoreflect.EnumNumber {
+func (x SHAREDSetError) Number() protoreflect.EnumNumber {
 	return protoreflect.EnumNumber(x)
 }
 
-// Deprecated: Use github.com/the-herald/monthly_reporter/reporter/sharedSetError.Descriptor instead.
-func (github.com/the-herald/monthly_reporter/reporter/sharedSetError) EnumDescriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescGZIP(), []int{0, 0}
+// Deprecated: Use SHAREDSetError.Descriptor instead.
+func (SHAREDSetError) EnumDescriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescGZIP(), []int{0, 0}
 }
 
-// Container for enum describing possible github.com/the-herald/monthly_reporter/reporter/shared set errors.
-type github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum struct {
+// Container for enum describing possible SHARED set errors.
+type SHAREDSetErrorEnum struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum) Reset() {
-	*x = github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum{}
-	mi := &file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_msgTypes[0]
+func (x *SHAREDSetErrorEnum) Reset() {
+	*x = SHAREDSetErrorEnum{}
+	mi := &file_google_ads_googleads_v20_errors_SHARED_set_error_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum) String() string {
+func (x *SHAREDSetErrorEnum) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum) ProtoMessage() {}
+func (*SHAREDSetErrorEnum) ProtoMessage() {}
 
-func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_msgTypes[0]
+func (x *SHAREDSetErrorEnum) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_errors_SHARED_set_error_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -132,45 +132,45 @@ func (x *github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum) Pro
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum.ProtoReflect.Descriptor instead.
-func (*github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use SHAREDSetErrorEnum.ProtoReflect.Descriptor instead.
+func (*SHAREDSetErrorEnum) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescGZIP(), []int{0}
 }
 
-var File_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto protoreflect.FileDescriptor
+var File_google_ads_googleads_v20_errors_SHARED_set_error_proto protoreflect.FileDescriptor
 
-const file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDesc = "" +
+const file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDesc = "" +
 	"\n" +
-	"6google/ads/googleads/v20/errors/github.com/the-herald/monthly_reporter/reporter/shared_set_error.proto\x12\x1fgoogle.ads.googleads.v20.errors\"\xbc\x01\n" +
-	"\x12github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum\"\xa5\x01\n" +
-	"\x0egithub.com/the-herald/monthly_reporter/reporter/sharedSetError\x12\x0f\n" +
+	"6google/ads/googleads/v20/errors/SHARED_set_error.proto\x12\x1fgoogle.ads.googleads.v20.errors\"\xbc\x01\n" +
+	"\x12SHAREDSetErrorEnum\"\xa5\x01\n" +
+	"\x0eSHAREDSetError\x12\x0f\n" +
 	"\vUNSPECIFIED\x10\x00\x12\v\n" +
 	"\aUNKNOWN\x10\x01\x122\n" +
-	".CUSTOMER_CANNOT_CREATE_github.com/the-herald/monthly_reporter/reporter/shared_SET_OF_THIS_TYPE\x10\x02\x12\x12\n" +
+	".CUSTOMER_CANNOT_CREATE_SHARED_SET_OF_THIS_TYPE\x10\x02\x12\x12\n" +
 	"\x0eDUPLICATE_NAME\x10\x03\x12\x16\n" +
-	"\x12github.com/the-herald/monthly_reporter/reporter/shared_SET_REMOVED\x10\x04\x12\x15\n" +
-	"\x11github.com/the-herald/monthly_reporter/reporter/shared_SET_IN_USE\x10\x05B\xf3\x01\n" +
-	"#com.google.ads.googleads.v20.errorsB\x13github.com/the-herald/monthly_reporter/reporter/sharedSetErrorProtoP\x01ZEgoogle.golang.org/genproto/googleapis/ads/googleads/v20/errors;errors\xa2\x02\x03GAA\xaa\x02\x1fGoogle.Ads.GoogleAds.V20.Errors\xca\x02\x1fGoogle\\Ads\\GoogleAds\\V20\\Errors\xea\x02#Google::Ads::GoogleAds::V20::Errorsb\x06proto3"
+	"\x12SHARED_SET_REMOVED\x10\x04\x12\x15\n" +
+	"\x11SHARED_SET_IN_USE\x10\x05B\xf3\x01\n" +
+	"#com.google.ads.googleads.v20.errorsB\x13SHAREDSetErrorProtoP\x01ZEgoogle.golang.org/genproto/googleapis/ads/googleads/v20/errors;errors\xa2\x02\x03GAA\xaa\x02\x1fGoogle.Ads.GoogleAds.V20.Errors\xca\x02\x1fGoogle\\Ads\\GoogleAds\\V20\\Errors\xea\x02#Google::Ads::GoogleAds::V20::Errorsb\x06proto3"
 
 var (
-	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescOnce sync.Once
-	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescData []byte
+	file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescOnce sync.Once
+	file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescData []byte
 )
 
-func file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescGZIP() []byte {
-	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescOnce.Do(func() {
-		file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDesc), len(file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDesc)))
+func file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescGZIP() []byte {
+	file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescOnce.Do(func() {
+		file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDesc), len(file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDesc)))
 	})
-	return file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDescData
+	return file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDescData
 }
 
-var file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_goTypes = []any{
-	(github.com/the-herald/monthly_reporter/reporter/sharedSetError)(0), // 0: google.ads.googleads.v20.errors.github.com/the-herald/monthly_reporter/reporter/sharedSetError
-	(*github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum
+var file_google_ads_googleads_v20_errors_SHARED_set_error_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_google_ads_googleads_v20_errors_SHARED_set_error_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_google_ads_googleads_v20_errors_SHARED_set_error_proto_goTypes = []any{
+	(SHAREDSetError)(0), // 0: google.ads.googleads.v20.errors.SHAREDSetError
+	(*SHAREDSetErrorEnum
 }
-var file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_depIdxs = []int32{
+var file_google_ads_googleads_v20_errors_SHARED_set_error_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -178,27 +178,27 @@ var file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_init() }
-func file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_init() {
-	if File_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto != nil {
+func init() { file_google_ads_googleads_v20_errors_SHARED_set_error_proto_init() }
+func file_google_ads_googleads_v20_errors_SHARED_set_error_proto_init() {
+	if File_google_ads_googleads_v20_errors_SHARED_set_error_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_errors_SHARED_set_error_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_goTypes,
-		DependencyIndexes: file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_depIdxs,
-		EnumInfos:         file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_enumTypes,
-		MessageInfos:      file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_msgTypes,
+		GoTypes:           file_google_ads_googleads_v20_errors_SHARED_set_error_proto_goTypes,
+		DependencyIndexes: file_google_ads_googleads_v20_errors_SHARED_set_error_proto_depIdxs,
+		EnumInfos:         file_google_ads_googleads_v20_errors_SHARED_set_error_proto_enumTypes,
+		MessageInfos:      file_google_ads_googleads_v20_errors_SHARED_set_error_proto_msgTypes,
 	}.Build()
-	File_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto = out.File
-	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_goTypes = nil
-	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_depIdxs = nil
+	File_google_ads_googleads_v20_errors_SHARED_set_error_proto = out.File
+	file_google_ads_googleads_v20_errors_SHARED_set_error_proto_goTypes = nil
+	file_google_ads_googleads_v20_errors_SHARED_set_error_proto_depIdxs = nil
 }

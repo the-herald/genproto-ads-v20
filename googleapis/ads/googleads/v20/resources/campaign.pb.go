@@ -152,7 +152,7 @@ type Campaign struct {
 	// of the unrestricted attributes of the attached portfolio bidding strategy
 	// identified by 'bidding_strategy'. Empty, if the campaign does not use a
 	// portfolio strategy. Unrestricted strategy attributes are available to all
-	// customers with whom the strategy is github.com/the-herald/monthly_reporter/reporter/shared and are read from the
+	// customers with whom the strategy is SHARED and are read from the
 	// AccessibleBiddingStrategy resource. In contrast, restricted attributes are
 	// only available to the owner customer of the strategy and their managers.
 	// Restricted attributes can only be read from the BiddingStrategy resource.
