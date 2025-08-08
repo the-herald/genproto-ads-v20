@@ -1,4 +1,4 @@
-﻿module google.golang.org/genproto/googleapis/ads/googleads/v20
+module google.golang.org/genproto
 
 go 1.20
 
