@@ -1,0 +1,7 @@
+﻿bin/
+obj/
+*.exe
+*.test
+*.out
+.vscode/
+.idea/
