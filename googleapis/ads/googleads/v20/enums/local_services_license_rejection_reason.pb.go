@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -219,3 +219,4 @@ func file_google_ads_googleads_v20_enums_local_services_license_rejection_reason
 	file_google_ads_googleads_v20_enums_local_services_license_rejection_reason_proto_goTypes = nil
 	file_google_ads_googleads_v20_enums_local_services_license_rejection_reason_proto_depIdxs = nil
 }
+

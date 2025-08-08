@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -700,7 +700,7 @@ func (x *FlexibleRuleOperandInfo) GetLookbackWindowDays() int64 {
 }
 
 // Flexible rule representation of visitors with one or multiple actions. The
-// flexible user list is defined by two lists of operands – inclusive_operands
+// flexible user list is defined by two lists of operands â€“ inclusive_operands
 // and exclusive_operands; each operand represents a set of users based on
 // actions they took in a given timeframe. These lists of operands are combined
 // with the AND_NOT operator, so that users represented by the inclusive
@@ -786,7 +786,7 @@ type RuleBasedUserListInfo struct {
 	// if the request fails.
 	PrepopulationStatus enums.UserListPrepopulationStatusEnum_UserListPrepopulationStatus `protobuf:"varint,1,opt,name=prepopulation_status,json=prepopulationStatus,proto3,enum=google.ads.googleads.v20.enums.UserListPrepopulationStatusEnum_UserListPrepopulationStatus" json:"prepopulation_status,omitempty"`
 	// Flexible rule representation of visitors with one or multiple actions. The
-	// flexible user list is defined by two lists of operands – inclusive_operands
+	// flexible user list is defined by two lists of operands â€“ inclusive_operands
 	// and exclusive_operands; each operand represents a set of users based on
 	// actions they took in a given timeframe. These lists of operands are
 	// combined with the AND_NOT operator, so that users represented by the
@@ -1309,3 +1309,4 @@ func file_google_ads_googleads_v20_common_user_lists_proto_init() {
 	file_google_ads_googleads_v20_common_user_lists_proto_goTypes = nil
 	file_google_ads_googleads_v20_common_user_lists_proto_depIdxs = nil
 }
+

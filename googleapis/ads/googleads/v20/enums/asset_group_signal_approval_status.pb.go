@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -52,7 +52,7 @@ const (
 	// Theme usually means there's an issue with one or more of our advertising
 	// policies.
 	AssetGroupSignalApprovalStatusEnum_DISAPPROVED AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus = 4
-	// Search Theme is under review. It won’t be able to trigger ads until
+	// Search Theme is under review. It wonâ€™t be able to trigger ads until
 	// it's been reviewed.
 	AssetGroupSignalApprovalStatusEnum_UNDER_REVIEW AssetGroupSignalApprovalStatusEnum_AssetGroupSignalApprovalStatus = 5
 )
@@ -207,3 +207,4 @@ func file_google_ads_googleads_v20_enums_asset_group_signal_approval_status_prot
 	file_google_ads_googleads_v20_enums_asset_group_signal_approval_status_proto_goTypes = nil
 	file_google_ads_googleads_v20_enums_asset_group_signal_approval_status_proto_depIdxs = nil
 }
+

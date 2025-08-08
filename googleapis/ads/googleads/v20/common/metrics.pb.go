@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -2714,7 +2714,7 @@ var File_google_ads_googleads_v20_common_metrics_proto protoreflect.FileDescript
 
 const file_google_ads_googleads_v20_common_metrics_proto_rawDesc = "" +
 	"\n" +
-	"-google/ads/googleads/v20/common/metrics.proto\x12\x1fgoogle.ads.googleads.v20.common\x1a;google/ads/googleads/v20/enums/interaction_event_type.proto\x1a9google/ads/googleads/v20/enums/quality_score_bucket.proto\"ۻ\x01\n" +
+	"-google/ads/googleads/v20/common/metrics.proto\x12\x1fgoogle.ads.googleads.v20.common\x1a;google/ads/googleads/v20/enums/interaction_event_type.proto\x1a9google/ads/googleads/v20/enums/quality_score_bucket.proto\"Û»\x01\n" +
 	"\aMetrics\x12Q\n" +
 	"\"absolute_top_impression_percentage\x18\xb7\x01 \x01(\x01H\x00R\x1fabsoluteTopImpressionPercentage\x88\x01\x01\x12,\n" +
 	"\x0factive_view_cpm\x18\xb8\x01 \x01(\x01H\x01R\ractiveViewCpm\x88\x01\x01\x12,\n" +
@@ -3213,3 +3213,4 @@ func file_google_ads_googleads_v20_common_metrics_proto_init() {
 	file_google_ads_googleads_v20_common_metrics_proto_goTypes = nil
 	file_google_ads_googleads_v20_common_metrics_proto_depIdxs = nil
 }
+

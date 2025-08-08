@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -252,7 +252,7 @@ type isCustomAudienceMember_Value interface {
 }
 
 type CustomAudienceMember_Keyword struct {
-	// A keyword or keyword phrase — at most 10 words and 80 characters.
+	// A keyword or keyword phrase â€” at most 10 words and 80 characters.
 	// Languages with double-width characters such as Chinese, Japanese,
 	// or Korean, are allowed 40 characters, which describes the user's
 	// interests or actions.
@@ -260,7 +260,7 @@ type CustomAudienceMember_Keyword struct {
 }
 
 type CustomAudienceMember_Url struct {
-	// An HTTP URL, protocol-included — at most 2048 characters, which includes
+	// An HTTP URL, protocol-included â€” at most 2048 characters, which includes
 	// contents users have interests in.
 	Url string `protobuf:"bytes,3,opt,name=url,proto3,oneof"`
 }
@@ -370,3 +370,4 @@ func file_google_ads_googleads_v20_resources_custom_audience_proto_init() {
 	file_google_ads_googleads_v20_resources_custom_audience_proto_goTypes = nil
 	file_google_ads_googleads_v20_resources_custom_audience_proto_depIdxs = nil
 }
+

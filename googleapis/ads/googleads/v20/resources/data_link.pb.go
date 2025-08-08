@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -162,7 +162,7 @@ func (*DataLink_YoutubeVideo) isDataLink_DataLinkEntity() {}
 type YoutubeVideoIdentifier struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// Immutable. The ID of the hosting channel of the video. This is a string
-	// value with “UC” prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
+	// value with â€œUCâ€ prefix. For example, "UCK8sQmJBp8GCxrOtXWBpyEA".
 	ChannelId *string `protobuf:"bytes,1,opt,name=channel_id,json=channelId,proto3,oneof" json:"channel_id,omitempty"`
 	// Immutable. The ID of the video associated with the video link. This is the
 	// 11 character string value used in the YouTube video URL. For example, video
@@ -300,3 +300,4 @@ func file_google_ads_googleads_v20_resources_data_link_proto_init() {
 	file_google_ads_googleads_v20_resources_data_link_proto_goTypes = nil
 	file_google_ads_googleads_v20_resources_data_link_proto_depIdxs = nil
 }
+

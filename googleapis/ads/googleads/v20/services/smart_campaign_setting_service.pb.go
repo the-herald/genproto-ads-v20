@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -139,12 +139,12 @@ type SmartCampaignEligibleDetails struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The timestamp of the last impression observed in the last 48 hours for this
 	// campaign.
-	// The timestamp is in the customer’s timezone and in
-	// “yyyy-MM-dd HH:mm:ss” format.
+	// The timestamp is in the customerâ€™s timezone and in
+	// â€œyyyy-MM-dd HH:mm:ssâ€ format.
 	LastImpressionDateTime *string `protobuf:"bytes,1,opt,name=last_impression_date_time,json=lastImpressionDateTime,proto3,oneof" json:"last_impression_date_time,omitempty"`
 	// The timestamp of when the campaign will end, if applicable.
-	// The timestamp is in the customer’s timezone and in
-	// “yyyy-MM-dd HH:mm:ss” format.
+	// The timestamp is in the customerâ€™s timezone and in
+	// â€œyyyy-MM-dd HH:mm:ssâ€ format.
 	EndDateTime   *string `protobuf:"bytes,2,opt,name=end_date_time,json=endDateTime,proto3,oneof" json:"end_date_time,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -198,8 +198,8 @@ func (x *SmartCampaignEligibleDetails) GetEndDateTime() string {
 type SmartCampaignPausedDetails struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The timestamp of when the campaign was last paused.
-	// The timestamp is in the customer’s timezone and in
-	// “yyyy-MM-dd HH:mm:ss” format.
+	// The timestamp is in the customerâ€™s timezone and in
+	// â€œyyyy-MM-dd HH:mm:ssâ€ format.
 	PausedDateTime *string `protobuf:"bytes,1,opt,name=paused_date_time,json=pausedDateTime,proto3,oneof" json:"paused_date_time,omitempty"`
 	unknownFields  protoimpl.UnknownFields
 	sizeCache      protoimpl.SizeCache
@@ -246,8 +246,8 @@ func (x *SmartCampaignPausedDetails) GetPausedDateTime() string {
 type SmartCampaignRemovedDetails struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The timestamp of when the campaign was removed.
-	// The timestamp is in the customer’s timezone and in
-	// “yyyy-MM-dd HH:mm:ss” format.
+	// The timestamp is in the customerâ€™s timezone and in
+	// â€œyyyy-MM-dd HH:mm:ssâ€ format.
 	RemovedDateTime *string `protobuf:"bytes,1,opt,name=removed_date_time,json=removedDateTime,proto3,oneof" json:"removed_date_time,omitempty"`
 	unknownFields   protoimpl.UnknownFields
 	sizeCache       protoimpl.SizeCache
@@ -294,8 +294,8 @@ func (x *SmartCampaignRemovedDetails) GetRemovedDateTime() string {
 type SmartCampaignEndedDetails struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The timestamp of when the campaign ended.
-	// The timestamp is in the customer’s timezone and in
-	// “yyyy-MM-dd HH:mm:ss” format.
+	// The timestamp is in the customerâ€™s timezone and in
+	// â€œyyyy-MM-dd HH:mm:ssâ€ format.
 	EndDateTime   *string `protobuf:"bytes,1,opt,name=end_date_time,json=endDateTime,proto3,oneof" json:"end_date_time,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -903,3 +903,4 @@ func file_google_ads_googleads_v20_services_smart_campaign_setting_service_proto
 	file_google_ads_googleads_v20_services_smart_campaign_setting_service_proto_goTypes = nil
 	file_google_ads_googleads_v20_services_smart_campaign_setting_service_proto_depIdxs = nil
 }
+

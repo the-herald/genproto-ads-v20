@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -943,7 +943,7 @@ func (x *LineupAttributeMetadata) GetSampleChannels() []*LineupAttributeMetadata
 // Metadata associated with a Location attribute.
 type LocationAttributeMetadata struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// The country location that this attribute’s sub country location is located
+	// The country location that this attributeâ€™s sub country location is located
 	// in.
 	CountryLocation *LocationInfo `protobuf:"bytes,1,opt,name=country_location,json=countryLocation,proto3" json:"country_location,omitempty"`
 	unknownFields   protoimpl.UnknownFields
@@ -1343,3 +1343,4 @@ func file_google_ads_googleads_v20_common_audience_insights_attribute_proto_init
 	file_google_ads_googleads_v20_common_audience_insights_attribute_proto_goTypes = nil
 	file_google_ads_googleads_v20_common_audience_insights_attribute_proto_depIdxs = nil
 }
+

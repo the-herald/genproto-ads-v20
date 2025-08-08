@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ const (
 	// Medical device website with website content in English.
 	VanityPharmaTextEnum_MEDICAL_DEVICE_WEBSITE_EN VanityPharmaTextEnum_VanityPharmaText = 6
 	// Medical device website with website content in Spanish (Sitio de
-	// dispositivos médicos).
+	// dispositivos mÃ©dicos).
 	VanityPharmaTextEnum_MEDICAL_DEVICE_WEBSITE_ES VanityPharmaTextEnum_VanityPharmaText = 7
 	// Preventative treatment website with website content in English.
 	VanityPharmaTextEnum_PREVENTATIVE_TREATMENT_WEBSITE_EN VanityPharmaTextEnum_VanityPharmaText = 8
@@ -250,3 +250,4 @@ func file_google_ads_googleads_v20_enums_vanity_pharma_text_proto_init() {
 	file_google_ads_googleads_v20_enums_vanity_pharma_text_proto_goTypes = nil
 	file_google_ads_googleads_v20_enums_vanity_pharma_text_proto_depIdxs = nil
 }
+

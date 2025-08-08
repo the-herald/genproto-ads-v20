@@ -1,4 +1,4 @@
-// Copyright 2025 Google LLC
+﻿// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -197,7 +197,7 @@ type GeoTargetConstantSuggestion struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// The language this GeoTargetConstantSuggestion is currently translated to.
 	// It affects the name of geo target fields. For example, if locale=en, then
-	// name=Spain. If locale=es, then name=España. The default locale will be
+	// name=Spain. If locale=es, then name=EspaÃ±a. The default locale will be
 	// returned if no translation exists for the locale in the request.
 	Locale *string `protobuf:"bytes,6,opt,name=locale,proto3,oneof" json:"locale,omitempty"`
 	// Approximate user population that will be targeted, rounded to the
@@ -470,3 +470,4 @@ func file_google_ads_googleads_v20_services_geo_target_constant_service_proto_in
 	file_google_ads_googleads_v20_services_geo_target_constant_service_proto_goTypes = nil
 	file_google_ads_googleads_v20_services_geo_target_constant_service_proto_depIdxs = nil
 }
+
