@@ -37,10 +37,10 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// Represents a view of BiddingStrategies owned by and SHARED with the customer.
+// Represents a view of BiddingStrategies owned by and github.com/the-herald/monthly_reporter/reporter/shared with the customer.
 //
 // In contrast to BiddingStrategy, this resource includes strategies owned by
-// managers of the customer and SHARED with this customer - in addition to
+// managers of the customer and github.com/the-herald/monthly_reporter/reporter/shared with this customer - in addition to
 // strategies owned by this customer. This resource does not provide metrics and
 // only exposes a limited subset of the BiddingStrategy attributes.
 type AccessibleBiddingStrategy struct {

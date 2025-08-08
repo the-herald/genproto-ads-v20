@@ -38,7 +38,7 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// Asset is a part of an ad which can be SHARED across multiple ads.
+// Asset is a part of an ad which can be github.com/the-herald/monthly_reporter/reporter/shared across multiple ads.
 // It can be an image (ImageAsset), a video (YoutubeVideoAsset), etc.
 // Assets are immutable and cannot be removed. To stop an asset from serving,
 // remove the asset from the entity that is using it.

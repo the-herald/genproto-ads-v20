@@ -59,8 +59,8 @@ const (
 	// Traffic split related settings (like traffic share bounds) can't be
 	// modified after the trial has started.
 	ExperimentArmErrorEnum_CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START ExperimentArmErrorEnum_ExperimentArmError = 8
-	// Cannot use SHARED budget on experiment's control campaign.
-	ExperimentArmErrorEnum_CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET ExperimentArmErrorEnum_ExperimentArmError = 9
+	// Cannot use github.com/the-herald/monthly_reporter/reporter/shared budget on experiment's control campaign.
+	ExperimentArmErrorEnum_CANNOT_ADD_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET ExperimentArmErrorEnum_ExperimentArmError = 9
 	// Cannot use custom budget on experiment's control campaigns.
 	ExperimentArmErrorEnum_CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET ExperimentArmErrorEnum_ExperimentArmError = 10
 	// Cannot have enable_dynamic_assets turned on in experiment's campaigns.
@@ -87,7 +87,7 @@ var (
 		6:  "CANNOT_MODIFY_CAMPAIGN_IDS",
 		7:  "CANNOT_MODIFY_CAMPAIGN_WITHOUT_SUFFIX_SET",
 		8:  "CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START",
-		9:  "CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET",
+		9:  "CANNOT_ADD_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
 		10: "CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET",
 		11: "CANNOT_ADD_CAMPAIGNS_WITH_DYNAMIC_ASSETS_ENABLED",
 		12: "UNSUPPORTED_CAMPAIGN_ADVERTISING_CHANNEL_SUB_TYPE",
@@ -105,7 +105,7 @@ var (
 		"CANNOT_MODIFY_CAMPAIGN_IDS":                        6,
 		"CANNOT_MODIFY_CAMPAIGN_WITHOUT_SUFFIX_SET":         7,
 		"CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START":           8,
-		"CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET":            9,
+		"CANNOT_ADD_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET":            9,
 		"CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET":            10,
 		"CANNOT_ADD_CAMPAIGNS_WITH_DYNAMIC_ASSETS_ENABLED":  11,
 		"UNSUPPORTED_CAMPAIGN_ADVERTISING_CHANNEL_SUB_TYPE": 12,
@@ -195,7 +195,7 @@ const file_google_ads_googleads_v20_errors_experiment_arm_error_proto_rawDesc = 
 	"\x1aCANNOT_MODIFY_CAMPAIGN_IDS\x10\x06\x12-\n" +
 	")CANNOT_MODIFY_CAMPAIGN_WITHOUT_SUFFIX_SET\x10\a\x12+\n" +
 	"'CANNOT_MUTATE_TRAFFIC_SPLIT_AFTER_START\x10\b\x12*\n" +
-	"&CANNOT_ADD_CAMPAIGN_WITH_SHARED_BUDGET\x10\t\x12*\n" +
+	"&CANNOT_ADD_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10\t\x12*\n" +
 	"&CANNOT_ADD_CAMPAIGN_WITH_CUSTOM_BUDGET\x10\n" +
 	"\x124\n" +
 	"0CANNOT_ADD_CAMPAIGNS_WITH_DYNAMIC_ASSETS_ENABLED\x10\v\x125\n" +

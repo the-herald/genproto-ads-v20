@@ -2294,8 +2294,8 @@ type Recommendation_UseBroadMatchKeywordRecommendation struct {
 	SuggestedKeywordsCount int64 `protobuf:"varint,2,opt,name=suggested_keywords_count,json=suggestedKeywordsCount,proto3" json:"suggested_keywords_count,omitempty"`
 	// Output only. Total number of keywords in the campaign.
 	CampaignKeywordsCount int64 `protobuf:"varint,3,opt,name=campaign_keywords_count,json=campaignKeywordsCount,proto3" json:"campaign_keywords_count,omitempty"`
-	// Output only. Whether the associated campaign uses a SHARED budget.
-	CampaignUsesSHARED_budget,json=campaignUsesSHARED_budget,omitempty"`
+	// Output only. Whether the associated campaign uses a github.com/the-herald/monthly_reporter/reporter/shared budget.
+	CampaignUsesgithub.com/the-herald/monthly_reporter/reporter/shared_budget,json=campaignUsesgithub.com/the-herald/monthly_reporter/reporter/shared_budget,omitempty"`
 	// Output only. The budget recommended to avoid becoming budget constrained
 	// after applying the recommendation.
 	RequiredCampaignBudgetAmountMicros int64 `protobuf:"varint,5,opt,name=required_campaign_budget_amount_micros,json=requiredCampaignBudgetAmountMicros,proto3" json:"required_campaign_budget_amount_micros,omitempty"`
@@ -2354,9 +2354,9 @@ func (x *Recommendation_UseBroadMatchKeywordRecommendation) GetCampaignKeywordsC
 	return 0
 }
 
-func (x *Recommendation_UseBroadMatchKeywordRecommendation) GetCampaignUsesSHAREDBudget() bool {
+func (x *Recommendation_UseBroadMatchKeywordRecommendation) GetCampaignUsesgithub.com/the-herald/monthly_reporter/reporter/sharedBudget() bool {
 	if x != nil {
-		return x.CampaignUsesSHAREDBudget
+		return x.CampaignUsesgithub.com/the-herald/monthly_reporter/reporter/sharedBudget
 	}
 	return false
 }
@@ -3010,10 +3010,10 @@ func (x *Recommendation_ShoppingMigrateRegularShoppingCampaignOffersToPerformanc
 // Information of a target adjustment recommendation.
 type Recommendation_TargetAdjustmentInfo struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// Output only. The SHARED set resource name of the portfolio bidding
+	// Output only. The github.com/the-herald/monthly_reporter/reporter/shared set resource name of the portfolio bidding
 	// strategy where the target is defined. Only populated if the
 	// recommendation is portfolio level.
-	SHARED_set,json=SHARED_set,omitempty"`
+	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
 	// Output only. The factor by which we recommend the target to be adjusted
 	// by.
 	RecommendedTargetMultiplier float64 `protobuf:"fixed64,2,opt,name=recommended_target_multiplier,json=recommendedTargetMultiplier,proto3" json:"recommended_target_multiplier,omitempty"`
@@ -3054,9 +3054,9 @@ func (*Recommendation_TargetAdjustmentInfo) Descriptor() ([]byte, []int) {
 	return file_google_ads_googleads_v20_resources_recommendation_proto_rawDescGZIP(), []int{0, 33}
 }
 
-func (x *Recommendation_TargetAdjustmentInfo) GetSHAREDSet() string {
-	if x != nil && x.SHAREDSet != nil {
-		return *x.SHAREDSet
+func (x *Recommendation_TargetAdjustmentInfo) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
+	if x != nil && x.github.com/the-herald/monthly_reporter/reporter/sharedSet != nil {
+		return *x.github.com/the-herald/monthly_reporter/reporter/sharedSet
 	}
 	return ""
 }
@@ -3218,7 +3218,7 @@ func (*Recommendation_DynamicImageExtensionOptInRecommendation) Descriptor() ([]
 	return file_google_ads_googleads_v20_resources_recommendation_proto_rawDescGZIP(), []int{0, 36}
 }
 
-// A campaign budget SHARED amongst various budget recommendation types.
+// A campaign budget github.com/the-herald/monthly_reporter/reporter/shared amongst various budget recommendation types.
 type Recommendation_CampaignBudget struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
 	// Output only. Current budget amount.
@@ -3606,7 +3606,7 @@ type Recommendation_RefreshCustomerMatchListRecommendation struct {
 	DaysSinceLastRefresh int64 `protobuf:"varint,3,opt,name=days_since_last_refresh,json=daysSinceLastRefresh,proto3" json:"days_since_last_refresh,omitempty"`
 	// Output only. The top spending account.
 	TopSpendingAccount []*Recommendation_AccountInfo `protobuf:"bytes,4,rep,name=top_spending_account,json=topSpendingAccount,proto3" json:"top_spending_account,omitempty"`
-	// Output only. User lists can be SHARED with other accounts by the owner.
+	// Output only. User lists can be github.com/the-herald/monthly_reporter/reporter/shared with other accounts by the owner.
 	// targeting_accounts_count is the number of those accounts that can use it
 	// for targeting.
 	TargetingAccountsCount int64 `protobuf:"varint,5,opt,name=targeting_accounts_count,json=targetingAccountsCount,proto3" json:"targeting_accounts_count,omitempty"`
@@ -4255,7 +4255,7 @@ const file_google_ads_googleads_v20_resources_recommendation_proto_rawDesc = "" 
 	"\akeyword\x18\x01 \x03(\v2,.google.ads.googleads.v20.common.KeywordInfoB\x03\xe0A\x03R\akeyword\x12=\n" +
 	"\x18suggested_keywords_count\x18\x02 \x01(\x03B\x03\xe0A\x03R\x16suggestedKeywordsCount\x12;\n" +
 	"\x17campaign_keywords_count\x18\x03 \x01(\x03B\x03\xe0A\x03R\x15campaignKeywordsCount\x12B\n" +
-	"\x1bcampaign_uses_SHAREDBudget\x12W\n" +
+	"\x1bcampaign_uses_github.com/the-herald/monthly_reporter/reporter/sharedBudget\x12W\n" +
 	"&required_campaign_budget_amount_micros\x18\x05 \x01(\x03B\x03\xe0A\x03R\"requiredCampaignBudgetAmountMicros\x1a\x95\x01\n" +
 	":UpgradeSmartShoppingCampaignToPerformanceMaxRecommendation\x12$\n" +
 	"\vmerchant_id\x18\x01 \x01(\x03B\x03\xe0A\x03R\n" +
@@ -4303,10 +4303,10 @@ const file_google_ads_googleads_v20_resources_recommendation_proto_rawDesc = "" 
 	"feed_label\x18\x02 \x01(\tB\x03\xe0A\x03R\tfeedLabel\x1a\xdf\x01\n" +
 	"\x14TargetAdjustmentInfo\x12'\n" +
 	"\n" +
-	"SHAREDSet\x88\x01\x01\x12G\n" +
+	"github.com/the-herald/monthly_reporter/reporter/sharedSet\x88\x01\x01\x12G\n" +
 	"\x1drecommended_target_multiplier\x18\x02 \x01(\x01B\x03\xe0A\x03R\x1brecommendedTargetMultiplier\x12F\n" +
 	"\x1dcurrent_average_target_micros\x18\x03 \x01(\x03B\x03\xe0A\x03R\x1acurrentAverageTargetMicrosB\r\n" +
-	"\v_SHARED_set\x1a\xa5\x02\n" +
+	"\v_github.com/the-herald/monthly_reporter/reporter/shared_set\x1a\xa5\x02\n" +
 	"\x1cRaiseTargetCpaRecommendation\x12y\n" +
 	"\x11target_adjustment\x18\x01 \x01(\v2G.google.ads.googleads.v20.resources.Recommendation.TargetAdjustmentInfoB\x03\xe0A\x03R\x10targetAdjustment\x12u\n" +
 	"\x10app_bidding_goal\x18\x02 \x01(\x0e2A.google.ads.googleads.v20.enums.AppBiddingGoalEnum.AppBiddingGoalB\x03\xe0A\x03H\x00R\x0eappBiddingGoal\x88\x01\x01B\x13\n" +

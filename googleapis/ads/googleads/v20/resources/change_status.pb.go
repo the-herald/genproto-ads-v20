@@ -67,10 +67,10 @@ type ChangeStatus struct {
 	CampaignCriterion *string `protobuf:"bytes,27,opt,name=campaign_criterion,json=campaignCriterion,proto3,oneof" json:"campaign_criterion,omitempty"`
 	// Output only. The AdGroupBidModifier affected by this change.
 	AdGroupBidModifier *string `protobuf:"bytes,32,opt,name=ad_group_bid_modifier,json=adGroupBidModifier,proto3,oneof" json:"ad_group_bid_modifier,omitempty"`
-	// Output only. The SHAREDSet affected by this change.
-	SHARED_set,json=SHARED_set,omitempty"`
-	// Output only. The CampaignSHAREDSet affected by this change.
-	CampaignSHARED_set,json=campaignSHARED_set,omitempty"`
+	// Output only. The github.com/the-herald/monthly_reporter/reporter/sharedSet affected by this change.
+	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	// Output only. The Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet affected by this change.
+	Campaigngithub.com/the-herald/monthly_reporter/reporter/shared_set,json=campaigngithub.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
 	// Output only. The Asset affected by this change.
 	Asset string `protobuf:"bytes,35,opt,name=asset,proto3" json:"asset,omitempty"`
 	// Output only. The CustomerAsset affected by this change.
@@ -189,16 +189,16 @@ func (x *ChangeStatus) GetAdGroupBidModifier() string {
 	return ""
 }
 
-func (x *ChangeStatus) GetSHAREDSet() string {
+func (x *ChangeStatus) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
 	if x != nil {
-		return x.SHAREDSet
+		return x.github.com/the-herald/monthly_reporter/reporter/sharedSet
 	}
 	return ""
 }
 
-func (x *ChangeStatus) GetCampaignSHAREDSet() string {
+func (x *ChangeStatus) GetCampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
 	if x != nil {
-		return x.CampaignSHAREDSet
+		return x.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet
 	}
 	return ""
 }
@@ -276,10 +276,10 @@ const file_google_ads_googleads_v20_resources_change_status_proto_rawDesc = "" +
 	"\x15ad_group_bid_modifier\x18  \x01(\tB3\xe0A\x03\xfaA-\n" +
 	"+googleads.googleapis.com/AdGroupBidModifierH\x06R\x12adGroupBidModifier\x88\x01\x01\x12I\n" +
 	"\n" +
-	"SHARED_set\x18! \x01(\tB*\xe0A\x03\xfaA$\n" +
-	"\"googleads.googleapis.com/SHAREDSet\x12b\n" +
-	"\x13campaign_SHARED_set\x18\" \x01(\tB2\xe0A\x03\xfaA,\n" +
-	"*googleads.googleapis.com/CampaignSHAREDSet\x12<\n" +
+	"github.com/the-herald/monthly_reporter/reporter/shared_set\x18! \x01(\tB*\xe0A\x03\xfaA$\n" +
+	"\"googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedSet\x12b\n" +
+	"\x13campaign_github.com/the-herald/monthly_reporter/reporter/shared_set\x18\" \x01(\tB2\xe0A\x03\xfaA,\n" +
+	"*googleads.googleapis.com/Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet\x12<\n" +
 	"\x05asset\x18# \x01(\tB&\xe0A\x03\xfaA \n" +
 	"\x1egoogleads.googleapis.com/AssetR\x05asset\x12U\n" +
 	"\x0ecustomer_asset\x18$ \x01(\tB.\xe0A\x03\xfaA(\n" +

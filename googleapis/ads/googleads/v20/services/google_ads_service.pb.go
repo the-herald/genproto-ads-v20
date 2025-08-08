@@ -515,8 +515,8 @@ type GoogleAdsRow struct {
 	CampaignLifecycleGoal *resources.CampaignLifecycleGoal `protobuf:"bytes,213,opt,name=campaign_lifecycle_goal,json=campaignLifecycleGoal,proto3" json:"campaign_lifecycle_goal,omitempty"`
 	// The campaign search term insight referenced in the query.
 	CampaignSearchTermInsight *resources.CampaignSearchTermInsight `protobuf:"bytes,204,opt,name=campaign_search_term_insight,json=campaignSearchTermInsight,proto3" json:"campaign_search_term_insight,omitempty"`
-	// Campaign SHARED Set referenced in AWQL query.
-	CampaignSHAREDSet `protobuf:"bytes,30,opt,name=campaign_SHAREDSet,proto3" json:"campaign_SHARED_set,omitempty"`
+	// Campaign github.com/the-herald/monthly_reporter/reporter/shared Set referenced in AWQL query.
+	Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet `protobuf:"bytes,30,opt,name=campaign_github.com/the-herald/monthly_reporter/reporter/sharedSet,proto3" json:"campaign_github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
 	// The campaign simulation referenced in the query.
 	CampaignSimulation *resources.CampaignSimulation `protobuf:"bytes,157,opt,name=campaign_simulation,json=campaignSimulation,proto3" json:"campaign_simulation,omitempty"`
 	// The carrier constant referenced in the query.
@@ -679,10 +679,10 @@ type GoogleAdsRow struct {
 	RecommendationSubscription *resources.RecommendationSubscription `protobuf:"bytes,220,opt,name=recommendation_subscription,json=recommendationSubscription,proto3" json:"recommendation_subscription,omitempty"`
 	// The search term view referenced in the query.
 	SearchTermView *resources.SearchTermView `protobuf:"bytes,68,opt,name=search_term_view,json=searchTermView,proto3" json:"search_term_view,omitempty"`
-	// The SHARED set referenced in the query.
-	SHAREDCriterion `protobuf:"bytes,29,opt,name=SHAREDCriterion,proto3" json:"SHARED_criterion,omitempty"`
-	// The SHARED set referenced in the query.
-	SHAREDSet `protobuf:"bytes,27,opt,name=SHAREDSet,proto3" json:"SHARED_set,omitempty"`
+	// The github.com/the-herald/monthly_reporter/reporter/shared set referenced in the query.
+	github.com/the-herald/monthly_reporter/reporter/sharedCriterion `protobuf:"bytes,29,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedCriterion,proto3" json:"github.com/the-herald/monthly_reporter/reporter/shared_criterion,omitempty"`
+	// The github.com/the-herald/monthly_reporter/reporter/shared set referenced in the query.
+	github.com/the-herald/monthly_reporter/reporter/sharedSet `protobuf:"bytes,27,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedSet,proto3" json:"github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
 	// The Smart campaign setting referenced in the query.
 	SmartCampaignSetting *resources.SmartCampaignSetting `protobuf:"bytes,167,opt,name=smart_campaign_setting,json=smartCampaignSetting,proto3" json:"smart_campaign_setting,omitempty"`
 	// The shopping performance view referenced in the query.
@@ -727,12 +727,12 @@ type GoogleAdsRow struct {
 	LocalServicesLead *resources.LocalServicesLead `protobuf:"bytes,210,opt,name=local_services_lead,json=localServicesLead,proto3" json:"local_services_lead,omitempty"`
 	// The local services lead conversationreferenced in the query.
 	LocalServicesLeadConversation *resources.LocalServicesLeadConversation `protobuf:"bytes,214,opt,name=local_services_lead_conversation,json=localServicesLeadConversation,proto3" json:"local_services_lead_conversation,omitempty"`
-	// The android privacy SHARED key google ad group referenced in the query.
-	AndroidPrivacySHAREDKeyGoogleAdGroup `protobuf:"bytes,217,opt,name=android_privacy_SHAREDKeyGoogleAdGroup,proto3" json:"android_privacy_SHARED_key_google_ad_group,omitempty"`
-	// The android privacy SHARED key google campaign referenced in the query.
-	AndroidPrivacySHAREDKeyGoogleCampaign `protobuf:"bytes,218,opt,name=android_privacy_SHAREDKeyGoogleCampaign,proto3" json:"android_privacy_SHARED_key_google_campaign,omitempty"`
-	// The android privacy SHARED key google network type referenced in the query.
-	AndroidPrivacySHAREDKeyGoogleNetworkType `protobuf:"bytes,219,opt,name=android_privacy_SHAREDKeyGoogleNetworkType,proto3" json:"android_privacy_SHARED_key_google_network_type,omitempty"`
+	// The android privacy github.com/the-herald/monthly_reporter/reporter/shared key google ad group referenced in the query.
+	AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup `protobuf:"bytes,217,opt,name=android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup,proto3" json:"android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_ad_group,omitempty"`
+	// The android privacy github.com/the-herald/monthly_reporter/reporter/shared key google campaign referenced in the query.
+	AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign `protobuf:"bytes,218,opt,name=android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign,proto3" json:"android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_campaign,omitempty"`
+	// The android privacy github.com/the-herald/monthly_reporter/reporter/shared key google network type referenced in the query.
+	AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType `protobuf:"bytes,219,opt,name=android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType,proto3" json:"android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_network_type,omitempty"`
 	// The metrics.
 	Metrics *common.Metrics `protobuf:"bytes,4,opt,name=metrics,proto3" json:"metrics,omitempty"`
 	// The segments.
@@ -1177,9 +1177,9 @@ func (x *GoogleAdsRow) GetCampaignSearchTermInsight() *resources.CampaignSearchT
 	return nil
 }
 
-func (x *GoogleAdsRow) GetCampaignSHAREDSet {
+func (x *GoogleAdsRow) GetCampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet {
 	if x != nil {
-		return x.CampaignSHAREDSet
+		return x.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet
 	}
 	return nil
 }
@@ -1751,16 +1751,16 @@ func (x *GoogleAdsRow) GetSearchTermView() *resources.SearchTermView {
 	return nil
 }
 
-func (x *GoogleAdsRow) GetSHAREDCriterion {
+func (x *GoogleAdsRow) Getgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion {
 	if x != nil {
-		return x.SHAREDCriterion
+		return x.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
 	}
 	return nil
 }
 
-func (x *GoogleAdsRow) GetSHAREDSet {
+func (x *GoogleAdsRow) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSet {
 	if x != nil {
-		return x.SHAREDSet
+		return x.github.com/the-herald/monthly_reporter/reporter/sharedSet
 	}
 	return nil
 }
@@ -1919,23 +1919,23 @@ func (x *GoogleAdsRow) GetLocalServicesLeadConversation() *resources.LocalServic
 	return nil
 }
 
-func (x *GoogleAdsRow) GetAndroidPrivacySHAREDKeyGoogleAdGroup {
+func (x *GoogleAdsRow) GetAndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup {
 	if x != nil {
-		return x.AndroidPrivacySHAREDKeyGoogleAdGroup
+		return x.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup
 	}
 	return nil
 }
 
-func (x *GoogleAdsRow) GetAndroidPrivacySHAREDKeyGoogleCampaign {
+func (x *GoogleAdsRow) GetAndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign {
 	if x != nil {
-		return x.AndroidPrivacySHAREDKeyGoogleCampaign
+		return x.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign
 	}
 	return nil
 }
 
-func (x *GoogleAdsRow) GetAndroidPrivacySHAREDKeyGoogleNetworkType {
+func (x *GoogleAdsRow) GetAndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType {
 	if x != nil {
-		return x.AndroidPrivacySHAREDKeyGoogleNetworkType
+		return x.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType
 	}
 	return nil
 }
@@ -2144,7 +2144,7 @@ type MutateOperation struct {
 	//	*MutateOperation_CampaignGroupOperation
 	//	*MutateOperation_CampaignLabelOperation
 	//	*MutateOperation_CampaignOperation
-	//	*MutateOperation_CampaignSHAREDSetOperation
+	//	*MutateOperation_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 	//	*MutateOperation_ConversionActionOperation
 	//	*MutateOperation_ConversionCustomVariableOperation
 	//	*MutateOperation_ConversionGoalCampaignConfigOperation
@@ -2168,8 +2168,8 @@ type MutateOperation struct {
 	//	*MutateOperation_LabelOperation
 	//	*MutateOperation_RecommendationSubscriptionOperation
 	//	*MutateOperation_RemarketingActionOperation
-	//	*MutateOperation_SHAREDCriterionOperation
-	//	*MutateOperation_SHAREDSetOperation
+	//	*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation
+	//	*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 	//	*MutateOperation_SmartCampaignSettingOperation
 	//	*MutateOperation_UserListOperation
 	Operation     isMutateOperation_Operation `protobuf_oneof:"operation"`
@@ -2520,10 +2520,10 @@ func (x *MutateOperation) GetCampaignOperation() *CampaignOperation {
 	return nil
 }
 
-func (x *MutateOperation) GetCampaignSHAREDSetOperation {
+func (x *MutateOperation) GetCampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation {
 	if x != nil {
-		if x, ok := x.Operation.(*MutateOperation_CampaignSHAREDSetOperation); ok {
-			return x.CampaignSHAREDSetOperation
+		if x, ok := x.Operation.(*MutateOperation_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation); ok {
+			return x.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 		}
 	}
 	return nil
@@ -2736,19 +2736,19 @@ func (x *MutateOperation) GetRemarketingActionOperation() *RemarketingActionOper
 	return nil
 }
 
-func (x *MutateOperation) GetSHAREDCriterionOperation {
+func (x *MutateOperation) Getgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation {
 	if x != nil {
-		if x, ok := x.Operation.(*MutateOperation_SHAREDCriterionOperation); ok {
-			return x.SHAREDCriterionOperation
+		if x, ok := x.Operation.(*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation); ok {
+			return x.github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation
 		}
 	}
 	return nil
 }
 
-func (x *MutateOperation) GetSHAREDSetOperation {
+func (x *MutateOperation) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation {
 	if x != nil {
-		if x, ok := x.Operation.(*MutateOperation_SHAREDSetOperation); ok {
-			return x.SHAREDSetOperation
+		if x, ok := x.Operation.(*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation); ok {
+			return x.github.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 		}
 	}
 	return nil
@@ -2946,9 +2946,9 @@ type MutateOperation_CampaignOperation struct {
 	CampaignOperation *CampaignOperation `protobuf:"bytes,10,opt,name=campaign_operation,json=campaignOperation,proto3,oneof"`
 }
 
-type MutateOperation_CampaignSHAREDSetOperation struct {
-	// A campaign SHARED set mutate operation.
-	CampaignSHAREDSetOperation `protobuf:"bytes,11,opt,name=campaign_SHAREDSetOperation,proto3,oneof"`
+type MutateOperation_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation struct {
+	// A campaign github.com/the-herald/monthly_reporter/reporter/shared set mutate operation.
+	Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation `protobuf:"bytes,11,opt,name=campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation,proto3,oneof"`
 }
 
 type MutateOperation_ConversionActionOperation struct {
@@ -3066,14 +3066,14 @@ type MutateOperation_RemarketingActionOperation struct {
 	RemarketingActionOperation *RemarketingActionOperation `protobuf:"bytes,43,opt,name=remarketing_action_operation,json=remarketingActionOperation,proto3,oneof"`
 }
 
-type MutateOperation_SHAREDCriterionOperation struct {
-	// A SHARED criterion mutate operation.
-	SHAREDCriterionOperation `protobuf:"bytes,14,opt,name=SHAREDCriterionOperation,proto3,oneof"`
+type MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation struct {
+	// A github.com/the-herald/monthly_reporter/reporter/shared criterion mutate operation.
+	github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation `protobuf:"bytes,14,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation,proto3,oneof"`
 }
 
-type MutateOperation_SHAREDSetOperation struct {
-	// A SHARED set mutate operation.
-	SHAREDSetOperation `protobuf:"bytes,15,opt,name=SHAREDSetOperation,proto3,oneof"`
+type MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation struct {
+	// A github.com/the-herald/monthly_reporter/reporter/shared set mutate operation.
+	github.com/the-herald/monthly_reporter/reporter/sharedSetOperation `protobuf:"bytes,15,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedSetOperation,proto3,oneof"`
 }
 
 type MutateOperation_SmartCampaignSettingOperation struct {
@@ -3154,7 +3154,7 @@ func (*MutateOperation_CampaignLabelOperation) isMutateOperation_Operation() {}
 
 func (*MutateOperation_CampaignOperation) isMutateOperation_Operation() {}
 
-func (*MutateOperation_CampaignSHAREDSetOperation) isMutateOperation_Operation() {}
+func (*MutateOperation_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation) isMutateOperation_Operation() {}
 
 func (*MutateOperation_ConversionActionOperation) isMutateOperation_Operation() {}
 
@@ -3202,9 +3202,9 @@ func (*MutateOperation_RecommendationSubscriptionOperation) isMutateOperation_Op
 
 func (*MutateOperation_RemarketingActionOperation) isMutateOperation_Operation() {}
 
-func (*MutateOperation_SHAREDCriterionOperation) isMutateOperation_Operation() {}
+func (*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation) isMutateOperation_Operation() {}
 
-func (*MutateOperation_SHAREDSetOperation) isMutateOperation_Operation() {}
+func (*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation) isMutateOperation_Operation() {}
 
 func (*MutateOperation_SmartCampaignSettingOperation) isMutateOperation_Operation() {}
 
@@ -3251,7 +3251,7 @@ type MutateOperationResponse struct {
 	//	*MutateOperationResponse_CampaignGroupResult
 	//	*MutateOperationResponse_CampaignLabelResult
 	//	*MutateOperationResponse_CampaignResult
-	//	*MutateOperationResponse_CampaignSHAREDSetResult
+	//	*MutateOperationResponse_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult
 	//	*MutateOperationResponse_ConversionActionResult
 	//	*MutateOperationResponse_ConversionCustomVariableResult
 	//	*MutateOperationResponse_ConversionGoalCampaignConfigResult
@@ -3275,8 +3275,8 @@ type MutateOperationResponse struct {
 	//	*MutateOperationResponse_LabelResult
 	//	*MutateOperationResponse_RecommendationSubscriptionResult
 	//	*MutateOperationResponse_RemarketingActionResult
-	//	*MutateOperationResponse_SHAREDCriterionResult
-	//	*MutateOperationResponse_SHAREDSetResult
+	//	*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult
+	//	*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedSetResult
 	//	*MutateOperationResponse_SmartCampaignSettingResult
 	//	*MutateOperationResponse_UserListResult
 	Response      isMutateOperationResponse_Response `protobuf_oneof:"response"`
@@ -3627,10 +3627,10 @@ func (x *MutateOperationResponse) GetCampaignResult() *MutateCampaignResult {
 	return nil
 }
 
-func (x *MutateOperationResponse) GetCampaignSHAREDSetResult {
+func (x *MutateOperationResponse) GetCampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult {
 	if x != nil {
-		if x, ok := x.Response.(*MutateOperationResponse_CampaignSHAREDSetResult); ok {
-			return x.CampaignSHAREDSetResult
+		if x, ok := x.Response.(*MutateOperationResponse_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult); ok {
+			return x.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult
 		}
 	}
 	return nil
@@ -3843,19 +3843,19 @@ func (x *MutateOperationResponse) GetRemarketingActionResult() *MutateRemarketin
 	return nil
 }
 
-func (x *MutateOperationResponse) GetSHAREDCriterionResult {
+func (x *MutateOperationResponse) Getgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult {
 	if x != nil {
-		if x, ok := x.Response.(*MutateOperationResponse_SHAREDCriterionResult); ok {
-			return x.SHAREDCriterionResult
+		if x, ok := x.Response.(*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult); ok {
+			return x.github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult
 		}
 	}
 	return nil
 }
 
-func (x *MutateOperationResponse) GetSHAREDSetResult {
+func (x *MutateOperationResponse) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSetResult {
 	if x != nil {
-		if x, ok := x.Response.(*MutateOperationResponse_SHAREDSetResult); ok {
-			return x.SHAREDSetResult
+		if x, ok := x.Response.(*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedSetResult); ok {
+			return x.github.com/the-herald/monthly_reporter/reporter/sharedSetResult
 		}
 	}
 	return nil
@@ -4053,9 +4053,9 @@ type MutateOperationResponse_CampaignResult struct {
 	CampaignResult *MutateCampaignResult `protobuf:"bytes,10,opt,name=campaign_result,json=campaignResult,proto3,oneof"`
 }
 
-type MutateOperationResponse_CampaignSHAREDSetResult struct {
-	// The result for the campaign SHARED set mutate.
-	CampaignSHAREDSetResult `protobuf:"bytes,11,opt,name=campaign_SHAREDSetResult,proto3,oneof"`
+type MutateOperationResponse_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult struct {
+	// The result for the campaign github.com/the-herald/monthly_reporter/reporter/shared set mutate.
+	Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult `protobuf:"bytes,11,opt,name=campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetResult,proto3,oneof"`
 }
 
 type MutateOperationResponse_ConversionActionResult struct {
@@ -4173,14 +4173,14 @@ type MutateOperationResponse_RemarketingActionResult struct {
 	RemarketingActionResult *MutateRemarketingActionResult `protobuf:"bytes,43,opt,name=remarketing_action_result,json=remarketingActionResult,proto3,oneof"`
 }
 
-type MutateOperationResponse_SHAREDCriterionResult struct {
-	// The result for the SHARED criterion mutate.
-	SHAREDCriterionResult `protobuf:"bytes,14,opt,name=SHAREDCriterionResult,proto3,oneof"`
+type MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult struct {
+	// The result for the github.com/the-herald/monthly_reporter/reporter/shared criterion mutate.
+	github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult `protobuf:"bytes,14,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult,proto3,oneof"`
 }
 
-type MutateOperationResponse_SHAREDSetResult struct {
-	// The result for the SHARED set mutate.
-	SHAREDSetResult `protobuf:"bytes,15,opt,name=SHAREDSetResult,proto3,oneof"`
+type MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedSetResult struct {
+	// The result for the github.com/the-herald/monthly_reporter/reporter/shared set mutate.
+	github.com/the-herald/monthly_reporter/reporter/sharedSetResult `protobuf:"bytes,15,opt,name=github.com/the-herald/monthly_reporter/reporter/sharedSetResult,proto3,oneof"`
 }
 
 type MutateOperationResponse_SmartCampaignSettingResult struct {
@@ -4264,7 +4264,7 @@ func (*MutateOperationResponse_CampaignLabelResult) isMutateOperationResponse_Re
 
 func (*MutateOperationResponse_CampaignResult) isMutateOperationResponse_Response() {}
 
-func (*MutateOperationResponse_CampaignSHAREDSetResult) isMutateOperationResponse_Response() {}
+func (*MutateOperationResponse_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult) isMutateOperationResponse_Response() {}
 
 func (*MutateOperationResponse_ConversionActionResult) isMutateOperationResponse_Response() {}
 
@@ -4317,9 +4317,9 @@ func (*MutateOperationResponse_RecommendationSubscriptionResult) isMutateOperati
 
 func (*MutateOperationResponse_RemarketingActionResult) isMutateOperationResponse_Response() {}
 
-func (*MutateOperationResponse_SHAREDCriterionResult) isMutateOperationResponse_Response() {}
+func (*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult) isMutateOperationResponse_Response() {}
 
-func (*MutateOperationResponse_SHAREDSetResult) isMutateOperationResponse_Response() {}
+func (*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedSetResult) isMutateOperationResponse_Response() {}
 
 func (*MutateOperationResponse_SmartCampaignSettingResult) isMutateOperationResponse_Response() {}
 
@@ -4399,7 +4399,7 @@ var File_google_ads_googleads_v20_services_google_ads_service_proto protoreflect
 
 const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = "" +
 	"\n" +
-	":google/ads/googleads/v20/services/google_ads_service.proto\x12!google.ads.googleads.v20.services\x1a-google/ads/googleads/v20/common/metrics.proto\x1a.google/ads/googleads/v20/common/segments.proto\x1a:google/ads/googleads/v20/enums/response_content_type.proto\x1a8google/ads/googleads/v20/enums/summary_row_setting.proto\x1aDgoogle/ads/googleads/v20/resources/accessible_bidding_strategy.proto\x1a7google/ads/googleads/v20/resources/account_budget.proto\x1a@google/ads/googleads/v20/resources/account_budget_proposal.proto\x1a5google/ads/googleads/v20/resources/account_link.proto\x1a+google/ads/googleads/v20/resources/ad.proto\x1a1google/ads/googleads/v20/resources/ad_group.proto\x1a4google/ads/googleads/v20/resources/ad_group_ad.proto\x1aKgoogle/ads/googleads/v20/resources/ad_group_ad_asset_combination_view.proto\x1a?google/ads/googleads/v20/resources/ad_group_ad_asset_view.proto\x1a:google/ads/googleads/v20/resources/ad_group_ad_label.proto\x1a7google/ads/googleads/v20/resources/ad_group_asset.proto\x1a;google/ads/googleads/v20/resources/ad_group_asset_set.proto\x1a?google/ads/googleads/v20/resources/ad_group_audience_view.proto\x1a>google/ads/googleads/v20/resources/ad_group_bid_modifier.proto\x1a;google/ads/googleads/v20/resources/ad_group_criterion.proto\x1aFgoogle/ads/googleads/v20/resources/ad_group_criterion_customizer.proto\x1aAgoogle/ads/googleads/v20/resources/ad_group_criterion_label.proto\x1aFgoogle/ads/googleads/v20/resources/ad_group_criterion_simulation.proto\x1a<google/ads/googleads/v20/resources/ad_group_customizer.proto\x1a7google/ads/googleads/v20/resources/ad_group_label.proto\x1a<google/ads/googleads/v20/resources/ad_group_simulation.proto\x1a5google/ads/googleads/v20/resources/ad_parameter.proto\x1a9google/ads/googleads/v20/resources/ad_schedule_view.proto\x1a7google/ads/googleads/v20/resources/age_range_view.proto\x1aSgoogle/ads/googleads/v20/resources/android_privacy_SHARED_key_google_campaign.proto\x1aWgoogle/ads/googleads/v20/resources/android_privacy_SHARED_set.proto\x1a<google/ads/googleads/v20/resources/campaign_simulation.proto\x1a9google/ads/googleads/v20/resources/carrier_constant.proto\x1a5google/ads/googleads/v20/resources/change_event.proto\x1a6google/ads/googleads/v20/resources/change_status.proto\x1aEgoogle/ads/googleads/v20/resources/channel_aggregate_asset_view.proto\x1a3google/ads/googleads/v20/resources/click_view.proto\x1a:google/ads/googleads/v20/resources/combined_audience.proto\x1a?google/ads/googleads/v20/resources/content_criterion_view.proto\x1a:google/ads/googleads/v20/resources/conversion_action.proto\x1aCgoogle/ads/googleads/v20/resources/conversion_custom_variable.proto\x1aHgoogle/ads/googleads/v20/resources/conversion_goal_campaign_config.proto\x1a>google/ads/googleads/v20/resources/conversion_value_rule.proto\x1aBgoogle/ads/googleads/v20/resources/conversion_value_rule_set.proto\x1a:google/ads/googleads/v20/resources/currency_constant.proto\x1a8google/ads/googleads/v20/resources/custom_audience.proto\x1a?google/ads/googleads/v20/resources/custom_conversion_goal.proto\x1a8google/ads/googleads/v20/resources/custom_interest.proto\x1a1google/ads/googleads/v20/resources/customer.proto\x1a7google/ads/googleads/v20/resources/customer_asset.proto\x1a;google/ads/googleads/v20/resources/customer_asset_set.proto\x1a8google/ads/googleads/v20/resources/customer_client.proto\x1a=google/ads/googleads/v20/resources/customer_client_link.proto\x1aAgoogle/ads/googleads/v20/resources/customer_conversion_goal.proto\x1a<google/ads/googleads/v20/resources/customer_customizer.proto\x1a7google/ads/googleads/v20/resources/customer_label.proto\x1a@google/ads/googleads/v20/resources/customer_lifecycle_goal.proto\x1a>google/ads/googleads/v20/resources/customer_manager_link.proto\x1aDgoogle/ads/googleads/v20/resources/customer_negative_criterion.proto\x1aEgoogle/ads/googleads/v20/resources/customer_search_term_insight.proto\x1a=google/ads/googleads/v20/resources/customer_user_access.proto\x1aHgoogle/ads/googleads/v20/resources/customer_user_access_invitation.proto\x1a=google/ads/googleads/v20/resources/customizer_attribute.proto\x1a2google/ads/googleads/v20/resources/data_link.proto\x1a>google/ads/googleads/v20/resources/detail_placement_view.proto\x1a=google/ads/googleads/v20/resources/detailed_demographic.proto\x1a=google/ads/googleads/v20/resources/display_keyword_view.proto\x1a6google/ads/googleads/v20/resources/distance_view.proto\x1a8google/ads/googleads/v20/resources/domain_category.proto\x1aLgoogle/ads/googleads/v20/resources/dynamic_search_ads_search_term_view.proto\x1aCgoogle/ads/googleads/v20/resources/expanded_landing_page_view.proto\x1a3google/ads/googleads/v20/resources/experiment.proto\x1a7google/ads/googleads/v20/resources/experiment_arm.proto\x1a4google/ads/googleads/v20/resources/gender_view.proto\x1a<google/ads/googleads/v20/resources/geo_target_constant.proto\x1a8google/ads/googleads/v20/resources/geographic_view.proto\x1a=google/ads/googleads/v20/resources/group_placement_view.proto\x1a9google/ads/googleads/v20/resources/hotel_group_view.proto\x1a?google/ads/googleads/v20/resources/hotel_performance_view.proto\x1a=google/ads/googleads/v20/resources/hotel_reconciliation.proto\x1a:google/ads/googleads/v20/resources/income_range_view.proto\x1a5google/ads/googleads/v20/resources/keyword_plan.proto\x1a>google/ads/googleads/v20/resources/keyword_plan_ad_group.proto\x1aFgoogle/ads/googleads/v20/resources/keyword_plan_ad_group_keyword.proto\x1a>google/ads/googleads/v20/resources/keyword_plan_campaign.proto\x1aFgoogle/ads/googleads/v20/resources/keyword_plan_campaign_keyword.proto\x1a?google/ads/googleads/v20/resources/keyword_theme_constant.proto\x1a5google/ads/googleads/v20/resources/keyword_view.proto\x1a.google/ads/googleads/v20/resources/label.proto\x1a:google/ads/googleads/v20/resources/landing_page_view.proto\x1a:google/ads/googleads/v20/resources/language_constant.proto\x1aBgoogle/ads/googleads/v20/resources/lead_form_submission_data.proto\x1a3google/ads/googleads/v20/resources/life_event.proto\x1a@google/ads/googleads/v20/resources/local_services_employee.proto\x1a<google/ads/googleads/v20/resources/local_services_lead.proto\x1aIgoogle/ads/googleads/v20/resources/local_services_lead_conversation.proto\x1aMgoogle/ads/googleads/v20/resources/local_services_verification_artifact.proto\x1a6google/ads/googleads/v20/resources/location_view.proto\x1a?google/ads/googleads/v20/resources/managed_placement_view.proto\x1a3google/ads/googleads/v20/resources/media_file.proto\x1aEgoogle/ads/googleads/v20/resources/mobile_app_category_constant.proto\x1a?google/ads/googleads/v20/resources/mobile_device_constant.proto\x1aQgoogle/ads/googleads/v20/resources/offline_conversion_upload_client_summary.proto\x1a\\google/ads/googleads/v20/resources/offline_conversion_upload_conversion_action_summary.proto\x1a>google/ads/googleads/v20/resources/offline_user_data_job.proto\x1aJgoogle/ads/googleads/v20/resources/operating_system_version_constant.proto\x1aFgoogle/ads/googleads/v20/resources/paid_organic_search_term_view.proto\x1a=google/ads/googleads/v20/resources/parental_status_view.proto\x1a7google/ads/googleads/v20/resources/per_store_view.proto\x1aGgoogle/ads/googleads/v20/resources/performance_max_placement_view.proto\x1aBgoogle/ads/googleads/v20/resources/product_category_constant.proto\x1a;google/ads/googleads/v20/resources/product_group_view.proto\x1a5google/ads/googleads/v20/resources/product_link.proto\x1a@google/ads/googleads/v20/resources/product_link_invitation.proto\x1a<google/ads/googleads/v20/resources/qualifying_question.proto\x1a7google/ads/googleads/v20/resources/recommendation.proto\x1aDgoogle/ads/googleads/v20/resources/recommendation_subscription.proto\x1a;google/ads/googleads/v20/resources/remarketing_action.proto\x1a9google/ads/googleads/v20/resources/search_term_view.proto\x1a9google/ads/googleads/v20/resources/SHARED_set.proto\x1aBgoogle/ads/googleads/v20/resources/shopping_performance_view.proto\x1a9google/ads/googleads/v20/resources/shopping_product.proto\x1aHgoogle/ads/googleads/v20/resources/smart_campaign_search_term_view.proto\x1a?google/ads/googleads/v20/resources/smart_campaign_setting.proto\x1aGgoogle/ads/googleads/v20/resources/third_party_app_analytics_link.proto\x1a7google/ads/googleads/v20/resources/topic_constant.proto\x1a3google/ads/googleads/v20/resources/topic_view.proto\x1aCgoogle/ads/googleads/v20/resources/travel_activity_group_view.proto\x1aIgoogle/ads/googleads/v20/resources/travel_activity_performance_view.proto\x1a6google/ads/googleads/v20/resources/user_interest.proto\x1a2google/ads/googleads/v20/resources/user_list.proto\x1a@google/ads/googleads/v20/resources/user_list_customer_type.proto\x1a;google/ads/googleads/v20/resources/user_location_view.proto\x1a.google/ads/googleads/v20/resources/video.proto\x1a5google/ads/googleads/v20/resources/webpage_view.proto\x1aAgoogle/ads/googleads/v20/services/ad_group_ad_label_service.proto\x1a;google/ads/googleads/v20/services/ad_group_ad_service.proto\x1a>google/ads/googleads/v20/services/ad_group_asset_service.proto\x1aEgoogle/ads/googleads/v20/services/ad_group_bid_modifier_service.proto\x1aMgoogle/ads/googleads/v20/services/ad_group_criterion_customizer_service.proto\x1aHgoogle/ads/googleads/v20/services/ad_group_criterion_label_service.proto\x1aBgoogle/ads/googleads/v20/services/ad_group_criterion_service.proto\x1aCgoogle/ads/googleads/v20/services/ad_group_customizer_service.proto\x1a>google/ads/googleads/v20/services/ad_group_label_service.proto\x1a8google/ads/googleads/v20/services/ad_group_service.proto\x1a<google/ads/googleads/v20/services/ad_parameter_service.proto\x1a2google/ads/googleads/v20/services/ad_service.proto\x1aAgoogle/ads/googleads/v20/services/asset_group_asset_service.proto\x1aPgoogle/ads/googleads/v20/services/asset_group_listing_group_filter_service.proto\x1a;google/ads/googleads/v20/services/asset_group_service.proto\x1aBgoogle/ads/googleads/v20/services/asset_group_signal_service.proto\x1a5google/ads/googleads/v20/services/asset_service.proto\x1a?google/ads/googleads/v20/services/asset_set_asset_service.proto\x1a9google/ads/googleads/v20/services/asset_set_service.proto\x1a8google/ads/googleads/v20/services/audience_service.proto\x1aFgoogle/ads/googleads/v20/services/bidding_data_exclusion_service.proto\x1aNgoogle/ads/googleads/v20/services/bidding_seasonality_adjustment_service.proto\x1a@google/ads/googleads/v20/services/bidding_strategy_service.proto\x1a>google/ads/googleads/v20/services/campaign_asset_service.proto\x1aBgoogle/ads/googleads/v20/services/campaign_asset_set_service.proto\x1aEgoogle/ads/googleads/v20/services/campaign_bid_modifier_service.proto\x1a?google/ads/googleads/v20/services/campaign_budget_service.proto\x1aHgoogle/ads/googleads/v20/services/campaign_conversion_goal_service.proto\x1aBgoogle/ads/googleads/v20/services/campaign_criterion_service.proto\x1aCgoogle/ads/googleads/v20/services/campaign_customizer_service.proto\x1a>google/ads/googleads/v20/services/campaign_draft_service.proto\x1a>google/ads/googleads/v20/services/campaign_group_service.proto\x1a>google/ads/googleads/v20/services/campaign_label_service.proto\x1a8google/ads/googleads/v20/services/campaign_service.proto\x1aCgoogle/ads/googleads/v20/services/campaign_SHARED_criterion_service.proto\x1a:google/ads/googleads/v20/services/SHARED_set_service.proto\x1aFgoogle/ads/googleads/v20/services/smart_campaign_setting_service.proto\x1a9google/ads/googleads/v20/services/user_list_service.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x17google/api/client.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/rpc/status.proto\"\x96\x02\n" +
+	":google/ads/googleads/v20/services/google_ads_service.proto\x12!google.ads.googleads.v20.services\x1a-google/ads/googleads/v20/common/metrics.proto\x1a.google/ads/googleads/v20/common/segments.proto\x1a:google/ads/googleads/v20/enums/response_content_type.proto\x1a8google/ads/googleads/v20/enums/summary_row_setting.proto\x1aDgoogle/ads/googleads/v20/resources/accessible_bidding_strategy.proto\x1a7google/ads/googleads/v20/resources/account_budget.proto\x1a@google/ads/googleads/v20/resources/account_budget_proposal.proto\x1a5google/ads/googleads/v20/resources/account_link.proto\x1a+google/ads/googleads/v20/resources/ad.proto\x1a1google/ads/googleads/v20/resources/ad_group.proto\x1a4google/ads/googleads/v20/resources/ad_group_ad.proto\x1aKgoogle/ads/googleads/v20/resources/ad_group_ad_asset_combination_view.proto\x1a?google/ads/googleads/v20/resources/ad_group_ad_asset_view.proto\x1a:google/ads/googleads/v20/resources/ad_group_ad_label.proto\x1a7google/ads/googleads/v20/resources/ad_group_asset.proto\x1a;google/ads/googleads/v20/resources/ad_group_asset_set.proto\x1a?google/ads/googleads/v20/resources/ad_group_audience_view.proto\x1a>google/ads/googleads/v20/resources/ad_group_bid_modifier.proto\x1a;google/ads/googleads/v20/resources/ad_group_criterion.proto\x1aFgoogle/ads/googleads/v20/resources/ad_group_criterion_customizer.proto\x1aAgoogle/ads/googleads/v20/resources/ad_group_criterion_label.proto\x1aFgoogle/ads/googleads/v20/resources/ad_group_criterion_simulation.proto\x1a<google/ads/googleads/v20/resources/ad_group_customizer.proto\x1a7google/ads/googleads/v20/resources/ad_group_label.proto\x1a<google/ads/googleads/v20/resources/ad_group_simulation.proto\x1a5google/ads/googleads/v20/resources/ad_parameter.proto\x1a9google/ads/googleads/v20/resources/ad_schedule_view.proto\x1a7google/ads/googleads/v20/resources/age_range_view.proto\x1aSgoogle/ads/googleads/v20/resources/android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_key_google_campaign.proto\x1aWgoogle/ads/googleads/v20/resources/android_privacy_github.com/the-herald/monthly_reporter/reporter/shared_set.proto\x1a<google/ads/googleads/v20/resources/campaign_simulation.proto\x1a9google/ads/googleads/v20/resources/carrier_constant.proto\x1a5google/ads/googleads/v20/resources/change_event.proto\x1a6google/ads/googleads/v20/resources/change_status.proto\x1aEgoogle/ads/googleads/v20/resources/channel_aggregate_asset_view.proto\x1a3google/ads/googleads/v20/resources/click_view.proto\x1a:google/ads/googleads/v20/resources/combined_audience.proto\x1a?google/ads/googleads/v20/resources/content_criterion_view.proto\x1a:google/ads/googleads/v20/resources/conversion_action.proto\x1aCgoogle/ads/googleads/v20/resources/conversion_custom_variable.proto\x1aHgoogle/ads/googleads/v20/resources/conversion_goal_campaign_config.proto\x1a>google/ads/googleads/v20/resources/conversion_value_rule.proto\x1aBgoogle/ads/googleads/v20/resources/conversion_value_rule_set.proto\x1a:google/ads/googleads/v20/resources/currency_constant.proto\x1a8google/ads/googleads/v20/resources/custom_audience.proto\x1a?google/ads/googleads/v20/resources/custom_conversion_goal.proto\x1a8google/ads/googleads/v20/resources/custom_interest.proto\x1a1google/ads/googleads/v20/resources/customer.proto\x1a7google/ads/googleads/v20/resources/customer_asset.proto\x1a;google/ads/googleads/v20/resources/customer_asset_set.proto\x1a8google/ads/googleads/v20/resources/customer_client.proto\x1a=google/ads/googleads/v20/resources/customer_client_link.proto\x1aAgoogle/ads/googleads/v20/resources/customer_conversion_goal.proto\x1a<google/ads/googleads/v20/resources/customer_customizer.proto\x1a7google/ads/googleads/v20/resources/customer_label.proto\x1a@google/ads/googleads/v20/resources/customer_lifecycle_goal.proto\x1a>google/ads/googleads/v20/resources/customer_manager_link.proto\x1aDgoogle/ads/googleads/v20/resources/customer_negative_criterion.proto\x1aEgoogle/ads/googleads/v20/resources/customer_search_term_insight.proto\x1a=google/ads/googleads/v20/resources/customer_user_access.proto\x1aHgoogle/ads/googleads/v20/resources/customer_user_access_invitation.proto\x1a=google/ads/googleads/v20/resources/customizer_attribute.proto\x1a2google/ads/googleads/v20/resources/data_link.proto\x1a>google/ads/googleads/v20/resources/detail_placement_view.proto\x1a=google/ads/googleads/v20/resources/detailed_demographic.proto\x1a=google/ads/googleads/v20/resources/display_keyword_view.proto\x1a6google/ads/googleads/v20/resources/distance_view.proto\x1a8google/ads/googleads/v20/resources/domain_category.proto\x1aLgoogle/ads/googleads/v20/resources/dynamic_search_ads_search_term_view.proto\x1aCgoogle/ads/googleads/v20/resources/expanded_landing_page_view.proto\x1a3google/ads/googleads/v20/resources/experiment.proto\x1a7google/ads/googleads/v20/resources/experiment_arm.proto\x1a4google/ads/googleads/v20/resources/gender_view.proto\x1a<google/ads/googleads/v20/resources/geo_target_constant.proto\x1a8google/ads/googleads/v20/resources/geographic_view.proto\x1a=google/ads/googleads/v20/resources/group_placement_view.proto\x1a9google/ads/googleads/v20/resources/hotel_group_view.proto\x1a?google/ads/googleads/v20/resources/hotel_performance_view.proto\x1a=google/ads/googleads/v20/resources/hotel_reconciliation.proto\x1a:google/ads/googleads/v20/resources/income_range_view.proto\x1a5google/ads/googleads/v20/resources/keyword_plan.proto\x1a>google/ads/googleads/v20/resources/keyword_plan_ad_group.proto\x1aFgoogle/ads/googleads/v20/resources/keyword_plan_ad_group_keyword.proto\x1a>google/ads/googleads/v20/resources/keyword_plan_campaign.proto\x1aFgoogle/ads/googleads/v20/resources/keyword_plan_campaign_keyword.proto\x1a?google/ads/googleads/v20/resources/keyword_theme_constant.proto\x1a5google/ads/googleads/v20/resources/keyword_view.proto\x1a.google/ads/googleads/v20/resources/label.proto\x1a:google/ads/googleads/v20/resources/landing_page_view.proto\x1a:google/ads/googleads/v20/resources/language_constant.proto\x1aBgoogle/ads/googleads/v20/resources/lead_form_submission_data.proto\x1a3google/ads/googleads/v20/resources/life_event.proto\x1a@google/ads/googleads/v20/resources/local_services_employee.proto\x1a<google/ads/googleads/v20/resources/local_services_lead.proto\x1aIgoogle/ads/googleads/v20/resources/local_services_lead_conversation.proto\x1aMgoogle/ads/googleads/v20/resources/local_services_verification_artifact.proto\x1a6google/ads/googleads/v20/resources/location_view.proto\x1a?google/ads/googleads/v20/resources/managed_placement_view.proto\x1a3google/ads/googleads/v20/resources/media_file.proto\x1aEgoogle/ads/googleads/v20/resources/mobile_app_category_constant.proto\x1a?google/ads/googleads/v20/resources/mobile_device_constant.proto\x1aQgoogle/ads/googleads/v20/resources/offline_conversion_upload_client_summary.proto\x1a\\google/ads/googleads/v20/resources/offline_conversion_upload_conversion_action_summary.proto\x1a>google/ads/googleads/v20/resources/offline_user_data_job.proto\x1aJgoogle/ads/googleads/v20/resources/operating_system_version_constant.proto\x1aFgoogle/ads/googleads/v20/resources/paid_organic_search_term_view.proto\x1a=google/ads/googleads/v20/resources/parental_status_view.proto\x1a7google/ads/googleads/v20/resources/per_store_view.proto\x1aGgoogle/ads/googleads/v20/resources/performance_max_placement_view.proto\x1aBgoogle/ads/googleads/v20/resources/product_category_constant.proto\x1a;google/ads/googleads/v20/resources/product_group_view.proto\x1a5google/ads/googleads/v20/resources/product_link.proto\x1a@google/ads/googleads/v20/resources/product_link_invitation.proto\x1a<google/ads/googleads/v20/resources/qualifying_question.proto\x1a7google/ads/googleads/v20/resources/recommendation.proto\x1aDgoogle/ads/googleads/v20/resources/recommendation_subscription.proto\x1a;google/ads/googleads/v20/resources/remarketing_action.proto\x1a9google/ads/googleads/v20/resources/search_term_view.proto\x1a9google/ads/googleads/v20/resources/github.com/the-herald/monthly_reporter/reporter/shared_set.proto\x1aBgoogle/ads/googleads/v20/resources/shopping_performance_view.proto\x1a9google/ads/googleads/v20/resources/shopping_product.proto\x1aHgoogle/ads/googleads/v20/resources/smart_campaign_search_term_view.proto\x1a?google/ads/googleads/v20/resources/smart_campaign_setting.proto\x1aGgoogle/ads/googleads/v20/resources/third_party_app_analytics_link.proto\x1a7google/ads/googleads/v20/resources/topic_constant.proto\x1a3google/ads/googleads/v20/resources/topic_view.proto\x1aCgoogle/ads/googleads/v20/resources/travel_activity_group_view.proto\x1aIgoogle/ads/googleads/v20/resources/travel_activity_performance_view.proto\x1a6google/ads/googleads/v20/resources/user_interest.proto\x1a2google/ads/googleads/v20/resources/user_list.proto\x1a@google/ads/googleads/v20/resources/user_list_customer_type.proto\x1a;google/ads/googleads/v20/resources/user_location_view.proto\x1a.google/ads/googleads/v20/resources/video.proto\x1a5google/ads/googleads/v20/resources/webpage_view.proto\x1aAgoogle/ads/googleads/v20/services/ad_group_ad_label_service.proto\x1a;google/ads/googleads/v20/services/ad_group_ad_service.proto\x1a>google/ads/googleads/v20/services/ad_group_asset_service.proto\x1aEgoogle/ads/googleads/v20/services/ad_group_bid_modifier_service.proto\x1aMgoogle/ads/googleads/v20/services/ad_group_criterion_customizer_service.proto\x1aHgoogle/ads/googleads/v20/services/ad_group_criterion_label_service.proto\x1aBgoogle/ads/googleads/v20/services/ad_group_criterion_service.proto\x1aCgoogle/ads/googleads/v20/services/ad_group_customizer_service.proto\x1a>google/ads/googleads/v20/services/ad_group_label_service.proto\x1a8google/ads/googleads/v20/services/ad_group_service.proto\x1a<google/ads/googleads/v20/services/ad_parameter_service.proto\x1a2google/ads/googleads/v20/services/ad_service.proto\x1aAgoogle/ads/googleads/v20/services/asset_group_asset_service.proto\x1aPgoogle/ads/googleads/v20/services/asset_group_listing_group_filter_service.proto\x1a;google/ads/googleads/v20/services/asset_group_service.proto\x1aBgoogle/ads/googleads/v20/services/asset_group_signal_service.proto\x1a5google/ads/googleads/v20/services/asset_service.proto\x1a?google/ads/googleads/v20/services/asset_set_asset_service.proto\x1a9google/ads/googleads/v20/services/asset_set_service.proto\x1a8google/ads/googleads/v20/services/audience_service.proto\x1aFgoogle/ads/googleads/v20/services/bidding_data_exclusion_service.proto\x1aNgoogle/ads/googleads/v20/services/bidding_seasonality_adjustment_service.proto\x1a@google/ads/googleads/v20/services/bidding_strategy_service.proto\x1a>google/ads/googleads/v20/services/campaign_asset_service.proto\x1aBgoogle/ads/googleads/v20/services/campaign_asset_set_service.proto\x1aEgoogle/ads/googleads/v20/services/campaign_bid_modifier_service.proto\x1a?google/ads/googleads/v20/services/campaign_budget_service.proto\x1aHgoogle/ads/googleads/v20/services/campaign_conversion_goal_service.proto\x1aBgoogle/ads/googleads/v20/services/campaign_criterion_service.proto\x1aCgoogle/ads/googleads/v20/services/campaign_customizer_service.proto\x1a>google/ads/googleads/v20/services/campaign_draft_service.proto\x1a>google/ads/googleads/v20/services/campaign_group_service.proto\x1a>google/ads/googleads/v20/services/campaign_label_service.proto\x1a8google/ads/googleads/v20/services/campaign_service.proto\x1aCgoogle/ads/googleads/v20/services/campaign_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service.proto\x1a:google/ads/googleads/v20/services/github.com/the-herald/monthly_reporter/reporter/shared_set_service.proto\x1aFgoogle/ads/googleads/v20/services/smart_campaign_setting_service.proto\x1a9google/ads/googleads/v20/services/user_list_service.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x17google/api/client.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/rpc/status.proto\"\x96\x02\n" +
 	"\x16SearchGoogleAdsRequest\x12$\n" +
 	"\vcustomer_id\x18\x01 \x01(\tB\x03\xe0A\x02R\n" +
 	"customerId\x12\x19\n" +
@@ -4493,7 +4493,7 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\x0ecampaign_label\x18l \x01(\v21.google.ads.googleads.v20.resources.CampaignLabelR\rcampaignLabel\x12r\n" +
 	"\x17campaign_lifecycle_goal\x18\xd5\x01 \x01(\v29.google.ads.googleads.v20.resources.CampaignLifecycleGoalR\x15campaignLifecycleGoal\x12\x7f\n" +
 	"\x1ccampaign_search_term_insight\x18\xcc\x01 \x01(\v2=.google.ads.googleads.v20.resources.CampaignSearchTermInsightR\x19campaignSearchTermInsight\x12e\n" +
-	"\x13campaign_SHAREDSetR\x11campaignSHAREDSet\x12h\n" +
+	"\x13campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetR\x11campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet\x12h\n" +
 	"\x13campaign_simulation\x18\x9d\x01 \x01(\v26.google.ads.googleads.v20.resources.CampaignSimulationR\x12campaignSimulation\x12^\n" +
 	"\x10carrier_constant\x18B \x01(\v23.google.ads.googleads.v20.resources.CarrierConstantR\x0fcarrierConstant\x12S\n" +
 	"\fchange_event\x18\x91\x01 \x01(\v2/.google.ads.googleads.v20.resources.ChangeEventR\vchangeEvent\x12U\n" +
@@ -4578,9 +4578,9 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\x0erecommendation\x18\x16 \x01(\v22.google.ads.googleads.v20.resources.RecommendationR\x0erecommendation\x12\x80\x01\n" +
 	"\x1brecommendation_subscription\x18\xdc\x01 \x01(\v2>.google.ads.googleads.v20.resources.RecommendationSubscriptionR\x1arecommendationSubscription\x12\\\n" +
 	"\x10search_term_view\x18D \x01(\v22.google.ads.googleads.v20.resources.SearchTermViewR\x0esearchTermView\x12^\n" +
-	"\x10SHAREDCriterionR\x0fSHAREDCriterion\x12L\n" +
+	"\x10github.com/the-herald/monthly_reporter/reporter/sharedCriterionR\x0fgithub.com/the-herald/monthly_reporter/reporter/sharedCriterion\x12L\n" +
 	"\n" +
-	"SHAREDSetR\tSHAREDSet\x12o\n" +
+	"github.com/the-herald/monthly_reporter/reporter/sharedSetR\tgithub.com/the-herald/monthly_reporter/reporter/sharedSet\x12o\n" +
 	"\x16smart_campaign_setting\x18\xa7\x01 \x01(\v28.google.ads.googleads.v20.resources.SmartCampaignSettingR\x14smartCampaignSetting\x12w\n" +
 	"\x19shopping_performance_view\x18u \x01(\v2;.google.ads.googleads.v20.resources.ShoppingPerformanceViewR\x17shoppingPerformanceView\x12_\n" +
 	"\x10shopping_product\x18\xe2\x01 \x01(\v23.google.ads.googleads.v20.resources.ShoppingProductR\x0fshoppingProduct\x12\x86\x01\n" +
@@ -4607,9 +4607,9 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\x19lead_form_submission_data\x18\xc0\x01 \x01(\v2:.google.ads.googleads.v20.resources.LeadFormSubmissionDataR\x16leadFormSubmissionData\x12f\n" +
 	"\x13local_services_lead\x18\xd2\x01 \x01(\v25.google.ads.googleads.v20.resources.LocalServicesLeadR\x11localServicesLead\x12\x8b\x01\n" +
 	" local_services_lead_conversation\x18\xd6\x01 \x01(\v2A.google.ads.googleads.v20.resources.LocalServicesLeadConversationR\x1dlocalServicesLeadConversation\x12\xa3\x01\n" +
-	"*android_privacy_SHAREDKeyGoogleAdGroupR$androidPrivacySHAREDKeyGoogleAdGroup\x12\xa5\x01\n" +
-	"*android_privacy_SHAREDKeyGoogleCampaignR%androidPrivacySHAREDKeyGoogleCampaign\x12\xaf\x01\n" +
-	".android_privacy_SHAREDKeyGoogleNetworkTypeR(androidPrivacySHAREDKeyGoogleNetworkType\x12B\n" +
+	"*android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroupR$androidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup\x12\xa5\x01\n" +
+	"*android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaignR%androidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign\x12\xaf\x01\n" +
+	".android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkTypeR(androidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType\x12B\n" +
 	"\ametrics\x18\x04 \x01(\v2(.google.ads.googleads.v20.common.MetricsR\ametrics\x12E\n" +
 	"\bsegments\x18f \x01(\v2).google.ads.googleads.v20.common.SegmentsR\bsegments\"\xf3\x02\n" +
 	"\x16MutateGoogleAdsRequest\x12$\n" +
@@ -4658,7 +4658,7 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\x18campaign_label_operation\x18\x1c \x01(\v29.google.ads.googleads.v20.services.CampaignLabelOperationH\x00R\x16campaignLabelOperation\x12e\n" +
 	"\x12campaign_operation\x18\n" +
 	" \x01(\v24.google.ads.googleads.v20.services.CampaignOperationH\x00R\x11campaignOperation\x12\x82\x01\n" +
-	"\x1dcampaign_SHAREDSetOperationH\x00R\x1acampaignSHAREDSetOperation\x12~\n" +
+	"\x1dcampaign_github.com/the-herald/monthly_reporter/reporter/sharedSetOperationH\x00R\x1acampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation\x12~\n" +
 	"\x1bconversion_action_operation\x18\f \x01(\v2<.google.ads.googleads.v20.services.ConversionActionOperationH\x00R\x19conversionActionOperation\x12\x97\x01\n" +
 	"$conversion_custom_variable_operation\x187 \x01(\v2D.google.ads.googleads.v20.services.ConversionCustomVariableOperationH\x00R!conversionCustomVariableOperation\x12\xa4\x01\n" +
 	")conversion_goal_campaign_config_operation\x18E \x01(\v2H.google.ads.googleads.v20.services.ConversionGoalCampaignConfigOperationH\x00R%conversionGoalCampaignConfigOperation\x12\x88\x01\n" +
@@ -4682,8 +4682,8 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\x0flabel_operation\x18) \x01(\v21.google.ads.googleads.v20.services.LabelOperationH\x00R\x0elabelOperation\x12\x9c\x01\n" +
 	"%recommendation_subscription_operation\x18V \x01(\v2F.google.ads.googleads.v20.services.RecommendationSubscriptionOperationH\x00R#recommendationSubscriptionOperation\x12\x81\x01\n" +
 	"\x1cremarketing_action_operation\x18+ \x01(\v2=.google.ads.googleads.v20.services.RemarketingActionOperationH\x00R\x1aremarketingActionOperation\x12{\n" +
-	"\x1aSHAREDCriterionOperationH\x00R\x18SHAREDCriterionOperation\x12i\n" +
-	"\x14SHAREDSetOperationH\x00R\x12SHAREDSetOperation\x12\x8b\x01\n" +
+	"\x1agithub.com/the-herald/monthly_reporter/reporter/sharedCriterionOperationH\x00R\x18github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation\x12i\n" +
+	"\x14github.com/the-herald/monthly_reporter/reporter/sharedSetOperationH\x00R\x12github.com/the-herald/monthly_reporter/reporter/sharedSetOperation\x12\x8b\x01\n" +
 	" smart_campaign_setting_operation\x18= \x01(\v2@.google.ads.googleads.v20.services.SmartCampaignSettingOperationH\x00R\x1dsmartCampaignSettingOperation\x12f\n" +
 	"\x13user_list_operation\x18\x10 \x01(\v24.google.ads.googleads.v20.services.UserListOperationH\x00R\x11userListOperationB\v\n" +
 	"\toperation\"\x8e=\n" +
@@ -4723,7 +4723,7 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\x15campaign_label_result\x18\x1c \x01(\v2<.google.ads.googleads.v20.services.MutateCampaignLabelResultH\x00R\x13campaignLabelResult\x12b\n" +
 	"\x0fcampaign_result\x18\n" +
 	" \x01(\v27.google.ads.googleads.v20.services.MutateCampaignResultH\x00R\x0ecampaignResult\x12\x7f\n" +
-	"\x1acampaign_SHAREDSetResultH\x00R\x17campaignSHAREDSetResult\x12{\n" +
+	"\x1acampaign_github.com/the-herald/monthly_reporter/reporter/sharedSetResultH\x00R\x17campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult\x12{\n" +
 	"\x18conversion_action_result\x18\f \x01(\v2?.google.ads.googleads.v20.services.MutateConversionActionResultH\x00R\x16conversionActionResult\x12\x94\x01\n" +
 	"!conversion_custom_variable_result\x187 \x01(\v2G.google.ads.googleads.v20.services.MutateConversionCustomVariableResultH\x00R\x1econversionCustomVariableResult\x12\xa1\x01\n" +
 	"&conversion_goal_campaign_config_result\x18E \x01(\v2K.google.ads.googleads.v20.services.MutateConversionGoalCampaignConfigResultH\x00R\"conversionGoalCampaignConfigResult\x12\x85\x01\n" +
@@ -4747,8 +4747,8 @@ const file_google_ads_googleads_v20_services_google_ads_service_proto_rawDesc = 
 	"\flabel_result\x18) \x01(\v24.google.ads.googleads.v20.services.MutateLabelResultH\x00R\vlabelResult\x12\x99\x01\n" +
 	"\"recommendation_subscription_result\x18U \x01(\v2I.google.ads.googleads.v20.services.MutateRecommendationSubscriptionResultH\x00R recommendationSubscriptionResult\x12~\n" +
 	"\x19remarketing_action_result\x18+ \x01(\v2@.google.ads.googleads.v20.services.MutateRemarketingActionResultH\x00R\x17remarketingActionResult\x12x\n" +
-	"\x17SHAREDCriterionResultH\x00R\x15SHAREDCriterionResult\x12f\n" +
-	"\x11SHAREDSetResultH\x00R\x0fSHAREDSetResult\x12\x88\x01\n" +
+	"\x17github.com/the-herald/monthly_reporter/reporter/sharedCriterionResultH\x00R\x15github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult\x12f\n" +
+	"\x11github.com/the-herald/monthly_reporter/reporter/sharedSetResultH\x00R\x0fgithub.com/the-herald/monthly_reporter/reporter/sharedSetResult\x12\x88\x01\n" +
 	"\x1dsmart_campaign_setting_result\x18= \x01(\v2C.google.ads.googleads.v20.services.MutateSmartCampaignSettingResultH\x00R\x1asmartCampaignSettingResult\x12c\n" +
 	"\x10user_list_result\x18\x10 \x01(\v27.google.ads.googleads.v20.services.MutateUserListResultH\x00R\x0euserListResultB\n" +
 	"\n" +
@@ -4847,7 +4847,7 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*resources.CampaignLabel)(nil),                                  // 67: google.ads.googleads.v20.resources.CampaignLabel
 	(*resources.CampaignLifecycleGoal)(nil),                          // 68: google.ads.googleads.v20.resources.CampaignLifecycleGoal
 	(*resources.CampaignSearchTermInsight)(nil),                      // 69: google.ads.googleads.v20.resources.CampaignSearchTermInsight
-	(*resources.CampaignSHAREDSet
+	(*resources.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet
 	(*resources.CampaignSimulation)(nil),                             // 71: google.ads.googleads.v20.resources.CampaignSimulation
 	(*resources.CarrierConstant)(nil),                                // 72: google.ads.googleads.v20.resources.CarrierConstant
 	(*resources.ChangeEvent)(nil),                                    // 73: google.ads.googleads.v20.resources.ChangeEvent
@@ -4929,8 +4929,8 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*resources.Recommendation)(nil),                                 // 149: google.ads.googleads.v20.resources.Recommendation
 	(*resources.RecommendationSubscription)(nil),                     // 150: google.ads.googleads.v20.resources.RecommendationSubscription
 	(*resources.SearchTermView)(nil),                                 // 151: google.ads.googleads.v20.resources.SearchTermView
-	(*resources.SHAREDCriterion
-	(*resources.SHAREDSet
+	(*resources.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
+	(*resources.github.com/the-herald/monthly_reporter/reporter/sharedSet
 	(*resources.SmartCampaignSetting)(nil),                           // 154: google.ads.googleads.v20.resources.SmartCampaignSetting
 	(*resources.ShoppingPerformanceView)(nil),                        // 155: google.ads.googleads.v20.resources.ShoppingPerformanceView
 	(*resources.ShoppingProduct)(nil),                                // 156: google.ads.googleads.v20.resources.ShoppingProduct
@@ -4953,9 +4953,9 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*resources.LeadFormSubmissionData)(nil),                         // 173: google.ads.googleads.v20.resources.LeadFormSubmissionData
 	(*resources.LocalServicesLead)(nil),                              // 174: google.ads.googleads.v20.resources.LocalServicesLead
 	(*resources.LocalServicesLeadConversation)(nil),                  // 175: google.ads.googleads.v20.resources.LocalServicesLeadConversation
-	(*resources.AndroidPrivacySHAREDKeyGoogleAdGroup
-	(*resources.AndroidPrivacySHAREDKeyGoogleCampaign
-	(*resources.AndroidPrivacySHAREDKeyGoogleNetworkType
+	(*resources.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup
+	(*resources.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign
+	(*resources.AndroidPrivacygithub.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType
 	(*common.Metrics)(nil),                                           // 179: google.ads.googleads.v20.common.Metrics
 	(*common.Segments)(nil),                                          // 180: google.ads.googleads.v20.common.Segments
 	(enums.ResponseContentTypeEnum_ResponseContentType)(0),           // 181: google.ads.googleads.v20.enums.ResponseContentTypeEnum.ResponseContentType
@@ -4994,7 +4994,7 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*CampaignGroupOperation)(nil),                                   // 214: google.ads.googleads.v20.services.CampaignGroupOperation
 	(*CampaignLabelOperation)(nil),                                   // 215: google.ads.googleads.v20.services.CampaignLabelOperation
 	(*CampaignOperation)(nil),                                        // 216: google.ads.googleads.v20.services.CampaignOperation
-	(*CampaignSHAREDSetOperation
+	(*Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 	(*ConversionActionOperation)(nil),                                // 218: google.ads.googleads.v20.services.ConversionActionOperation
 	(*ConversionCustomVariableOperation)(nil),                        // 219: google.ads.googleads.v20.services.ConversionCustomVariableOperation
 	(*ConversionGoalCampaignConfigOperation)(nil),                    // 220: google.ads.googleads.v20.services.ConversionGoalCampaignConfigOperation
@@ -5018,8 +5018,8 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*LabelOperation)(nil),                                           // 238: google.ads.googleads.v20.services.LabelOperation
 	(*RecommendationSubscriptionOperation)(nil),                      // 239: google.ads.googleads.v20.services.RecommendationSubscriptionOperation
 	(*RemarketingActionOperation)(nil),                               // 240: google.ads.googleads.v20.services.RemarketingActionOperation
-	(*SHAREDCriterionOperation
-	(*SHAREDSetOperation
+	(*github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation
+	(*github.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 	(*SmartCampaignSettingOperation)(nil),                            // 243: google.ads.googleads.v20.services.SmartCampaignSettingOperation
 	(*UserListOperation)(nil),                                        // 244: google.ads.googleads.v20.services.UserListOperation
 	(*MutateAdGroupAdLabelResult)(nil),                               // 245: google.ads.googleads.v20.services.MutateAdGroupAdLabelResult
@@ -5056,7 +5056,7 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*MutateCampaignGroupResult)(nil),                                // 276: google.ads.googleads.v20.services.MutateCampaignGroupResult
 	(*MutateCampaignLabelResult)(nil),                                // 277: google.ads.googleads.v20.services.MutateCampaignLabelResult
 	(*MutateCampaignResult)(nil),                                     // 278: google.ads.googleads.v20.services.MutateCampaignResult
-	(*MutateCampaignSHAREDSetResult
+	(*MutateCampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult
 	(*MutateConversionActionResult)(nil),                             // 280: google.ads.googleads.v20.services.MutateConversionActionResult
 	(*MutateConversionCustomVariableResult)(nil),                     // 281: google.ads.googleads.v20.services.MutateConversionCustomVariableResult
 	(*MutateConversionGoalCampaignConfigResult)(nil),                 // 282: google.ads.googleads.v20.services.MutateConversionGoalCampaignConfigResult
@@ -5080,8 +5080,8 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_goTypes = []
 	(*MutateLabelResult)(nil),                                        // 300: google.ads.googleads.v20.services.MutateLabelResult
 	(*MutateRecommendationSubscriptionResult)(nil),                   // 301: google.ads.googleads.v20.services.MutateRecommendationSubscriptionResult
 	(*MutateRemarketingActionResult)(nil),                            // 302: google.ads.googleads.v20.services.MutateRemarketingActionResult
-	(*MutateSHAREDCriterionResult
-	(*MutateSHAREDSetResult
+	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedCriterionResult
+	(*Mutategithub.com/the-herald/monthly_reporter/reporter/sharedSetResult
 	(*MutateSmartCampaignSettingResult)(nil),                         // 305: google.ads.googleads.v20.services.MutateSmartCampaignSettingResult
 	(*MutateUserListResult)(nil),                                     // 306: google.ads.googleads.v20.services.MutateUserListResult
 }
@@ -5152,7 +5152,7 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	67,  // 63: google.ads.googleads.v20.services.GoogleAdsRow.campaign_label:type_name -> google.ads.googleads.v20.resources.CampaignLabel
 	68,  // 64: google.ads.googleads.v20.services.GoogleAdsRow.campaign_lifecycle_goal:type_name -> google.ads.googleads.v20.resources.CampaignLifecycleGoal
 	69,  // 65: google.ads.googleads.v20.services.GoogleAdsRow.campaign_search_term_insight:type_name -> google.ads.googleads.v20.resources.CampaignSearchTermInsight
-	70,  // 66: google.ads.googleads.v20.services.GoogleAdsRow.campaign_SHAREDSet
+	70,  // 66: google.ads.googleads.v20.services.GoogleAdsRow.campaign_github.com/the-herald/monthly_reporter/reporter/sharedSet
 	71,  // 67: google.ads.googleads.v20.services.GoogleAdsRow.campaign_simulation:type_name -> google.ads.googleads.v20.resources.CampaignSimulation
 	72,  // 68: google.ads.googleads.v20.services.GoogleAdsRow.carrier_constant:type_name -> google.ads.googleads.v20.resources.CarrierConstant
 	73,  // 69: google.ads.googleads.v20.services.GoogleAdsRow.change_event:type_name -> google.ads.googleads.v20.resources.ChangeEvent
@@ -5234,8 +5234,8 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	149, // 145: google.ads.googleads.v20.services.GoogleAdsRow.recommendation:type_name -> google.ads.googleads.v20.resources.Recommendation
 	150, // 146: google.ads.googleads.v20.services.GoogleAdsRow.recommendation_subscription:type_name -> google.ads.googleads.v20.resources.RecommendationSubscription
 	151, // 147: google.ads.googleads.v20.services.GoogleAdsRow.search_term_view:type_name -> google.ads.googleads.v20.resources.SearchTermView
-	152, // 148: google.ads.googleads.v20.services.GoogleAdsRow.SHAREDCriterion
-	153, // 149: google.ads.googleads.v20.services.GoogleAdsRow.SHAREDSet
+	152, // 148: google.ads.googleads.v20.services.GoogleAdsRow.github.com/the-herald/monthly_reporter/reporter/sharedCriterion
+	153, // 149: google.ads.googleads.v20.services.GoogleAdsRow.github.com/the-herald/monthly_reporter/reporter/sharedSet
 	154, // 150: google.ads.googleads.v20.services.GoogleAdsRow.smart_campaign_setting:type_name -> google.ads.googleads.v20.resources.SmartCampaignSetting
 	155, // 151: google.ads.googleads.v20.services.GoogleAdsRow.shopping_performance_view:type_name -> google.ads.googleads.v20.resources.ShoppingPerformanceView
 	156, // 152: google.ads.googleads.v20.services.GoogleAdsRow.shopping_product:type_name -> google.ads.googleads.v20.resources.ShoppingProduct
@@ -5258,9 +5258,9 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	173, // 169: google.ads.googleads.v20.services.GoogleAdsRow.lead_form_submission_data:type_name -> google.ads.googleads.v20.resources.LeadFormSubmissionData
 	174, // 170: google.ads.googleads.v20.services.GoogleAdsRow.local_services_lead:type_name -> google.ads.googleads.v20.resources.LocalServicesLead
 	175, // 171: google.ads.googleads.v20.services.GoogleAdsRow.local_services_lead_conversation:type_name -> google.ads.googleads.v20.resources.LocalServicesLeadConversation
-	176, // 172: google.ads.googleads.v20.services.GoogleAdsRow.android_privacy_SHAREDKeyGoogleAdGroup
-	177, // 173: google.ads.googleads.v20.services.GoogleAdsRow.android_privacy_SHAREDKeyGoogleCampaign
-	178, // 174: google.ads.googleads.v20.services.GoogleAdsRow.android_privacy_SHAREDKeyGoogleNetworkType
+	176, // 172: google.ads.googleads.v20.services.GoogleAdsRow.android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleAdGroup
+	177, // 173: google.ads.googleads.v20.services.GoogleAdsRow.android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleCampaign
+	178, // 174: google.ads.googleads.v20.services.GoogleAdsRow.android_privacy_github.com/the-herald/monthly_reporter/reporter/sharedKeyGoogleNetworkType
 	179, // 175: google.ads.googleads.v20.services.GoogleAdsRow.metrics:type_name -> google.ads.googleads.v20.common.Metrics
 	180, // 176: google.ads.googleads.v20.services.GoogleAdsRow.segments:type_name -> google.ads.googleads.v20.common.Segments
 	7,   // 177: google.ads.googleads.v20.services.MutateGoogleAdsRequest.mutate_operations:type_name -> google.ads.googleads.v20.services.MutateOperation
@@ -5301,7 +5301,7 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	214, // 212: google.ads.googleads.v20.services.MutateOperation.campaign_group_operation:type_name -> google.ads.googleads.v20.services.CampaignGroupOperation
 	215, // 213: google.ads.googleads.v20.services.MutateOperation.campaign_label_operation:type_name -> google.ads.googleads.v20.services.CampaignLabelOperation
 	216, // 214: google.ads.googleads.v20.services.MutateOperation.campaign_operation:type_name -> google.ads.googleads.v20.services.CampaignOperation
-	217, // 215: google.ads.googleads.v20.services.MutateOperation.campaign_SHAREDSetOperation
+	217, // 215: google.ads.googleads.v20.services.MutateOperation.campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 	218, // 216: google.ads.googleads.v20.services.MutateOperation.conversion_action_operation:type_name -> google.ads.googleads.v20.services.ConversionActionOperation
 	219, // 217: google.ads.googleads.v20.services.MutateOperation.conversion_custom_variable_operation:type_name -> google.ads.googleads.v20.services.ConversionCustomVariableOperation
 	220, // 218: google.ads.googleads.v20.services.MutateOperation.conversion_goal_campaign_config_operation:type_name -> google.ads.googleads.v20.services.ConversionGoalCampaignConfigOperation
@@ -5325,8 +5325,8 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	238, // 236: google.ads.googleads.v20.services.MutateOperation.label_operation:type_name -> google.ads.googleads.v20.services.LabelOperation
 	239, // 237: google.ads.googleads.v20.services.MutateOperation.recommendation_subscription_operation:type_name -> google.ads.googleads.v20.services.RecommendationSubscriptionOperation
 	240, // 238: google.ads.googleads.v20.services.MutateOperation.remarketing_action_operation:type_name -> google.ads.googleads.v20.services.RemarketingActionOperation
-	241, // 239: google.ads.googleads.v20.services.MutateOperation.SHAREDCriterionOperation
-	242, // 240: google.ads.googleads.v20.services.MutateOperation.SHAREDSetOperation
+	241, // 239: google.ads.googleads.v20.services.MutateOperation.github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation
+	242, // 240: google.ads.googleads.v20.services.MutateOperation.github.com/the-herald/monthly_reporter/reporter/sharedSetOperation
 	243, // 241: google.ads.googleads.v20.services.MutateOperation.smart_campaign_setting_operation:type_name -> google.ads.googleads.v20.services.SmartCampaignSettingOperation
 	244, // 242: google.ads.googleads.v20.services.MutateOperation.user_list_operation:type_name -> google.ads.googleads.v20.services.UserListOperation
 	245, // 243: google.ads.googleads.v20.services.MutateOperationResponse.ad_group_ad_label_result:type_name -> google.ads.googleads.v20.services.MutateAdGroupAdLabelResult
@@ -5363,7 +5363,7 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	276, // 274: google.ads.googleads.v20.services.MutateOperationResponse.campaign_group_result:type_name -> google.ads.googleads.v20.services.MutateCampaignGroupResult
 	277, // 275: google.ads.googleads.v20.services.MutateOperationResponse.campaign_label_result:type_name -> google.ads.googleads.v20.services.MutateCampaignLabelResult
 	278, // 276: google.ads.googleads.v20.services.MutateOperationResponse.campaign_result:type_name -> google.ads.googleads.v20.services.MutateCampaignResult
-	279, // 277: google.ads.googleads.v20.services.MutateOperationResponse.campaign_SHAREDSetResult
+	279, // 277: google.ads.googleads.v20.services.MutateOperationResponse.campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetResult
 	280, // 278: google.ads.googleads.v20.services.MutateOperationResponse.conversion_action_result:type_name -> google.ads.googleads.v20.services.MutateConversionActionResult
 	281, // 279: google.ads.googleads.v20.services.MutateOperationResponse.conversion_custom_variable_result:type_name -> google.ads.googleads.v20.services.MutateConversionCustomVariableResult
 	282, // 280: google.ads.googleads.v20.services.MutateOperationResponse.conversion_goal_campaign_config_result:type_name -> google.ads.googleads.v20.services.MutateConversionGoalCampaignConfigResult
@@ -5387,8 +5387,8 @@ var file_google_ads_googleads_v20_services_google_ads_service_proto_depIdxs = []
 	300, // 298: google.ads.googleads.v20.services.MutateOperationResponse.label_result:type_name -> google.ads.googleads.v20.services.MutateLabelResult
 	301, // 299: google.ads.googleads.v20.services.MutateOperationResponse.recommendation_subscription_result:type_name -> google.ads.googleads.v20.services.MutateRecommendationSubscriptionResult
 	302, // 300: google.ads.googleads.v20.services.MutateOperationResponse.remarketing_action_result:type_name -> google.ads.googleads.v20.services.MutateRemarketingActionResult
-	303, // 301: google.ads.googleads.v20.services.MutateOperationResponse.SHAREDCriterionResult
-	304, // 302: google.ads.googleads.v20.services.MutateOperationResponse.SHAREDSetResult
+	303, // 301: google.ads.googleads.v20.services.MutateOperationResponse.github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult
+	304, // 302: google.ads.googleads.v20.services.MutateOperationResponse.github.com/the-herald/monthly_reporter/reporter/sharedSetResult
 	305, // 303: google.ads.googleads.v20.services.MutateOperationResponse.smart_campaign_setting_result:type_name -> google.ads.googleads.v20.services.MutateSmartCampaignSettingResult
 	306, // 304: google.ads.googleads.v20.services.MutateOperationResponse.user_list_result:type_name -> google.ads.googleads.v20.services.MutateUserListResult
 	0,   // 305: google.ads.googleads.v20.services.GoogleAdsService.Search:input_type -> google.ads.googleads.v20.services.SearchGoogleAdsRequest
@@ -5443,7 +5443,7 @@ func file_google_ads_googleads_v20_services_google_ads_service_proto_init() {
 	file_google_ads_googleads_v20_services_campaign_group_service_proto_init()
 	file_google_ads_googleads_v20_services_campaign_label_service_proto_init()
 	file_google_ads_googleads_v20_services_campaign_service_proto_init()
-	file_google_ads_googleads_v20_services_campaign_SHARED_set_service_proto_init()
+	file_google_ads_googleads_v20_services_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_init()
 	file_google_ads_googleads_v20_services_conversion_action_service_proto_init()
 	file_google_ads_googleads_v20_services_conversion_custom_variable_service_proto_init()
 	file_google_ads_googleads_v20_services_conversion_goal_campaign_config_service_proto_init()
@@ -5467,8 +5467,8 @@ func file_google_ads_googleads_v20_services_google_ads_service_proto_init() {
 	file_google_ads_googleads_v20_services_label_service_proto_init()
 	file_google_ads_googleads_v20_services_recommendation_subscription_service_proto_init()
 	file_google_ads_googleads_v20_services_remarketing_action_service_proto_init()
-	file_google_ads_googleads_v20_services_SHARED_criterion_service_proto_init()
-	file_google_ads_googleads_v20_services_SHARED_set_service_proto_init()
+	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_criterion_service_proto_init()
+	file_google_ads_googleads_v20_services_github.com/the-herald/monthly_reporter/reporter/shared_set_service_proto_init()
 	file_google_ads_googleads_v20_services_smart_campaign_setting_service_proto_init()
 	file_google_ads_googleads_v20_services_user_list_service_proto_init()
 	file_google_ads_googleads_v20_services_google_ads_service_proto_msgTypes[7].OneofWrappers = []any{
@@ -5506,7 +5506,7 @@ func file_google_ads_googleads_v20_services_google_ads_service_proto_init() {
 		(*MutateOperation_CampaignGroupOperation)(nil),
 		(*MutateOperation_CampaignLabelOperation)(nil),
 		(*MutateOperation_CampaignOperation)(nil),
-		(*MutateOperation_CampaignSHAREDSetOperation)(nil),
+		(*MutateOperation_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetOperation)(nil),
 		(*MutateOperation_ConversionActionOperation)(nil),
 		(*MutateOperation_ConversionCustomVariableOperation)(nil),
 		(*MutateOperation_ConversionGoalCampaignConfigOperation)(nil),
@@ -5530,8 +5530,8 @@ func file_google_ads_googleads_v20_services_google_ads_service_proto_init() {
 		(*MutateOperation_LabelOperation)(nil),
 		(*MutateOperation_RecommendationSubscriptionOperation)(nil),
 		(*MutateOperation_RemarketingActionOperation)(nil),
-		(*MutateOperation_SHAREDCriterionOperation)(nil),
-		(*MutateOperation_SHAREDSetOperation)(nil),
+		(*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedCriterionOperation)(nil),
+		(*MutateOperation_github.com/the-herald/monthly_reporter/reporter/sharedSetOperation)(nil),
 		(*MutateOperation_SmartCampaignSettingOperation)(nil),
 		(*MutateOperation_UserListOperation)(nil),
 	}
@@ -5570,7 +5570,7 @@ func file_google_ads_googleads_v20_services_google_ads_service_proto_init() {
 		(*MutateOperationResponse_CampaignGroupResult)(nil),
 		(*MutateOperationResponse_CampaignLabelResult)(nil),
 		(*MutateOperationResponse_CampaignResult)(nil),
-		(*MutateOperationResponse_CampaignSHAREDSetResult)(nil),
+		(*MutateOperationResponse_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetResult)(nil),
 		(*MutateOperationResponse_ConversionActionResult)(nil),
 		(*MutateOperationResponse_ConversionCustomVariableResult)(nil),
 		(*MutateOperationResponse_ConversionGoalCampaignConfigResult)(nil),
@@ -5594,8 +5594,8 @@ func file_google_ads_googleads_v20_services_google_ads_service_proto_init() {
 		(*MutateOperationResponse_LabelResult)(nil),
 		(*MutateOperationResponse_RecommendationSubscriptionResult)(nil),
 		(*MutateOperationResponse_RemarketingActionResult)(nil),
-		(*MutateOperationResponse_SHAREDCriterionResult)(nil),
-		(*MutateOperationResponse_SHAREDSetResult)(nil),
+		(*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedCriterionResult)(nil),
+		(*MutateOperationResponse_github.com/the-herald/monthly_reporter/reporter/sharedSetResult)(nil),
 		(*MutateOperationResponse_SmartCampaignSettingResult)(nil),
 		(*MutateOperationResponse_UserListResult)(nil),
 	}

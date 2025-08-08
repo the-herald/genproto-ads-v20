@@ -91,8 +91,8 @@ const (
 	// Clients must use the graduate action to graduate experiments and cannot
 	// set the status to GRADUATED directly.
 	ExperimentErrorEnum_CANNOT_SET_STATUS_TO_GRADUATED ExperimentErrorEnum_ExperimentError = 22
-	// Cannot use SHARED budget on base campaign when scheduling an experiment.
-	ExperimentErrorEnum_CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_SHARED_BUDGET ExperimentErrorEnum_ExperimentError = 23
+	// Cannot use github.com/the-herald/monthly_reporter/reporter/shared budget on base campaign when scheduling an experiment.
+	ExperimentErrorEnum_CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET ExperimentErrorEnum_ExperimentError = 23
 	// Cannot use custom budget on base campaign when scheduling an experiment.
 	ExperimentErrorEnum_CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_CUSTOM_BUDGET ExperimentErrorEnum_ExperimentError = 24
 	// Invalid status transition.
@@ -138,7 +138,7 @@ var (
 		20: "CANNOT_HAVE_MULTIPLE_CONTROL_ARMS",
 		21: "IN_DESIGN_CAMPAIGNS_NOT_SET",
 		22: "CANNOT_SET_STATUS_TO_GRADUATED",
-		23: "CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_SHARED_BUDGET",
+		23: "CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
 		24: "CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_CUSTOM_BUDGET",
 		25: "STATUS_TRANSITION_INVALID",
 		26: "DUPLICATE_EXPERIMENT_CAMPAIGN_NAME",
@@ -171,7 +171,7 @@ var (
 		"CANNOT_HAVE_MULTIPLE_CONTROL_ARMS":                                 20,
 		"IN_DESIGN_CAMPAIGNS_NOT_SET":                                       21,
 		"CANNOT_SET_STATUS_TO_GRADUATED":                                    22,
-		"CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_SHARED_BUDGET":              23,
+		"CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET":              23,
 		"CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_CUSTOM_BUDGET":              24,
 		"STATUS_TRANSITION_INVALID":                                         25,
 		"DUPLICATE_EXPERIMENT_CAMPAIGN_NAME":                                26,
@@ -277,7 +277,7 @@ const file_google_ads_googleads_v20_errors_experiment_error_proto_rawDesc = "" +
 	"!CANNOT_HAVE_MULTIPLE_CONTROL_ARMS\x10\x14\x12\x1f\n" +
 	"\x1bIN_DESIGN_CAMPAIGNS_NOT_SET\x10\x15\x12\"\n" +
 	"\x1eCANNOT_SET_STATUS_TO_GRADUATED\x10\x16\x128\n" +
-	"4CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_SHARED_BUDGET\x10\x17\x128\n" +
+	"4CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10\x17\x128\n" +
 	"4CANNOT_CREATE_EXPERIMENT_CAMPAIGN_WITH_CUSTOM_BUDGET\x10\x18\x12\x1d\n" +
 	"\x19STATUS_TRANSITION_INVALID\x10\x19\x12&\n" +
 	"\"DUPLICATE_EXPERIMENT_CAMPAIGN_NAME\x10\x1a\x12(\n" +

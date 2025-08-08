@@ -66,10 +66,10 @@ const (
 	ChangeStatusResourceTypeEnum_CAMPAIGN_FEED ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 12
 	// An AdGroupBidModifier resource change.
 	ChangeStatusResourceTypeEnum_AD_GROUP_BID_MODIFIER ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 13
-	// A SHAREDSet resource change.
-	ChangeStatusResourceTypeEnum_SHARED_SET ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 14
-	// A CampaignSHAREDSet resource change.
-	ChangeStatusResourceTypeEnum_CAMPAIGN_SHARED_SET ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 15
+	// A github.com/the-herald/monthly_reporter/reporter/sharedSet resource change.
+	ChangeStatusResourceTypeEnum_github.com/the-herald/monthly_reporter/reporter/shared_SET ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 14
+	// A Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet resource change.
+	ChangeStatusResourceTypeEnum_CAMPAIGN_github.com/the-herald/monthly_reporter/reporter/shared_SET ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 15
 	// An Asset resource change.
 	ChangeStatusResourceTypeEnum_ASSET ChangeStatusResourceTypeEnum_ChangeStatusResourceType = 16
 	// A CustomerAsset resource change.
@@ -104,8 +104,8 @@ var (
 		11: "AD_GROUP_FEED",
 		12: "CAMPAIGN_FEED",
 		13: "AD_GROUP_BID_MODIFIER",
-		14: "SHARED_SET",
-		15: "CAMPAIGN_SHARED_SET",
+		14: "github.com/the-herald/monthly_reporter/reporter/shared_SET",
+		15: "CAMPAIGN_github.com/the-herald/monthly_reporter/reporter/shared_SET",
 		16: "ASSET",
 		17: "CUSTOMER_ASSET",
 		18: "CAMPAIGN_ASSET",
@@ -129,8 +129,8 @@ var (
 		"AD_GROUP_FEED":         11,
 		"CAMPAIGN_FEED":         12,
 		"AD_GROUP_BID_MODIFIER": 13,
-		"SHARED_SET":            14,
-		"CAMPAIGN_SHARED_SET":   15,
+		"github.com/the-herald/monthly_reporter/reporter/shared_SET":            14,
+		"CAMPAIGN_github.com/the-herald/monthly_reporter/reporter/shared_SET":   15,
 		"ASSET":                 16,
 		"CUSTOMER_ASSET":        17,
 		"CAMPAIGN_ASSET":        18,
@@ -229,8 +229,8 @@ const file_google_ads_googleads_v20_enums_change_status_resource_type_proto_rawD
 	"\rCAMPAIGN_FEED\x10\f\x12\x19\n" +
 	"\x15AD_GROUP_BID_MODIFIER\x10\r\x12\x0e\n" +
 	"\n" +
-	"SHARED_SET\x10\x0e\x12\x17\n" +
-	"\x13CAMPAIGN_SHARED_SET\x10\x0f\x12\t\n" +
+	"github.com/the-herald/monthly_reporter/reporter/shared_SET\x10\x0e\x12\x17\n" +
+	"\x13CAMPAIGN_github.com/the-herald/monthly_reporter/reporter/shared_SET\x10\x0f\x12\t\n" +
 	"\x05ASSET\x10\x10\x12\x12\n" +
 	"\x0eCUSTOMER_ASSET\x10\x11\x12\x12\n" +
 	"\x0eCAMPAIGN_ASSET\x10\x12\x12\x12\n" +

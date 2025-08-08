@@ -315,9 +315,9 @@ type ErrorCode struct {
 	//	*ErrorCode_AdGroupBidModifierError
 	//	*ErrorCode_ContextError
 	//	*ErrorCode_FieldError
-	//	*ErrorCode_SHAREDSetError
-	//	*ErrorCode_SHAREDCriterionError
-	//	*ErrorCode_CampaignSHAREDSetError
+	//	*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedSetError
+	//	*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError
+	//	*ErrorCode_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError
 	//	*ErrorCode_ConversionActionError
 	//	*ErrorCode_ConversionAdjustmentUploadError
 	//	*ErrorCode_ConversionCustomVariableError
@@ -1108,31 +1108,31 @@ func (x *ErrorCode) GetFieldError() FieldErrorEnum_FieldError {
 	return FieldErrorEnum_UNSPECIFIED
 }
 
-func (x *ErrorCode) GetSHAREDSetErrorEnum_SHAREDSetError {
+func (x *ErrorCode) Getgithub.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedSetError {
 	if x != nil {
-		if x, ok := x.ErrorCode.(*ErrorCode_SHAREDSetError); ok {
-			return x.SHAREDSetError
+		if x, ok := x.ErrorCode.(*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedSetError); ok {
+			return x.github.com/the-herald/monthly_reporter/reporter/sharedSetError
 		}
 	}
-	return SHAREDSetErrorEnum_UNSPECIFIED
+	return github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_UNSPECIFIED
 }
 
-func (x *ErrorCode) GetSHAREDCriterionErrorEnum_SHAREDCriterionError {
+func (x *ErrorCode) Getgithub.com/the-herald/monthly_reporter/reporter/sharedCriterionErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError {
 	if x != nil {
-		if x, ok := x.ErrorCode.(*ErrorCode_SHAREDCriterionError); ok {
-			return x.SHAREDCriterionError
+		if x, ok := x.ErrorCode.(*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError); ok {
+			return x.github.com/the-herald/monthly_reporter/reporter/sharedCriterionError
 		}
 	}
-	return SHAREDCriterionErrorEnum_UNSPECIFIED
+	return github.com/the-herald/monthly_reporter/reporter/sharedCriterionErrorEnum_UNSPECIFIED
 }
 
-func (x *ErrorCode) GetCampaignSHAREDSetErrorEnum_CampaignSHAREDSetError {
+func (x *ErrorCode) GetCampaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError {
 	if x != nil {
-		if x, ok := x.ErrorCode.(*ErrorCode_CampaignSHAREDSetError); ok {
-			return x.CampaignSHAREDSetError
+		if x, ok := x.ErrorCode.(*ErrorCode_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError); ok {
+			return x.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError
 		}
 	}
-	return CampaignSHAREDSetErrorEnum_UNSPECIFIED
+	return Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_UNSPECIFIED
 }
 
 func (x *ErrorCode) GetConversionActionError() ConversionActionErrorEnum_ConversionActionError {
@@ -2247,19 +2247,19 @@ type ErrorCode_FieldError struct {
 	FieldError FieldErrorEnum_FieldError `protobuf:"varint,61,opt,name=field_error,json=fieldError,proto3,enum=google.ads.googleads.v20.errors.FieldErrorEnum_FieldError,oneof"`
 }
 
-type ErrorCode_SHAREDSetError struct {
-	// The reasons for the SHARED set error
-	SHAREDSetErrorEnum_SHARED_set_error,json=SHAREDSetErrorEnum_SHAREDSetError,oneof"`
+type ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedSetError struct {
+	// The reasons for the github.com/the-herald/monthly_reporter/reporter/shared set error
+	github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_github.com/the-herald/monthly_reporter/reporter/shared_set_error,json=github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedSetError,oneof"`
 }
 
-type ErrorCode_SHAREDCriterionError struct {
-	// The reasons for the SHARED criterion error
-	SHAREDCriterionErrorEnum_SHARED_criterion_error,json=SHAREDCriterionErrorEnum_SHAREDCriterionError,oneof"`
+type ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError struct {
+	// The reasons for the github.com/the-herald/monthly_reporter/reporter/shared criterion error
+	github.com/the-herald/monthly_reporter/reporter/sharedCriterionErrorEnum_github.com/the-herald/monthly_reporter/reporter/shared_criterion_error,json=github.com/the-herald/monthly_reporter/reporter/sharedCriterionErrorEnum_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError,oneof"`
 }
 
-type ErrorCode_CampaignSHAREDSetError struct {
-	// The reasons for the campaign SHARED set error
-	CampaignSHAREDSetErrorEnum_CampaignSHARED_set_error,json=campaignSHAREDSetErrorEnum_CampaignSHAREDSetError,oneof"`
+type ErrorCode_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError struct {
+	// The reasons for the campaign github.com/the-herald/monthly_reporter/reporter/shared set error
+	Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_Campaigngithub.com/the-herald/monthly_reporter/reporter/shared_set_error,json=campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError,oneof"`
 }
 
 type ErrorCode_ConversionActionError struct {
@@ -2820,11 +2820,11 @@ func (*ErrorCode_ContextError) isErrorCode_ErrorCode() {}
 
 func (*ErrorCode_FieldError) isErrorCode_ErrorCode() {}
 
-func (*ErrorCode_SHAREDSetError) isErrorCode_ErrorCode() {}
+func (*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedSetError) isErrorCode_ErrorCode() {}
 
-func (*ErrorCode_SHAREDCriterionError) isErrorCode_ErrorCode() {}
+func (*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError) isErrorCode_ErrorCode() {}
 
-func (*ErrorCode_CampaignSHAREDSetError) isErrorCode_ErrorCode() {}
+func (*ErrorCode_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError) isErrorCode_ErrorCode() {}
 
 func (*ErrorCode_ConversionActionError) isErrorCode_ErrorCode() {}
 
@@ -3454,7 +3454,7 @@ var File_google_ads_googleads_v20_errors_errors_proto protoreflect.FileDescripto
 
 const file_google_ads_googleads_v20_errors_errors_proto_rawDesc = "" +
 	"\n" +
-	",google/ads/googleads/v20/errors/errors.proto\x12\x1fgoogle.ads.googleads.v20.errors\x1a,google/ads/googleads/v20/common/policy.proto\x1a+google/ads/googleads/v20/common/value.proto\x1a8google/ads/googleads/v20/enums/resource_limit_type.proto\x1a=google/ads/googleads/v20/errors/access_invitation_error.proto\x1aCgoogle/ads/googleads/v20/errors/account_budget_proposal_error.proto\x1a8google/ads/googleads/v20/errors/account_link_error.proto\x1a9google/ads/googleads/v20/errors/ad_customizer_error.proto\x1a.google/ads/googleads/v20/errors/ad_error.proto\x1a7google/ads/googleads/v20/errors/ad_group_ad_error.proto\x1aAgoogle/ads/googleads/v20/errors/ad_group_bid_modifier_error.proto\x1aIgoogle/ads/googleads/v20/errors/ad_group_criterion_customizer_error.proto\x1a>google/ads/googleads/v20/errors/ad_group_criterion_error.proto\x1a?google/ads/googleads/v20/errors/ad_group_customizer_error.proto\x1a4google/ads/googleads/v20/errors/ad_group_error.proto\x1a9google/ads/googleads/v20/errors/ad_group_feed_error.proto\x1a8google/ads/googleads/v20/errors/ad_parameter_error.proto\x1a6google/ads/googleads/v20/errors/ad_sharing_error.proto\x1a/google/ads/googleads/v20/errors/adx_error.proto\x1a1google/ads/googleads/v20/errors/asset_error.proto\x1a=google/ads/googleads/v20/errors/asset_group_asset_error.proto\x1a7google/ads/googleads/v20/errors/asset_group_error.proto\x1aLgoogle/ads/googleads/v20/errors/asset_group_listing_group_filter_error.proto\x1a>google/ads/googleads/v20/errors/asset_group_signal_error.proto\x1a6google/ads/googleads/v20/errors/asset_link_error.proto\x1a;google/ads/googleads/v20/errors/asset_set_asset_error.proto\x1a5google/ads/googleads/v20/errors/asset_set_error.proto\x1a:google/ads/googleads/v20/errors/asset_set_link_error.proto\x1a4google/ads/googleads/v20/errors/audience_error.proto\x1a=google/ads/googleads/v20/errors/audience_insights_error.proto\x1a:google/ads/googleads/v20/errors/authentication_error.proto\x1a9google/ads/googleads/v20/errors/authorization_error.proto\x1aOgoogle/ads/googleads/v20/errors/automatically_created_asset_removal_error.proto\x1a5google/ads/googleads/v20/errors/batch_job_error.proto\x1a3google/ads/googleads/v20/errors/bidding_error.proto\x1a<google/ads/googleads/v20/errors/bidding_strategy_error.proto\x1a9google/ads/googleads/v20/errors/billing_setup_error.proto\x1aFgoogle/ads/googleads/v20/errors/brand_guidelines_migration_error.proto\x1a;google/ads/googleads/v20/errors/campaign_budget_error.proto\x1aDgoogle/ads/googleads/v20/errors/campaign_conversion_goal_error.proto\x1a>google/ads/googleads/v20/errors/campaign_criterion_error.proto\x1a?google/ads/googleads/v20/errors/campaign_customizer_error.proto\x1a:google/ads/googleads/v20/errors/campaign_draft_error.proto\x1a4google/ads/googleads/v20/errors/campaign_error.proto\x1a?google/ads/googleads/v20/errors/campaign_experiment_error.proto\x1a9google/ads/googleads/v20/errors/campaign_feed_error.proto\x1aCgoogle/ads/googleads/v20/errors/campaign_lifecycle_goal_error.proto\x1a?google/ads/googleads/v20/errors/campaign_SHARED_criterion_error.proto\x1a6google/ads/googleads/v20/errors/SHARED_set_error.proto\x1a<google/ads/googleads/v20/errors/shopping_product_error.proto\x1a6google/ads/googleads/v20/errors/size_limit_error.proto\x1a:google/ads/googleads/v20/errors/smart_campaign_error.proto\x1a9google/ads/googleads/v20/errors/string_format_error.proto\x1a9google/ads/googleads/v20/errors/string_length_error.proto\x1aJgoogle/ads/googleads/v20/errors/third_party_app_analytics_link_error.proto\x1a5google/ads/googleads/v20/errors/time_zone_error.proto\x1a5google/ads/googleads/v20/errors/url_field_error.proto\x1a5google/ads/googleads/v20/errors/user_data_error.proto\x1aCgoogle/ads/googleads/v20/errors/user_list_customer_type_error.proto\x1a5google/ads/googleads/v20/errors/user_list_error.proto\x1a:google/ads/googleads/v20/errors/video_campaign_error.proto\x1aFgoogle/ads/googleads/v20/errors/youtube_video_registration_error.proto\x1a\x1egoogle/protobuf/duration.proto\"z\n" +
+	",google/ads/googleads/v20/errors/errors.proto\x12\x1fgoogle.ads.googleads.v20.errors\x1a,google/ads/googleads/v20/common/policy.proto\x1a+google/ads/googleads/v20/common/value.proto\x1a8google/ads/googleads/v20/enums/resource_limit_type.proto\x1a=google/ads/googleads/v20/errors/access_invitation_error.proto\x1aCgoogle/ads/googleads/v20/errors/account_budget_proposal_error.proto\x1a8google/ads/googleads/v20/errors/account_link_error.proto\x1a9google/ads/googleads/v20/errors/ad_customizer_error.proto\x1a.google/ads/googleads/v20/errors/ad_error.proto\x1a7google/ads/googleads/v20/errors/ad_group_ad_error.proto\x1aAgoogle/ads/googleads/v20/errors/ad_group_bid_modifier_error.proto\x1aIgoogle/ads/googleads/v20/errors/ad_group_criterion_customizer_error.proto\x1a>google/ads/googleads/v20/errors/ad_group_criterion_error.proto\x1a?google/ads/googleads/v20/errors/ad_group_customizer_error.proto\x1a4google/ads/googleads/v20/errors/ad_group_error.proto\x1a9google/ads/googleads/v20/errors/ad_group_feed_error.proto\x1a8google/ads/googleads/v20/errors/ad_parameter_error.proto\x1a6google/ads/googleads/v20/errors/ad_sharing_error.proto\x1a/google/ads/googleads/v20/errors/adx_error.proto\x1a1google/ads/googleads/v20/errors/asset_error.proto\x1a=google/ads/googleads/v20/errors/asset_group_asset_error.proto\x1a7google/ads/googleads/v20/errors/asset_group_error.proto\x1aLgoogle/ads/googleads/v20/errors/asset_group_listing_group_filter_error.proto\x1a>google/ads/googleads/v20/errors/asset_group_signal_error.proto\x1a6google/ads/googleads/v20/errors/asset_link_error.proto\x1a;google/ads/googleads/v20/errors/asset_set_asset_error.proto\x1a5google/ads/googleads/v20/errors/asset_set_error.proto\x1a:google/ads/googleads/v20/errors/asset_set_link_error.proto\x1a4google/ads/googleads/v20/errors/audience_error.proto\x1a=google/ads/googleads/v20/errors/audience_insights_error.proto\x1a:google/ads/googleads/v20/errors/authentication_error.proto\x1a9google/ads/googleads/v20/errors/authorization_error.proto\x1aOgoogle/ads/googleads/v20/errors/automatically_created_asset_removal_error.proto\x1a5google/ads/googleads/v20/errors/batch_job_error.proto\x1a3google/ads/googleads/v20/errors/bidding_error.proto\x1a<google/ads/googleads/v20/errors/bidding_strategy_error.proto\x1a9google/ads/googleads/v20/errors/billing_setup_error.proto\x1aFgoogle/ads/googleads/v20/errors/brand_guidelines_migration_error.proto\x1a;google/ads/googleads/v20/errors/campaign_budget_error.proto\x1aDgoogle/ads/googleads/v20/errors/campaign_conversion_goal_error.proto\x1a>google/ads/googleads/v20/errors/campaign_criterion_error.proto\x1a?google/ads/googleads/v20/errors/campaign_customizer_error.proto\x1a:google/ads/googleads/v20/errors/campaign_draft_error.proto\x1a4google/ads/googleads/v20/errors/campaign_error.proto\x1a?google/ads/googleads/v20/errors/campaign_experiment_error.proto\x1a9google/ads/googleads/v20/errors/campaign_feed_error.proto\x1aCgoogle/ads/googleads/v20/errors/campaign_lifecycle_goal_error.proto\x1a?google/ads/googleads/v20/errors/campaign_github.com/the-herald/monthly_reporter/reporter/shared_criterion_error.proto\x1a6google/ads/googleads/v20/errors/github.com/the-herald/monthly_reporter/reporter/shared_set_error.proto\x1a<google/ads/googleads/v20/errors/shopping_product_error.proto\x1a6google/ads/googleads/v20/errors/size_limit_error.proto\x1a:google/ads/googleads/v20/errors/smart_campaign_error.proto\x1a9google/ads/googleads/v20/errors/string_format_error.proto\x1a9google/ads/googleads/v20/errors/string_length_error.proto\x1aJgoogle/ads/googleads/v20/errors/third_party_app_analytics_link_error.proto\x1a5google/ads/googleads/v20/errors/time_zone_error.proto\x1a5google/ads/googleads/v20/errors/url_field_error.proto\x1a5google/ads/googleads/v20/errors/user_data_error.proto\x1aCgoogle/ads/googleads/v20/errors/user_list_customer_type_error.proto\x1a5google/ads/googleads/v20/errors/user_list_error.proto\x1a:google/ads/googleads/v20/errors/video_campaign_error.proto\x1aFgoogle/ads/googleads/v20/errors/youtube_video_registration_error.proto\x1a\x1egoogle/protobuf/duration.proto\"z\n" +
 	"\x10GoogleAdsFailure\x12G\n" +
 	"\x06errors\x18\x01 \x03(\v2/.google.ads.googleads.v20.errors.GoogleAdsErrorR\x06errors\x12\x1d\n" +
 	"\n" +
@@ -3550,9 +3550,9 @@ const file_google_ads_googleads_v20_errors_errors_proto_rawDesc = "" +
 	"\rcontext_error\x18< \x01(\x0e2>.google.ads.googleads.v20.errors.ContextErrorEnum.ContextErrorH\x00R\fcontextError\x12]\n" +
 	"\vfield_error\x18= \x01(\x0e2:.google.ads.googleads.v20.errors.FieldErrorEnum.FieldErrorH\x00R\n" +
 	"fieldError\x12n\n" +
-	"\x10SHAREDSetErrorEnum.SHAREDSetError\x12\x86\x01\n" +
-	"\x16SHAREDCriterionErrorEnum.SHAREDCriterionError\x12\x8f\x01\n" +
-	"\x19campaign_SHAREDSetErrorEnum.CampaignSHAREDSetError\x12\x8a\x01\n" +
+	"\x10github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum.github.com/the-herald/monthly_reporter/reporter/sharedSetError\x12\x86\x01\n" +
+	"\x16github.com/the-herald/monthly_reporter/reporter/sharedCriterionErrorEnum.github.com/the-herald/monthly_reporter/reporter/sharedCriterionError\x12\x8f\x01\n" +
+	"\x19campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError\x12\x8a\x01\n" +
 	"\x17conversion_action_error\x18A \x01(\x0e2P.google.ads.googleads.v20.errors.ConversionActionErrorEnum.ConversionActionErrorH\x00R\x15conversionActionError\x12\xb3\x01\n" +
 	"\"conversion_adjustment_upload_error\x18s \x01(\x0e2d.google.ads.googleads.v20.errors.ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadErrorH\x00R\x1fconversionAdjustmentUploadError\x12\xac\x01\n" +
 	" conversion_custom_variable_error\x18\x8f\x01 \x01(\x0e2`.google.ads.googleads.v20.errors.ConversionCustomVariableErrorEnum.ConversionCustomVariableErrorH\x00R\x1dconversionCustomVariableError\x12\x8a\x01\n" +
@@ -3781,9 +3781,9 @@ var file_google_ads_googleads_v20_errors_errors_proto_goTypes = []any{
 	(AdGroupBidModifierErrorEnum_AdGroupBidModifierError)(0),                                             // 83: google.ads.googleads.v20.errors.AdGroupBidModifierErrorEnum.AdGroupBidModifierError
 	(ContextErrorEnum_ContextError)(0),                                                                   // 84: google.ads.googleads.v20.errors.ContextErrorEnum.ContextError
 	(FieldErrorEnum_FieldError)(0),                                                                       // 85: google.ads.googleads.v20.errors.FieldErrorEnum.FieldError
-	(SHAREDSetError)(0),                                                               // 86: google.ads.googleads.v20.errors.SHAREDSetError
-	(SHAREDCriterionError)(0),                                                   // 87: google.ads.googleads.v20.errors.SHAREDCriterionError
-	(CampaignSHAREDSetError)(0),                                               // 88: google.ads.googleads.v20.errors.CampaignSHAREDSetError
+	(github.com/the-herald/monthly_reporter/reporter/sharedSetError)(0),                                                               // 86: google.ads.googleads.v20.errors.github.com/the-herald/monthly_reporter/reporter/sharedSetError
+	(github.com/the-herald/monthly_reporter/reporter/sharedCriterionError)(0),                                                   // 87: google.ads.googleads.v20.errors.github.com/the-herald/monthly_reporter/reporter/sharedCriterionError
+	(Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError)(0),                                               // 88: google.ads.googleads.v20.errors.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError
 	(ConversionActionErrorEnum_ConversionActionError)(0),                                                 // 89: google.ads.googleads.v20.errors.ConversionActionErrorEnum.ConversionActionError
 	(ConversionAdjustmentUploadErrorEnum_ConversionAdjustmentUploadError)(0),                             // 90: google.ads.googleads.v20.errors.ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError
 	(ConversionCustomVariableErrorEnum_ConversionCustomVariableError)(0),                                 // 91: google.ads.googleads.v20.errors.ConversionCustomVariableErrorEnum.ConversionCustomVariableError
@@ -3951,9 +3951,9 @@ var file_google_ads_googleads_v20_errors_errors_proto_depIdxs = []int32{
 	83,  // 76: google.ads.googleads.v20.errors.ErrorCode.ad_group_bid_modifier_error:type_name -> google.ads.googleads.v20.errors.AdGroupBidModifierErrorEnum.AdGroupBidModifierError
 	84,  // 77: google.ads.googleads.v20.errors.ErrorCode.context_error:type_name -> google.ads.googleads.v20.errors.ContextErrorEnum.ContextError
 	85,  // 78: google.ads.googleads.v20.errors.ErrorCode.field_error:type_name -> google.ads.googleads.v20.errors.FieldErrorEnum.FieldError
-	86,  // 79: google.ads.googleads.v20.errors.ErrorCode.SHAREDSetErrorEnum.SHAREDSetError
-	87,  // 80: google.ads.googleads.v20.errors.ErrorCode.SHAREDCriterionErrorEnum.SHAREDCriterionError
-	88,  // 81: google.ads.googleads.v20.errors.ErrorCode.campaign_SHAREDSetErrorEnum.CampaignSHAREDSetError
+	86,  // 79: google.ads.googleads.v20.errors.ErrorCode.github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum.github.com/the-herald/monthly_reporter/reporter/sharedSetError
+	87,  // 80: google.ads.googleads.v20.errors.ErrorCode.github.com/the-herald/monthly_reporter/reporter/sharedCriterionErrorEnum.github.com/the-herald/monthly_reporter/reporter/sharedCriterionError
+	88,  // 81: google.ads.googleads.v20.errors.ErrorCode.campaign_github.com/the-herald/monthly_reporter/reporter/sharedSetErrorEnum.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError
 	89,  // 82: google.ads.googleads.v20.errors.ErrorCode.conversion_action_error:type_name -> google.ads.googleads.v20.errors.ConversionActionErrorEnum.ConversionActionError
 	90,  // 83: google.ads.googleads.v20.errors.ErrorCode.conversion_adjustment_upload_error:type_name -> google.ads.googleads.v20.errors.ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError
 	91,  // 84: google.ads.googleads.v20.errors.ErrorCode.conversion_custom_variable_error:type_name -> google.ads.googleads.v20.errors.ConversionCustomVariableErrorEnum.ConversionCustomVariableError
@@ -4101,7 +4101,7 @@ func file_google_ads_googleads_v20_errors_errors_proto_init() {
 	file_google_ads_googleads_v20_errors_campaign_experiment_error_proto_init()
 	file_google_ads_googleads_v20_errors_campaign_feed_error_proto_init()
 	file_google_ads_googleads_v20_errors_campaign_lifecycle_goal_error_proto_init()
-	file_google_ads_googleads_v20_errors_campaign_SHARED_set_error_proto_init()
+	file_google_ads_googleads_v20_errors_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_init()
 	file_google_ads_googleads_v20_errors_change_event_error_proto_init()
 	file_google_ads_googleads_v20_errors_change_status_error_proto_init()
 	file_google_ads_googleads_v20_errors_click_view_error_proto_init()
@@ -4202,8 +4202,8 @@ func file_google_ads_googleads_v20_errors_errors_proto_init() {
 	file_google_ads_googleads_v20_errors_search_term_insight_error_proto_init()
 	file_google_ads_googleads_v20_errors_setting_error_proto_init()
 	file_google_ads_googleads_v20_errors_shareable_preview_error_proto_init()
-	file_google_ads_googleads_v20_errors_SHARED_criterion_error_proto_init()
-	file_google_ads_googleads_v20_errors_SHARED_set_error_proto_init()
+	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_criterion_error_proto_init()
+	file_google_ads_googleads_v20_errors_github.com/the-herald/monthly_reporter/reporter/shared_set_error_proto_init()
 	file_google_ads_googleads_v20_errors_shopping_product_error_proto_init()
 	file_google_ads_googleads_v20_errors_size_limit_error_proto_init()
 	file_google_ads_googleads_v20_errors_smart_campaign_error_proto_init()
@@ -4292,9 +4292,9 @@ func file_google_ads_googleads_v20_errors_errors_proto_init() {
 		(*ErrorCode_AdGroupBidModifierError)(nil),
 		(*ErrorCode_ContextError)(nil),
 		(*ErrorCode_FieldError)(nil),
-		(*ErrorCode_SHAREDSetError)(nil),
-		(*ErrorCode_SHAREDCriterionError)(nil),
-		(*ErrorCode_CampaignSHAREDSetError)(nil),
+		(*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedSetError)(nil),
+		(*ErrorCode_github.com/the-herald/monthly_reporter/reporter/sharedCriterionError)(nil),
+		(*ErrorCode_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetError)(nil),
 		(*ErrorCode_ConversionActionError)(nil),
 		(*ErrorCode_ConversionAdjustmentUploadError)(nil),
 		(*ErrorCode_ConversionCustomVariableError)(nil),

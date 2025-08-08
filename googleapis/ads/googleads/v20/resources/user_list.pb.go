@@ -55,7 +55,7 @@ type UserList struct {
 	// This field is read-only.
 	ReadOnly *bool `protobuf:"varint,26,opt,name=read_only,json=readOnly,proto3,oneof" json:"read_only,omitempty"`
 	// Name of this user list. Depending on its access_reason, the user list name
-	// may not be unique (for example, if access_reason=SHARED)
+	// may not be unique (for example, if access_reason=github.com/the-herald/monthly_reporter/reporter/shared)
 	Name *string `protobuf:"bytes,27,opt,name=name,proto3,oneof" json:"name,omitempty"`
 	// Description of this user list.
 	Description *string `protobuf:"bytes,28,opt,name=description,proto3,oneof" json:"description,omitempty"`
@@ -107,11 +107,11 @@ type UserList struct {
 	// and will be cleared once the list membership status becomes open.
 	ClosingReason enums.UserListClosingReasonEnum_UserListClosingReason `protobuf:"varint,14,opt,name=closing_reason,json=closingReason,proto3,enum=google.ads.googleads.v20.enums.UserListClosingReasonEnum_UserListClosingReason" json:"closing_reason,omitempty"`
 	// Output only. Indicates the reason this account has been granted access to
-	// the list. The reason can be SHARED, OWNED, LICENSED or SUBSCRIBED.
+	// the list. The reason can be github.com/the-herald/monthly_reporter/reporter/shared, OWNED, LICENSED or SUBSCRIBED.
 	//
 	// This field is read-only.
 	AccessReason enums.AccessReasonEnum_AccessReason `protobuf:"varint,15,opt,name=access_reason,json=accessReason,proto3,enum=google.ads.googleads.v20.enums.AccessReasonEnum_AccessReason" json:"access_reason,omitempty"`
-	// Indicates if this share is still enabled. When a UserList is SHARED with
+	// Indicates if this share is still enabled. When a UserList is github.com/the-herald/monthly_reporter/reporter/shared with
 	// the user this field is set to ENABLED. Later the userList owner can decide
 	// to revoke the share and make it DISABLED.
 	// The default value of this field is set to ENABLED.

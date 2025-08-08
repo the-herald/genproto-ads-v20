@@ -70,10 +70,10 @@ const (
 	// criterion id, separated by a single comma (,).
 	ResourceCountLimitExceededErrorEnum_AD_GROUP_CRITERION_LIMIT ResourceCountLimitExceededErrorEnum_ResourceCountLimitExceededError = 6
 	// Indicates that this request would exceed the number of allowed resources
-	// in this SHARED set. The exact resource type and limit being checked can
+	// in this github.com/the-herald/monthly_reporter/reporter/shared set. The exact resource type and limit being checked can
 	// be inferred from accountLimitType, and the numeric id of the
-	// SHARED set involved is given by enclosingId.
-	ResourceCountLimitExceededErrorEnum_SHARED_SET_LIMIT ResourceCountLimitExceededErrorEnum_ResourceCountLimitExceededError = 7
+	// github.com/the-herald/monthly_reporter/reporter/shared set involved is given by enclosingId.
+	ResourceCountLimitExceededErrorEnum_github.com/the-herald/monthly_reporter/reporter/shared_SET_LIMIT ResourceCountLimitExceededErrorEnum_ResourceCountLimitExceededError = 7
 	// Exceeds a limit related to a matching function.
 	ResourceCountLimitExceededErrorEnum_MATCHING_FUNCTION_LIMIT ResourceCountLimitExceededErrorEnum_ResourceCountLimitExceededError = 8
 	// The response for this request would exceed the maximum number of rows
@@ -95,7 +95,7 @@ var (
 		4:  "ADGROUP_LIMIT",
 		5:  "AD_GROUP_AD_LIMIT",
 		6:  "AD_GROUP_CRITERION_LIMIT",
-		7:  "SHARED_SET_LIMIT",
+		7:  "github.com/the-herald/monthly_reporter/reporter/shared_SET_LIMIT",
 		8:  "MATCHING_FUNCTION_LIMIT",
 		9:  "RESPONSE_ROW_LIMIT_EXCEEDED",
 		10: "RESOURCE_LIMIT",
@@ -108,7 +108,7 @@ var (
 		"ADGROUP_LIMIT":               4,
 		"AD_GROUP_AD_LIMIT":           5,
 		"AD_GROUP_CRITERION_LIMIT":    6,
-		"SHARED_SET_LIMIT":            7,
+		"github.com/the-herald/monthly_reporter/reporter/shared_SET_LIMIT":            7,
 		"MATCHING_FUNCTION_LIMIT":     8,
 		"RESPONSE_ROW_LIMIT_EXCEEDED": 9,
 		"RESOURCE_LIMIT":              10,
@@ -193,7 +193,7 @@ const file_google_ads_googleads_v20_errors_resource_count_limit_exceeded_error_p
 	"\rADGROUP_LIMIT\x10\x04\x12\x15\n" +
 	"\x11AD_GROUP_AD_LIMIT\x10\x05\x12\x1c\n" +
 	"\x18AD_GROUP_CRITERION_LIMIT\x10\x06\x12\x14\n" +
-	"\x10SHARED_SET_LIMIT\x10\a\x12\x1b\n" +
+	"\x10github.com/the-herald/monthly_reporter/reporter/shared_SET_LIMIT\x10\a\x12\x1b\n" +
 	"\x17MATCHING_FUNCTION_LIMIT\x10\b\x12\x1f\n" +
 	"\x1bRESPONSE_ROW_LIMIT_EXCEEDED\x10\t\x12\x12\n" +
 	"\x0eRESOURCE_LIMIT\x10\n" +

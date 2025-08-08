@@ -45,8 +45,8 @@ const (
 	AccessReasonEnum_UNKNOWN AccessReasonEnum_AccessReason = 1
 	// The resource is owned by the user.
 	AccessReasonEnum_OWNED AccessReasonEnum_AccessReason = 2
-	// The resource is SHARED to the user.
-	AccessReasonEnum_SHARED AccessReasonEnum_AccessReason = 3
+	// The resource is github.com/the-herald/monthly_reporter/reporter/shared to the user.
+	AccessReasonEnum_github.com/the-herald/monthly_reporter/reporter/shared AccessReasonEnum_AccessReason = 3
 	// The resource is licensed to the user.
 	AccessReasonEnum_LICENSED AccessReasonEnum_AccessReason = 4
 	// The user subscribed to the resource.
@@ -61,7 +61,7 @@ var (
 		0: "UNSPECIFIED",
 		1: "UNKNOWN",
 		2: "OWNED",
-		3: "SHARED",
+		3: "github.com/the-herald/monthly_reporter/reporter/shared",
 		4: "LICENSED",
 		5: "SUBSCRIBED",
 		6: "AFFILIATED",
@@ -70,7 +70,7 @@ var (
 		"UNSPECIFIED": 0,
 		"UNKNOWN":     1,
 		"OWNED":       2,
-		"SHARED":      3,
+		"github.com/the-herald/monthly_reporter/reporter/shared":      3,
 		"LICENSED":    4,
 		"SUBSCRIBED":  5,
 		"AFFILIATED":  6,
@@ -152,7 +152,7 @@ const file_google_ads_googleads_v20_enums_access_reason_proto_rawDesc = "" +
 	"\aUNKNOWN\x10\x01\x12\t\n" +
 	"\x05OWNED\x10\x02\x12\n" +
 	"\n" +
-	"\x06SHARED\x10\x03\x12\f\n" +
+	"\x06github.com/the-herald/monthly_reporter/reporter/shared\x10\x03\x12\f\n" +
 	"\bLICENSED\x10\x04\x12\x0e\n" +
 	"\n" +
 	"SUBSCRIBED\x10\x05\x12\x0e\n" +

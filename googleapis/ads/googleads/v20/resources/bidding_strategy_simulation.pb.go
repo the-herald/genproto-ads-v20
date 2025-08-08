@@ -50,7 +50,7 @@ type BiddingStrategySimulation struct {
 	//
 	// `customers/{customer_id}/biddingStrategySimulations/{bidding_strategy_id}~{type}~{modification_method}~{start_date}~{end_date}`
 	ResourceName string `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	// Output only. Bidding strategy SHARED set id of the simulation.
+	// Output only. Bidding strategy github.com/the-herald/monthly_reporter/reporter/shared set id of the simulation.
 	BiddingStrategyId int64 `protobuf:"varint,2,opt,name=bidding_strategy_id,json=biddingStrategyId,proto3" json:"bidding_strategy_id,omitempty"`
 	// Output only. The field that the simulation modifies.
 	Type enums.SimulationTypeEnum_SimulationType `protobuf:"varint,3,opt,name=type,proto3,enum=google.ads.googleads.v20.enums.SimulationTypeEnum_SimulationType" json:"type,omitempty"`

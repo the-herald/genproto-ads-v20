@@ -16,7 +16,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        (unknown)
-// source: google/ads/googleads/v20/resources/campaign_SHARED_set.proto
+// source: google/ads/googleads/v20/resources/campaign_github.com/the-herald/monthly_reporter/reporter/shared_set.proto
 
 package resources
 
@@ -37,45 +37,45 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
-// CampaignSHARED sets associated with a
+// Campaigngithub.com/the-herald/monthly_reporter/reporter/shared sets associated with a
 // campaign.
-type CampaignSHAREDSet struct {
+type Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet struct {
 	state protoimpl.MessageState `protogen:"open.v1"`
-	// Immutable. The resource name of the campaign SHARED set.
-	// Campaign SHARED set resource names have the form:
+	// Immutable. The resource name of the campaign github.com/the-herald/monthly_reporter/reporter/shared set.
+	// Campaign github.com/the-herald/monthly_reporter/reporter/shared set resource names have the form:
 	//
-	// `customers/{customer_id}/campaignSHARED_set_id}`
+	// `customers/{customer_id}/campaigngithub.com/the-herald/monthly_reporter/reporter/shared_set_id}`
 	ResourceName string `protobuf:"bytes,1,opt,name=resource_name,json=resourceName,proto3" json:"resource_name,omitempty"`
-	// Immutable. The campaign to which the campaign SHARED set belongs.
+	// Immutable. The campaign to which the campaign github.com/the-herald/monthly_reporter/reporter/shared set belongs.
 	Campaign *string `protobuf:"bytes,5,opt,name=campaign,proto3,oneof" json:"campaign,omitempty"`
-	// Immutable. The SHARED set associated with the campaign. This may be a
-	// negative keyword SHARED set of another customer. This customer should be a
-	// manager of the other customer, otherwise the campaign SHARED set will exist
-	// but have no serving effect. Only negative keyword SHARED sets can be
-	// associated with Shopping campaigns. Only negative placement SHARED sets can
+	// Immutable. The github.com/the-herald/monthly_reporter/reporter/shared set associated with the campaign. This may be a
+	// negative keyword github.com/the-herald/monthly_reporter/reporter/shared set of another customer. This customer should be a
+	// manager of the other customer, otherwise the campaign github.com/the-herald/monthly_reporter/reporter/shared set will exist
+	// but have no serving effect. Only negative keyword github.com/the-herald/monthly_reporter/reporter/shared sets can be
+	// associated with Shopping campaigns. Only negative placement github.com/the-herald/monthly_reporter/reporter/shared sets can
 	// be associated with Display mobile app campaigns.
-	SHARED_set,json=SHARED_set,omitempty"`
-	// Output only. The status of this campaign SHARED set. Read only.
-	Status        enums.CampaignSHAREDSetStatus `protobuf:"varint,2,opt,name=status,proto3,enum=google.ads.googleads.v20.enums.CampaignSHAREDSetStatus" json:"status,omitempty"`
+	github.com/the-herald/monthly_reporter/reporter/shared_set,json=github.com/the-herald/monthly_reporter/reporter/shared_set,omitempty"`
+	// Output only. The status of this campaign github.com/the-herald/monthly_reporter/reporter/shared set. Read only.
+	Status        enums.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus `protobuf:"varint,2,opt,name=status,proto3,enum=google.ads.googleads.v20.enums.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus" json:"status,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *CampaignSHAREDSet) Reset() {
-	*x = CampaignSHAREDSet{}
-	mi := &file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_msgTypes[0]
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) Reset() {
+	*x = Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet{}
+	mi := &file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *CampaignSHAREDSet) String() string {
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*CampaignSHAREDSet) ProtoMessage() {}
+func (*Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) ProtoMessage() {}
 
-func (x *CampaignSHAREDSet) ProtoReflect() protoreflect.Message {
-	mi := &file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_msgTypes[0]
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) ProtoReflect() protoreflect.Message {
+	mi := &file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -86,77 +86,77 @@ func (x *CampaignSHAREDSet) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use CampaignSHAREDSet.ProtoReflect.Descriptor instead.
-func (*CampaignSHAREDSet) Descriptor() ([]byte, []int) {
-	return file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDescGZIP(), []int{0}
+// Deprecated: Use Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet.ProtoReflect.Descriptor instead.
+func (*Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) Descriptor() ([]byte, []int) {
+	return file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *CampaignSHAREDSet) GetResourceName() string {
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) GetResourceName() string {
 	if x != nil {
 		return x.ResourceName
 	}
 	return ""
 }
 
-func (x *CampaignSHAREDSet) GetCampaign() string {
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet) GetCampaign() string {
 	if x != nil && x.Campaign != nil {
 		return *x.Campaign
 	}
 	return ""
 }
 
-func (x *CampaignSHAREDSet() string {
-	if x != nil && x.SHAREDSet != nil {
-		return *x.SHAREDSet
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet() string {
+	if x != nil && x.github.com/the-herald/monthly_reporter/reporter/sharedSet != nil {
+		return *x.github.com/the-herald/monthly_reporter/reporter/sharedSet
 	}
 	return ""
 }
 
-func (x *CampaignSHAREDSetStatusEnum_CampaignSHAREDSetStatus {
+func (x *Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatusEnum_Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus {
 	if x != nil {
 		return x.Status
 	}
-	return enums.CampaignSHAREDSetStatus(0)
+	return enums.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus(0)
 }
 
-var File_google_ads_googleads_v20_resources_campaign_SHARED_set_proto protoreflect.FileDescriptor
+var File_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto protoreflect.FileDescriptor
 
-const file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDesc = "" +
+const file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDesc = "" +
 	"\n" +
-	"<google/ads/googleads/v20/resources/campaign_SHARED_set_status.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\"\x91\x04\n" +
-	"\x11CampaignSHAREDSet\x12W\n" +
+	"<google/ads/googleads/v20/resources/campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_status.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\"\x91\x04\n" +
+	"\x11Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet\x12W\n" +
 	"\rresource_name\x18\x01 \x01(\tB2\xe0A\x05\xfaA,\n" +
-	"*googleads.googleapis.com/CampaignSHAREDSetR\fresourceName\x12J\n" +
+	"*googleads.googleapis.com/Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetR\fresourceName\x12J\n" +
 	"\bcampaign\x18\x05 \x01(\tB)\xe0A\x05\xfaA#\n" +
 	"!googleads.googleapis.com/CampaignH\x00R\bcampaign\x88\x01\x01\x12N\n" +
 	"\n" +
-	"SHARED_set\x18\x06 \x01(\tB*\xe0A\x05\xfaA$\n" +
-	"\"googleads.googleapis.com/SHAREDSet\x88\x01\x01\x12p\n" +
-	"\x06status\x18\x02 \x01(\x0e2S.google.ads.googleads.v20.enums.CampaignSHAREDSetStatusB\x03\xe0A\x03R\x06status:y\xeaAv\n" +
-	"*googleads.googleapis.com/CampaignSHAREDSets/{campaign_id}~{SHARED_set_id}B\v\n" +
+	"github.com/the-herald/monthly_reporter/reporter/shared_set\x18\x06 \x01(\tB*\xe0A\x05\xfaA$\n" +
+	"\"googleads.googleapis.com/github.com/the-herald/monthly_reporter/reporter/sharedSet\x88\x01\x01\x12p\n" +
+	"\x06status\x18\x02 \x01(\x0e2S.google.ads.googleads.v20.enums.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatusB\x03\xe0A\x03R\x06status:y\xeaAv\n" +
+	"*googleads.googleapis.com/Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSets/{campaign_id}~{github.com/the-herald/monthly_reporter/reporter/shared_set_id}B\v\n" +
 	"\t_campaignB\r\n" +
-	"\v_SHARED_setB\x88\x02\n" +
-	"&com.google.ads.googleads.v20.resourcesB\x16CampaignSHAREDSetProtoP\x01ZKgoogle.golang.org/genproto/googleapis/ads/googleads/v20/resources;resources\xa2\x02\x03GAA\xaa\x02\"Google.Ads.GoogleAds.V20.Resources\xca\x02\"Google\\Ads\\GoogleAds\\V20\\Resources\xea\x02&Google::Ads::GoogleAds::V20::Resourcesb\x06proto3"
+	"\v_github.com/the-herald/monthly_reporter/reporter/shared_setB\x88\x02\n" +
+	"&com.google.ads.googleads.v20.resourcesB\x16Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetProtoP\x01ZKgoogle.golang.org/genproto/googleapis/ads/googleads/v20/resources;resources\xa2\x02\x03GAA\xaa\x02\"Google.Ads.GoogleAds.V20.Resources\xca\x02\"Google\\Ads\\GoogleAds\\V20\\Resources\xea\x02&Google::Ads::GoogleAds::V20::Resourcesb\x06proto3"
 
 var (
-	file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDescOnce sync.Once
-	file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDescData []byte
+	file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDescOnce sync.Once
+	file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDescData []byte
 )
 
-func file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDescGZIP() []byte {
-	file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDescOnce.Do(func() {
-		file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDesc), len(file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDesc)))
+func file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDescGZIP() []byte {
+	file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDescOnce.Do(func() {
+		file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDesc), len(file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDesc)))
 	})
-	return file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDescData
+	return file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDescData
 }
 
-var file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_goTypes = []any{
-	(*CampaignSHAREDSet
-	(enums.CampaignSHAREDSetStatus)(0), // 1: google.ads.googleads.v20.enums.CampaignSHAREDSetStatus
+var file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_goTypes = []any{
+	(*Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSet
+	(enums.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus)(0), // 1: google.ads.googleads.v20.enums.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus
 }
-var file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_depIdxs = []int32{
-	1, // 0: google.ads.googleads.v20.resources.CampaignSHAREDSetStatusEnum.CampaignSHAREDSetStatus
+var file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_depIdxs = []int32{
+	1, // 0: google.ads.googleads.v20.resources.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatusEnum.Campaigngithub.com/the-herald/monthly_reporter/reporter/sharedSetStatus
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -164,27 +164,27 @@ var file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_depIdxs = 
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_init() }
-func file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_init() {
-	if File_google_ads_googleads_v20_resources_campaign_SHARED_set_proto != nil {
+func init() { file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_init() }
+func file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_init() {
+	if File_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto != nil {
 		return
 	}
-	file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_msgTypes[0].OneofWrappers = []any{}
+	file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_msgTypes[0].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_goTypes,
-		DependencyIndexes: file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_depIdxs,
-		MessageInfos:      file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_msgTypes,
+		GoTypes:           file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_goTypes,
+		DependencyIndexes: file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_depIdxs,
+		MessageInfos:      file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_msgTypes,
 	}.Build()
-	File_google_ads_googleads_v20_resources_campaign_SHARED_set_proto = out.File
-	file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_goTypes = nil
-	file_google_ads_googleads_v20_resources_campaign_SHARED_set_proto_depIdxs = nil
+	File_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto = out.File
+	file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_goTypes = nil
+	file_google_ads_googleads_v20_resources_campaign_github.com/the-herald/monthly_reporter/reporter/shared_set_proto_depIdxs = nil
 }

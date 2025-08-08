@@ -86,8 +86,8 @@ const (
 	BiddingErrorEnum_INVALID_DOMAIN_NAME BiddingErrorEnum_BiddingError = 33
 	// The field is not compatible with the payment mode.
 	BiddingErrorEnum_NOT_COMPATIBLE_WITH_PAYMENT_MODE BiddingErrorEnum_BiddingError = 34
-	// Bidding strategy type is incompatible with SHARED budget.
-	BiddingErrorEnum_BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET BiddingErrorEnum_BiddingError = 37
+	// Bidding strategy type is incompatible with github.com/the-herald/monthly_reporter/reporter/shared budget.
+	BiddingErrorEnum_BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET BiddingErrorEnum_BiddingError = 37
 	// The attached bidding strategy and budget must be aligned with each other
 	// if alignment is specified on either entity.
 	BiddingErrorEnum_BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED BiddingErrorEnum_BiddingError = 38
@@ -124,7 +124,7 @@ var (
 		32: "BID_TOO_MANY_FRACTIONAL_DIGITS",
 		33: "INVALID_DOMAIN_NAME",
 		34: "NOT_COMPATIBLE_WITH_PAYMENT_MODE",
-		37: "BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET",
+		37: "BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET",
 		38: "BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED",
 		39: "BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ATTACHED_TO_THE_SAME_CAMPAIGNS_TO_ALIGN",
 		40: "BIDDING_STRATEGY_AND_BUDGET_MUST_BE_REMOVED_TOGETHER",
@@ -152,7 +152,7 @@ var (
 		"BID_TOO_MANY_FRACTIONAL_DIGITS":   32,
 		"INVALID_DOMAIN_NAME":              33,
 		"NOT_COMPATIBLE_WITH_PAYMENT_MODE": 34,
-		"BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET":                       37,
+		"BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET":                       37,
 		"BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED":                                 38,
 		"BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ATTACHED_TO_THE_SAME_CAMPAIGNS_TO_ALIGN": 39,
 		"BIDDING_STRATEGY_AND_BUDGET_MUST_BE_REMOVED_TOGETHER":                        40,
@@ -253,7 +253,7 @@ const file_google_ads_googleads_v20_errors_bidding_error_proto_rawDesc = "" +
 	"\x1eBID_TOO_MANY_FRACTIONAL_DIGITS\x10 \x12\x17\n" +
 	"\x13INVALID_DOMAIN_NAME\x10!\x12$\n" +
 	" NOT_COMPATIBLE_WITH_PAYMENT_MODE\x10\"\x129\n" +
-	"5BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_SHARED_BUDGET\x10%\x12/\n" +
+	"5BIDDING_STRATEGY_TYPE_INCOMPATIBLE_WITH_github.com/the-herald/monthly_reporter/reporter/shared_BUDGET\x10%\x12/\n" +
 	"+BIDDING_STRATEGY_AND_BUDGET_MUST_BE_ALIGNED\x10&\x12O\n" +
 	"KBIDDING_STRATEGY_AND_BUDGET_MUST_BE_ATTACHED_TO_THE_SAME_CAMPAIGNS_TO_ALIGN\x10'\x128\n" +
 	"4BIDDING_STRATEGY_AND_BUDGET_MUST_BE_REMOVED_TOGETHER\x10(\x12<\n" +
